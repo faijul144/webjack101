@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+:root {
+  --primary: #04abed;
+  --primary-dark: #1a1a1a;
+  --primary-white: #ffffff;
+  --secondary-white: #f8f8f8;
+  --tertiary-white: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: var(--primary-white);
+}
+
+header .top-header {
+  background: var(--primary-dark);
+}
+
+header .top-header li {
+  color: var(--primary-white);
+  transition: all 0.5s ease;
+}
+
+header .top-header .header-dropdown {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+header .top-header .onhover-dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+header .top-header img {
+  margin: 0.8rem;
+  width: 1.2rem;
+}
+
+header .top-header a {
+  color: var(--primary-white);
+  display: flex;
+  align-items: center;
+}
+
+header .top-header a:hover {
+  color: var(--primary);
+}
+
+header .main-menu .hotDeal {
+  display: inline-flex;
+  align-items: center;
+}
+
+header .main-menu .hotDeal img {
+  width: 1rem;
+}
+
+header .main-menu .brand-logo img {
+  width: 10rem;
+}
+
+header .main-menu .icon-nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .main-menu .icon-nav > ul li > div > img {
+  width: 1.5rem;
+}
+
+header .main-menu .icon-nav .cart_qty_cls {
+  position: absolute;
+  background: var(--primary);
+  width: 20px;
+  height: 20px;
+  color: var(--primary-white);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  top: -12px;
+  right: -6px;
+  padding: 3px;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.btn img {
+  width: 1.6rem;
+  margin-right: 0.3rem;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--primary-white);
+}
