@@ -1,13 +1,11 @@
 @charset "UTF-8";
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("../images/ajax-loader.gif") center center no-repeat; }
+
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("https://themes.pixelstrap.com/multikart/assets/fonts/slick.eot");
-  src: url("https://themes.pixelstrap.com/multikart/assets/fonts/slick.eot?#iefix") format("embedded-opentype"), url("https://themes.pixelstrap.com/multikart/assets/fonts/slick.woff") format("woff"), url("https://themes.pixelstrap.com/multikart/assets/fonts/slick.ttf") format("truetype"), url("https://themes.pixelstrap.com/multikart/assets/fonts/slick.svg#slick") format("svg");
+  src: url("../webfonts/slick.eot");
+  src: url("../webfonts/slick.eot?#iefix") format("embedded-opentype"), url("../webfonts/slick.woff") format("woff"), url("../webfonts/slick.ttf") format("truetype"), url("../webfonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 
