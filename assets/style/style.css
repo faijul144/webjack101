@@ -415,6 +415,19 @@ header .main-menu .icon-nav .cart_qty_cls {
   background: var(--fourth-white);
 }
 
+.flash-sale-link {
+  position: absolute;
+  bottom: 0;
+  right: 1.3rem;
+  color: var(--primary-white);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.flash-sale-link:hover {
+  color: var(--tertiary-white);
+}
+
 .footer-logo {
   text-align: center;
 }
