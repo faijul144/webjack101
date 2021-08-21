@@ -295,6 +295,29 @@ header .main-menu .icon-nav .cart_qty_cls {
   margin-top: 0.5rem;
 }
 
+.product-box .product-detail h4 span {
+  text-decoration: line-through;
+  color: var(--fifth-white);
+}
+
+.product-box .front {
+  position: relative;
+}
+
+.product-box .front .sale-badge {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background-color: var(--primary);
+  color: var(--primary-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.3rem;
+  line-height: initial;
+}
+
 .special-section {
   background: var(--primary);
   position: relative;
@@ -311,6 +334,7 @@ header .main-menu .icon-nav .cart_qty_cls {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
 }
 
 .special-section .left-text h4,
@@ -330,10 +354,78 @@ header .main-menu .icon-nav .cart_qty_cls {
 .special-section .bg-shape {
   position: absolute;
   width: 29rem;
-  left: 0;
+  left: 0.8rem;
   top: 50%;
   transform: translateY(-50%);
   padding: inherit;
+}
+
+.special-section.subscribe .left-text h4,
+.special-section.subscribe .left-text h5 {
+  font-size: 2rem;
+}
+
+.special-section.subscribe .bg-shape {
+  width: 19rem;
+}
+
+.special-section.subscribe .subscribe-input {
+  width: 100%;
+  position: relative;
+}
+
+.special-section.subscribe .subscribe-input input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  padding: 1rem 10rem 1rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.special-section.subscribe .subscribe-input input:focus {
+  border: none;
+  outline: 0;
+  background: var(--tertiary-white);
+}
+
+.special-section.subscribe .subscribe-input .btn-subscribe {
+  position: absolute;
+  background: var(--primary-dark);
+  color: var(--primary-white);
+  text-transform: uppercase;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.special-section.subscribe .subscribe-input .btn-subscribe:hover {
+  background: var(--primary);
 }
 
 .flash-slider .product-box {
@@ -363,11 +455,20 @@ header .main-menu .icon-nav .cart_qty_cls {
   white-space: unset;
 }
 
-.flash-slider .product-box .product-detail .product-left {
+.flash-slider .slick-dots {
+  justify-content: flex-start;
+  bottom: -35px;
+}
+
+.flash-slider .slick-dots li.slick-active button {
+  background: var(--fourth-white);
+}
+
+.product-left {
   position: relative;
 }
 
-.flash-slider .product-box .product-detail .product-left .slider-bar {
+.product-left .slider-bar {
   background: var(--tertiary-white);
   appearance: none;
   display: block;
@@ -381,19 +482,19 @@ header .main-menu .icon-nav .cart_qty_cls {
   overflow: hidden;
 }
 
-.flash-slider .product-box .product-detail .product-left .slider-bar::-webkit-slider-thumb {
+.product-left .slider-bar::-webkit-slider-thumb {
   -webkit-appearance: none !important;
 }
 
-.flash-slider .product-box .product-detail .product-left .slider-bar::-moz-range-thumb {
+.product-left .slider-bar::-moz-range-thumb {
   appearance: none !important;
 }
 
-.flash-slider .product-box .product-detail .product-left .slider-bar::-ms-thumb {
+.product-left .slider-bar::-ms-thumb {
   background: transparent;
 }
 
-.flash-slider .product-box .product-detail .product-left .progress-bar {
+.product-left .progress-bar {
   height: 100%;
   width: 50%;
   background: var(--fourth-white);
@@ -404,15 +505,6 @@ header .main-menu .icon-nav .cart_qty_cls {
   -o-border-radius: 50rem;
   position: absolute;
   top: 0;
-}
-
-.flash-slider .slick-dots {
-  justify-content: flex-start;
-  bottom: -35px;
-}
-
-.flash-slider .slick-dots li.slick-active button {
-  background: var(--fourth-white);
 }
 
 .flash-sale-link {

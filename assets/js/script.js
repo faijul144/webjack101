@@ -982,6 +982,29 @@
       },
     ],
   });
+  $(".hot-product-slider-5").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
 
   $(".product-5").slick({
     dots: false,
