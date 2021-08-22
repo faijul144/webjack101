@@ -58,7 +58,7 @@ header .top-header a {
 }
 
 header .top-header a:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 header #main-menu > li > a {
