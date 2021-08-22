@@ -1,45 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name:Multikart
-    Template URI: themes.pixelstrap.com/multikart
-    Description: This is E-commerce website
-    Author: Pixelstrap
-    Author URI: https://themeforest.net/user/pixelstrap
-
------------------------------------------------------------------------------------ */
-/* 1. General CSS
-   1.1. Button CSS
-   1.2. Title CSS
-   1.3. Brand logo CSS */
-/* 2. Header CSS */
-/* 3. Home slider CSS  */
-/* 4. Instagram CSS  */
-/* 5. Blog CSS */
-/* 6. Service CSS  */
-/* 7. About CSS  */
-/* 8. Banner Timer CSS  */
-/* 9. Category CSS */
-/* 10. Product Box CSS */
-/* 11. Theme tab CSS */
-/* 12. Banner CSS */
-/* 13. Collection Banner CSS */
-/* 14. Product-box slider CSS */
-/* 15. Modal popup CSS */
-/* 18. Flying products CSS */
-/* 19. Footer CSS */
-/* 20. Loader CSS*/
-/* 21. Tap to top CSS */
-/* 22. theme setting css */
-/* 23. Inner pages CSS */
-/* 24. RTL CSS */
-/* 25. Dark CSS */
-/* 26. Menu CSS */
-/* 27. Responsive CSS */
-/*=====================
-    1.General CSS start
-==========================*/
-
-
 h1 {
   font-size: 60px;
   color: #222222;
@@ -4236,7 +4194,7 @@ footer p {
 }
 
 .sub-footer {
-  background-color: #ffffff;
+  background-color: #1a1a1a;
 }
 .sub-footer.dark-subfooter {
   background-color: #2e2726;
@@ -4257,9 +4215,9 @@ footer p {
   color: #777777;
 }
 .sub-footer p {
-  color: #777777;
+  color: #ffffff;
   margin-bottom: 0;
-  padding: 20px 0;
+  padding: 15px 0 13px;
 }
 .sub-footer .payment-card-bottom {
   height: 100%;

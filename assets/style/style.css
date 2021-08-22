@@ -18,6 +18,7 @@
 body {
   font-family: "Nunito", sans-serif;
   background: var(--primary-white);
+  font-size: 16px;
 }
 
 .bg-grey {
@@ -142,7 +143,7 @@ header .main-menu .icon-nav .cart_qty_cls {
 
 .hero-text p {
   margin-bottom: 1.2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hero-text span {
@@ -151,7 +152,7 @@ header .main-menu .icon-nav .cart_qty_cls {
 
 .hero-text h2 {
   display: inline-block;
-  font-size: 3.8rem;
+  font-size: 2.5rem;
   background: var(--primary-dark);
   padding: 0.5rem;
   color: var(--primary-white);
@@ -166,21 +167,31 @@ header .main-menu .icon-nav .cart_qty_cls {
 .hero-text h3 {
   margin-bottom: 1.2rem;
   color: var(--primary-dark);
-  font-size: 3.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .hero-text .btn.hero-btn {
-  padding: 1.5rem 1.8rem;
+  padding: 1rem 1.5rem;
   background: var(--primary-dark);
   border-color: var(--primary-dark);
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary-white);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.hero-text .btn.hero-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
 }
 
 .slick-dots {
@@ -263,14 +274,14 @@ header .main-menu .icon-nav .cart_qty_cls {
 
 .slider-controller > div {
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
   background-color: var(--primary-dark);
   transition: all 0.5s ease-in-out;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -278,7 +289,7 @@ header .main-menu .icon-nav .cart_qty_cls {
 }
 
 .slider-controller > div i {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: var(--primary-white);
   line-height: 0;
 }
