@@ -131,19 +131,21 @@ header .cart_qty_cls {
   background: -ms-linear-gradient(-90deg, #f1f1f1 0%, #f1f1f1 0%, white 40.6%, #fcfcfc 71.45%, #f1f1f1 97.07%, #f1f1f1 97.86%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1F1F1', endColorstr='#F1F1F1' ,GradientType=0)";
   background: linear-gradient(180deg, #f1f1f1 0%, #f1f1f1 0%, white 40.6%, #fcfcfc 71.45%, #f1f1f1 97.07%, #f1f1f1 97.86%);
-  border-radius: 23px;
-  -moz-border-radius: 23px;
-  -webkit-border-radius: 23px;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1F1F1',endColorstr='#F1F1F1' , GradientType=0);
-  height: 38rem;
 }
 
-.slider-bg .slick-dots {
-  margin-bottom: 2.5rem;
+.slider-img {
+  width: 65%;
 }
 
-.slider-bg .slider-img {
-  width: 70%;
+@media screen and (min-width: 1430px) {
+  .slider-img {
+    width: 55%;
+  }
+}
+
+.home-slider .slick-dots {
+  bottom: 1rem !important;
 }
 
 .hero-text {

@@ -1180,7 +1180,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 75vh;
+  height: 32rem;
+  display: flex;
+  align-items: center;
 }
 .home-slider .home.home1, .center-slider .home.home1 {
   background-image: url("/assets/images/home-banner/1.jpg");
@@ -7539,6 +7541,7 @@ footer p {
 }
 
 @media (min-width: 1200px) {
+
   .toggle-nav {
     display: none;
   }
