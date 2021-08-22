@@ -1389,7 +1389,7 @@ header {
 .home-slider:hover .slick-prev, .home-slider:hover .slick-next, .center-slider:hover .slick-prev, .center-slider:hover .slick-next {
   opacity: 1;
   -webkit-transform: scale(2.5);
-          transform: scale(2.5);
+  transform: scale(2.5);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -7818,12 +7818,6 @@ footer p {
 @media (max-width: 1367px) {
   .pixelstrap .full-mega-menu.layout-3 {
     width: 1079px !important;
-  }
-  .pixelstrap a {
-    font-size: 14px;
-  }
-  .pixelstrap a:hover, .pixelstrap a:active {
-    font-size: 14px;
   }
 
   .pixelstrap .feature-menu.product-menu {
