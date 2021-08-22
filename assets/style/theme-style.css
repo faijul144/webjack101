@@ -677,11 +677,11 @@ header {
   visibility: hidden;
   right: 0;
   padding: 15px 20px;
-  border-radius: .3rem !important;
-  -webkit-border-radius: .3rem !important;
-  -moz-border-radius: .3rem !important;
-  -ms-border-radius: .3rem !important;
-  -o-border-radius: .3rem !important;
+  border-radius: .2rem !important;
+  -webkit-border-radius: .2rem !important;
+  -moz-border-radius: .2rem !important;
+  -ms-border-radius: .2rem !important;
+  -o-border-radius: .2rem !important;
   -moz-transform: translateY(30px);
   -ms-transform: translateY(30px);
   -o-transform: translateY(30px);
