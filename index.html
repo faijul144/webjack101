@@ -1689,6 +1689,8 @@
                         <div class="testimonial">
                             <p>My jacket has arrived and I’m very pleased with it.
                                 Thank you for your good customer service.
+                                You guys are the best. My jacket has arrived and I’m very pleased with it.
+                                Thank you for your good customer service.
                                 You guys are the best.</p>
                         </div>
                         <div class="meta">
@@ -1809,7 +1811,7 @@
     <!-- info end -->
     <!-- footer -->
     <footer class="footer-light">
-        <section class="section-b-space light-layout">
+        <section class="section-b-space bg-grey">
             <div class="container">
                 <div class="row footer-theme partition-f">
                     <div class="col-lg-4 col-md-6">
@@ -1997,6 +1999,18 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
+
+    <script>
+        let cardHeight = [];
+        $('.testimonial-slider .slick-slide>div').each(function () {
+            cardHeight.push($(this).height())
+        })
+        let maxHeight = Math.max.apply(Math, cardHeight);
+        $('.testimonial-slider .slick-slide>div').each(function () {
+            $(this).css("height", maxHeight + "px")
+        })
+
+    </script>
 
 
 </body>
