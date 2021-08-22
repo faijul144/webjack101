@@ -3645,10 +3645,6 @@ button.btn.btn-solid:active, button.btn.btn-outline:active {
     padding-bottom: 30px; }
   .vector-category .margin-default > div {
     margin-bottom: 0; }
-  .vector-category .category-slide .slick-prev:before {
-    content: "\f104"; }
-  .vector-category .category-slide .slick-next:before {
-    content: "\f105"; }
   .vector-category .category-slide .slick-prev, .vector-category .category-slide .slick-next {
     z-index: 1;
     background: white;
@@ -3868,7 +3864,7 @@ button.btn.btn-solid:active, button.btn.btn-outline:active {
     right: 30px; }
 
 /*=====================
-    Demo CSS 
+    Demo CSS
 ==========================*/
 .full-scroll-menu {
   position: fixed;
