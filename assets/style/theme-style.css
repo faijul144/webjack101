@@ -7180,10 +7180,8 @@ footer p {
   font-weight: 700;
   line-height: 23px;
   text-decoration: none;
-  text-transform: uppercase;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  /* letter-spacing: 0.07em; */
 }
 .pixelstrap a:hover {
   color: #04abed;

@@ -368,6 +368,7 @@
     dots: true,
     arrows: false,
     slidesToShow: 2,
+    slidesToScroll: 2,
   });
 
   $(".slide-center").slick({
@@ -1004,6 +1005,14 @@
         },
       },
     ],
+  });
+
+  $(".testimonial-slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 2,
+    slidesToScroll: 2,
   });
 
   $(".product-5").slick({
