@@ -1,3 +1,5 @@
+
+
 h1 {
   font-size: 60px;
   color: #222222;
@@ -1142,7 +1144,7 @@ header {
   margin-top: -10px;
 }
 .home-slider .slick-prev:before, .home-slider .slick-next:before, .center-slider .slick-prev:before, .center-slider .slick-next:before {
-
+  font: normal normal normal 14px/1 FontAwesome;
   opacity: 1;
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
@@ -1161,12 +1163,16 @@ header {
 .home-slider .slick-next, .center-slider .slick-next {
   right: 1px;
 }
-
+.home-slider .slick-next:before, .center-slider .slick-next:before {
+  content: "\f105";
+}
 .home-slider .slick-prev, .center-slider .slick-prev {
   left: 1px;
   z-index: 1;
 }
-
+.home-slider .slick-prev:before, .center-slider .slick-prev:before {
+  content: "\f104";
+}
 .home-slider .home, .center-slider .home {
   background-size: cover;
   background-repeat: no-repeat;
