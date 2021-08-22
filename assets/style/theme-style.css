@@ -7142,7 +7142,7 @@ footer p {
 .pixelstrap a, .pixelstrap a:hover, .pixelstrap a:active {
   padding-right: 1.8rem;
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 23px;
   text-decoration: none;
@@ -7550,7 +7550,7 @@ footer p {
 
   .pixelstrap ul {
     position: absolute;
-    width: 16em !important;
+    width: 20em !important;
   }
 
   .pixelstrap li {
