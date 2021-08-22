@@ -667,7 +667,7 @@ header {
   top: 38px;
   position: absolute;
   z-index: 10;
-  background-color: #f8f8f8;
+  background-color: #fff;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
   min-width: 160px;
@@ -7642,8 +7642,13 @@ footer p {
   .pixelstrap ul {
     border: none;
     padding: 15px 10px 15px 5px;
-    background: #f8f8f8;
-  }
+    background: #fff;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
   .pixelstrap ul ul {
     background: #fff;
   }
