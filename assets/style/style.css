@@ -127,7 +127,7 @@ header .cart_qty_cls {
   color: var(--primary-white);
 }
 
-.slider-.bg {
+.slider-bg {
   background: -ms-linear-gradient(-90deg, #f1f1f1 0%, #f1f1f1 0%, white 40.6%, #fcfcfc 71.45%, #f1f1f1 97.07%, #f1f1f1 97.86%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1F1F1', endColorstr='#F1F1F1' ,GradientType=0)";
   background: linear-gradient(180deg, #f1f1f1 0%, #f1f1f1 0%, white 40.6%, #fcfcfc 71.45%, #f1f1f1 97.07%, #f1f1f1 97.86%);
@@ -138,11 +138,11 @@ header .cart_qty_cls {
   height: 38rem;
 }
 
-.slider-.bg .slick-dots {
+.slider-bg .slick-dots {
   margin-bottom: 2.5rem;
 }
 
-.slider-.bg .slider-img {
+.slider-bg .slider-img {
   width: 70%;
 }
 
