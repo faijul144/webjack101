@@ -1414,10 +1414,10 @@ header {
   opacity: 1;
 }
 .home-slider:hover .slick-next, .center-slider:hover .slick-next {
-  right: 100px;
+  right: 80px;
 }
 .home-slider:hover .slick-prev, .center-slider:hover .slick-prev {
-  left: 100px;
+  left: 80px;
 }
 
 .home-slider-container .slider-contain {
