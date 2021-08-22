@@ -631,6 +631,11 @@ header .main-menu .icon-nav .cart_qty_cls {
   padding: 2rem;
   position: relative;
   height: 100%;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
 }
 
 .testimonial-box .testmonial-card .quotes {
