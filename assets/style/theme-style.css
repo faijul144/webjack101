@@ -3762,9 +3762,6 @@ header {
   padding-right: 0 !important;
 }
 
-.modal-dialog {
-  margin: 0;
-}
 .modal-dialog .modal-content {
   border: none;
 }
@@ -3777,8 +3774,6 @@ header {
 }
 .theme-modal .modal-dialog .modal-content .modal-body {
   padding: 15px;
-  background-image: linear-gradient(135deg, #04abed 5.77%, #ffffff 5.77%, #ffffff 25%, #111111 25%, #111111 30.77%, #ffffff 30.77%, #ffffff 50%, #04abed 50%, #04abed 55.77%, #ffffff 55.77%, #ffffff 75%, #111111 75%, #111111 80.77%, #ffffff 80.77%, #ffffff 100%);
-  background-size: 36.77px 36.77px;
 }
 .theme-modal .modal-dialog .modal-content .modal-body .modal-bg {
   background-color: #ffffff;
