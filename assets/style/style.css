@@ -7,6 +7,7 @@
   --tertiary-white: #f1f1f1;
   --fourth-white: #e5e5e5;
   --fifth-white: #cbcbcb;
+  --sixth-white: #f0f0f0;
 }
 
 * {
@@ -82,6 +83,7 @@ header .icon-nav > ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: 100%;
 }
 
 header .icon-nav > ul li > div > img {
@@ -99,9 +101,36 @@ header .cart_qty_cls {
   font-size: 12px;
   line-height: 14px;
   font-weight: 600;
-  top: -12px;
+  top: 0;
   right: -6px;
   padding: 3px;
+}
+
+.shopping-cart .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shopping-cart .buttons a {
+  padding: 0.4rem 0.8rem 0.2rem;
+  background-color: var(--primary-dark);
+  color: var(--primary-white);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.shopping-cart .buttons a:hover {
+  background-color: var(--primary);
 }
 
 .btn {
@@ -254,6 +283,13 @@ header .cart_qty_cls {
   color: var(--primary-dark);
   font-size: 0.8rem;
   font-weight: 800;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--sixth-white);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
 }
 
 .add-to-cart img {
@@ -263,6 +299,17 @@ header .cart_qty_cls {
 .add-to-cart span {
   display: inline-block;
   margin-top: 0.3rem;
+}
+
+.add-to-cart:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-white);
+}
+
+.add-to-cart:hover img {
+  filter: invert(1);
+  -webkit-filter: invert(1);
 }
 
 .left-with-controller {
@@ -748,4 +795,19 @@ header .cart_qty_cls {
 
 .wishlist-link img {
   width: 1.45rem;
+}
+
+.home-slider .slick-prev::before,
+.home-slider .slick-next::before {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.home-slider .slick-prev:hover::before,
+.home-slider .slick-next:hover::before {
+  background-color: var(--primary);
+  color: var(--primary-white);
 }
