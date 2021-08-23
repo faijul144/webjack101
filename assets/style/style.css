@@ -143,6 +143,11 @@ header .cart_qty_cls {
   font-size: 1.05rem;
   text-transform: uppercase;
   font-weight: 400;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .btn img {
@@ -154,6 +159,22 @@ header .cart_qty_cls {
   background-color: var(--primary) !important;
   border-color: var(--primary) !important;
   color: var(--primary-white);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.btn.btn-dark {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  color: var(--primary-white);
+}
+
+.btn.btn-dark:hover {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
 }
 
 .slider-bg {
@@ -369,7 +390,7 @@ header .cart_qty_cls {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  margin-top: 0.5rem;
+  margin: 0.3rem 0 0;
 }
 
 .product-box .product-detail h4 span {
@@ -534,7 +555,7 @@ header .cart_qty_cls {
 
 .flash-slider .slick-dots {
   justify-content: flex-start;
-  bottom: -35px;
+  bottom: -3rem;
 }
 
 .flash-slider .slick-dots li.slick-active button {
@@ -554,7 +575,7 @@ header .cart_qty_cls {
   -moz-border-radius: 50rem;
   -ms-border-radius: 50rem;
   -o-border-radius: 50rem;
-  height: 0.8rem;
+  height: 0.5rem;
   width: 100%;
   overflow: hidden;
 }
@@ -586,7 +607,7 @@ header .cart_qty_cls {
 
 .flash-sale-link {
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   right: 1.3rem;
   color: var(--primary-white);
   font-weight: 700;
@@ -835,8 +856,9 @@ header .cart_qty_cls {
 }
 
 .product-box {
-  padding: 0.8rem 0;
+  background: var(--primary-white);
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.13);
+  overflow: hidden;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -846,4 +868,64 @@ header .cart_qty_cls {
 
 .product-box .product-detail {
   padding: 0.8rem;
+}
+
+.product-box .cart-info,
+.product-box .cart-wrap,
+.product-wrap .cart-info,
+.product-wrap .cart-wrap {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+.modal .modal-body .modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.modal .modal-body .modal-top .btn-close {
+  border: 0;
+  background: var(--sixth-white);
+  color: var(--fifth-white);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.modal .modal-body .modal-top .btn-close:hover {
+  background: var(--primary);
+  color: var(--primary-white);
+}
+
+.modal .modal-body .product-buttons .btn {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-features-list {
+  margin: 1rem 0 0.5rem;
+}
+
+.product-features-list li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.product-features-list li:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f0a4";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: var(--primary);
 }
