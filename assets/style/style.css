@@ -917,16 +917,16 @@ header .cart_qty_cls {
 }
 
 .product-features-list li {
-  padding-left: 1.5rem;
+  padding-left: 1.1rem;
   position: relative;
 }
 
 .product-features-list li:before {
-  font: normal normal normal 14px/1 FontAwesome;
-  content: "\f0a4";
+  font: normal normal normal 15px/1 FontAwesome;
+  content: "\f14a";
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 4px;
   color: var(--primary);
 }
 
