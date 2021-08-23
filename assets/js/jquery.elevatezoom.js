@@ -2087,6 +2087,8 @@ if ($(window).width() > 991) {
       $(temp_zoom_cls).elevateZoom({
         zoomType: "inner",
         cursor: "crosshair",
+        zoomLevel: 1,
+        scrollZoom: true,
       });
     }, 200);
   });
@@ -2098,6 +2100,8 @@ if ($(window).width() > 991) {
     ).elevateZoom({
       zoomType: "inner",
       cursor: "crosshair",
+      zoomLevel: 1.5,
+      scrollZoom: true,
     });
   }, 100);
 }

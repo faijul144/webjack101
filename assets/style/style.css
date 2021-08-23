@@ -1001,10 +1001,6 @@ header .cart_qty_cls {
   color: var(--primary-white);
 }
 
-.zoomContainer {
-  z-index: 9999;
-}
-
-.zoomWindow {
-  z-index: 9999;
+.zoomImg {
+  cursor: crosshair;
 }

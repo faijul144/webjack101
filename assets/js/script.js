@@ -1240,27 +1240,51 @@
     ],
   });
 
-  $(".product-slick").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: ".slider-nav",
-  });
+  // $(".product-slick").slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   fade: true,
+  //   asNavFor: ".slider-nav",
+  // });
 
-  $(".slider-nav").slick({
-    vertical: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: ".product-slick",
-    arrows: false,
-    dots: false,
-    focusOnSelect: true,
-  });
+  // $(".slider-nav").slick({
+  //   vertical: false,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   asNavFor: ".product-slick",
+  //   arrows: false,
+  //   dots: false,
+  //   focusOnSelect: true,
+  // });
 
   $("#quick-view").on("shown.bs.modal", function (e) {
-    $(".product-slick").slick("setPosition");
-    $(".slider-nav").slick("setPosition");
+    $(".product-slick").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: ".slider-nav",
+    });
+
+    $(".slider-nav").slick({
+      vertical: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: ".product-slick",
+      arrows: false,
+      dots: false,
+      focusOnSelect: true,
+    });
+
+    $(".product-slick .slick-slide > div>div").zoom({
+      magnify: 0.4,
+    });
+  });
+
+  $("#quick-view").on("hidden.bs.modal", function (e) {
+    $(".product-slick").slick("unslick");
+    $(".slider-nav").slick("unslick");
   });
 
   $(".product-right-slick").slick({
@@ -2037,21 +2061,22 @@ $(".testimonial-slider .slick-slide>div").each(function () {
   $(this).css("height", maxHeight + "px");
 });
 
+let currentVal = 1;
 
-$(".quantity-left-minus").on("click",function(e){
+$(".quantity-left-minus").on("click", function (e) {
   e.preventDefault();
-
-  if($(this).parent().parent().find(".input-number").val()>1){
-    $(this).parent().parent().find(".input-number").val() -= 1;
+  currentVal = $(this).parent().parent().find(".input-number").val();
+  if (currentVal > 1) {
+    currentVal--;
+    $(this).parent().parent().find(".input-number").val(currentVal);
   }
+});
 
-})
-
-$(".quantity-right-plus").on("click",function(e){
+$(".quantity-right-plus").on("click", function (e) {
   e.preventDefault();
-  if($(this).parent().parent().find(".input-number").val()>=1){
-    $(this).parent().parent().find(".input-number").val() += 1;
+  currentVal = $(this).parent().parent().find(".input-number").val();
+  if (currentVal >= 1) {
+    currentVal++;
+    $(this).parent().parent().find(".input-number").val(currentVal);
   }
-
-
-})
+});

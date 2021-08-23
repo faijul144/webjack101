@@ -5841,18 +5841,19 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px 15px 0 15px;
-  border: 1px solid #dddddd;
+  margin: 15px 0 0 0;
+  padding: 0.15rem;
+  border: 1px solid #f1f1f1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .slider-nav .slick-slide.slick-current > div, .rtl-slider-nav .slick-slide.slick-current > div, .slider-right-nav .slick-slide.slick-current > div, .rtl-slider-right-nav .slick-slide.slick-current > div {
-  border-color: #aaaaaa;
+  border-color: #04abed;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .slider-nav .slick-slide.slick-current img, .rtl-slider-nav .slick-slide.slick-current img, .slider-right-nav .slick-slide.slick-current img, .rtl-slider-right-nav .slick-slide.slick-current img {
-  border: 1px solid #dddddd;
+  /* border: 1px solid #dddddd; */
 }
 .slider-nav .slick-slide.slick-active, .rtl-slider-nav .slick-slide.slick-active, .slider-right-nav .slick-slide.slick-active, .rtl-slider-right-nav .slick-slide.slick-active {
   -webkit-transition: all 0.5s ease;
