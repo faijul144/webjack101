@@ -818,7 +818,7 @@ header .cart_qty_cls {
   width: 1.45rem;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1400) {
   .home-slider:hover .slick-prev {
     left: 50px;
   }
@@ -932,4 +932,20 @@ header .cart_qty_cls {
 
 .title-inner1 {
   margin-bottom: 2rem;
+}
+
+.ratio_asos .bg-size:before {
+  padding-top: 16rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .ratio_asos .bg-size:before {
+    padding-top: 13rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .ratio_asos .bg-size:before {
+    padding-top: 16rem;
+  }
 }
