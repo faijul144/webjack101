@@ -1041,8 +1041,11 @@ header .cart_qty_cls {
   color: var(--primary);
 }
 
-.title-inner1.has-controller {
+.title-inner1 {
   margin-bottom: 3rem;
+}
+
+.title-inner1.has-controller {
   display: flex;
   align-items: baseline;
 }
