@@ -1258,6 +1258,13 @@
   //   focusOnSelect: true,
   // });
 
+  $("#quick-view").on("show.bs.modal", function (e) {
+    $("#quick-view").css("opacity", 0);
+    setTimeout(function () {
+      $("#quick-view").css("opacity", 1);
+    }, 500);
+  });
+
   $("#quick-view").on("shown.bs.modal", function (e) {
     $(".product-slick").slick({
       slidesToShow: 1,
