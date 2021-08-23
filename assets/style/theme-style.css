@@ -337,7 +337,7 @@ del {
 }
 
 .ratio_asos .bg-size:before {
-  padding-top: 127.7777778%;
+  padding-top: 90%;
   content: "";
   display: block;
 }
