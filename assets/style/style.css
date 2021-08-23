@@ -949,3 +949,43 @@ header .cart_qty_cls {
     padding-top: 16rem;
   }
 }
+
+.product-box .cart-info.cart-wrap,
+.product-box .cart-wrap.cart-wrap,
+.product-wrap .cart-info.cart-wrap,
+.product-wrap .cart-wrap.cart-wrap {
+  background-color: transparent;
+}
+
+.product-box .cart-info.cart-wrap a i,
+.product-box .cart-wrap.cart-wrap a i,
+.product-wrap .cart-info.cart-wrap a i,
+.product-wrap .cart-wrap.cart-wrap a i {
+  background: rgba(0, 0, 0, 0.17);
+  color: var(--primary-white);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.product-box .cart-info.cart-wrap a:not(:last-child),
+.product-box .cart-wrap.cart-wrap a:not(:last-child),
+.product-wrap .cart-info.cart-wrap a:not(:last-child),
+.product-wrap .cart-wrap.cart-wrap a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.product-box .cart-info.cart-wrap a:hover i,
+.product-box .cart-wrap.cart-wrap a:hover i,
+.product-wrap .cart-info.cart-wrap a:hover i,
+.product-wrap .cart-wrap.cart-wrap a:hover i {
+  background: var(--primary);
+  color: var(--primary-white);
+}
