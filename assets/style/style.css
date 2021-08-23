@@ -765,11 +765,24 @@ header .cart_qty_cls {
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .social-list li a i {
   color: var(--fifth-white);
   font-size: 1rem;
+}
+
+.social-list li a:hover {
+  background-color: var(--primary);
+}
+
+.social-list li a:hover i {
+  color: var(--primary-white);
 }
 
 .footer-tel {
