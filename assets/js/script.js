@@ -1258,6 +1258,11 @@
     focusOnSelect: true,
   });
 
+  $("#quick-view").on("shown.bs.modal", function (e) {
+    $(".product-slick").slick("setPosition");
+    $(".slider-nav").slick("setPosition");
+  });
+
   $(".product-right-slick").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -2022,3 +2027,31 @@ $(".product-left").each(function () {
     .find(".progress-bar")
     .css("width", $(this).find(".slider-bar").val() + "%");
 });
+
+let cardHeight = [];
+$(".testimonial-slider .slick-slide>div").each(function () {
+  cardHeight.push($(this).height());
+});
+let maxHeight = Math.max.apply(Math, cardHeight);
+$(".testimonial-slider .slick-slide>div").each(function () {
+  $(this).css("height", maxHeight + "px");
+});
+
+
+$(".quantity-left-minus").on("click",function(e){
+  e.preventDefault();
+
+  if($(this).parent().parent().find(".input-number").val()>1){
+    $(this).parent().parent().find(".input-number").val() -= 1;
+  }
+
+})
+
+$(".quantity-right-plus").on("click",function(e){
+  e.preventDefault();
+  if($(this).parent().parent().find(".input-number").val()>=1){
+    $(this).parent().parent().find(".input-number").val() += 1;
+  }
+
+
+})

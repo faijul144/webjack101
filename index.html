@@ -1795,8 +1795,33 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-xs-12">
-                            <div class="quick-view-img"><img src="./assets/images/products/front-blue.png" alt=""
+                            <!-- <div class="quick-view-img"><img src="./assets/images/products/front-blue.png" alt=""
                                     class="img-fluid">
+                            </div> -->
+                            <div class="product-slick">
+                                <div>
+                                    <img src="./assets/images/products/front-blue.png" alt=""
+                                        class="img-fluid image_zoom_cls-0">
+                                </div>
+                                <div>
+                                    <img src="./assets/images/products/front-gold.png" alt=""
+                                        class="img-fluid image_zoom_cls-1">
+                                </div>
+                                <div>
+                                    <img src="./assets/images/products/front-tan.png" alt=""
+                                        class="img-fluid image_zoom_cls-2">
+                                </div>
+                            </div>
+                            <div class="slider-nav">
+                                <div>
+                                    <img src="./assets/images/products/front-blue.png" alt="" class="img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./assets/images/products/front-gold.png" alt="" class="img-fluid">
+                                </div>
+                                <div>
+                                    <img src="./assets/images/products/front-tan.png" alt="" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 rtl-text">
@@ -1817,10 +1842,39 @@
                                         <li>Strong snaps front closure.</li>
                                     </ul>
                                 </div>
-                                <div class="product-buttons">
-                                    <a href="#" class="btn btn-primary">add to cart</a>
-                                    <a href="#" class="btn btn-primary">view detail</a>
+                                <div class="product-description border-product">
+                                    <ul class="color-variant mt-2 mb-4">
+                                        <li class="bg-light0 active"></li>
+                                        <li class="bg-light1"></li>
+                                        <li class="bg-light2"></li>
+                                    </ul>
+                                    <div class="size-box mt-3 mb-4">
+                                        <ul>
+                                            <li class="active"><a href="javascript:void(0)">S</a></li>
+                                            <li><a href="javascript:void(0)">M</a></li>
+                                            <li><a href="javascript:void(0)">L</a></li>
+                                            <li><a href="javascript:void(0)">XL</a></li>
+                                        </ul>
+                                    </div>
+                                    <h6 class="product-title">quantity</h6>
+                                    <div class="qty-box">
+                                        <div class="input-group"><span class="input-group-prepend"><button type="button"
+                                                    class="btn quantity-left-minus" data-type="minus" data-field=""><i
+                                                        class="fa fa-minus"></i></button> </span>
+                                            <input type="text" name="quantity" class="form-control input-number"
+                                                value="1">
+                                            <span class="input-group-prepend"><button type="button"
+                                                    class="btn quantity-right-plus" data-type="plus" data-field=""><i
+                                                        class="fa fa-plus"></i></button></span>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="product-buttons">
+                                    <a href="#" class="btn btn-dark">add to cart</a>
+                                    <a href="#" class="btn btn-dark">view detail</a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1851,6 +1905,7 @@
 
     <!-- exitintent jquery-->
     <script src="./assets/js/jquery.exitintent.js"></script>
+    <script src="./assets/js/jquery.elevatezoom.js"></script>
 
     <!-- slick js-->
     <script src="./assets/js/slick.js"></script>
@@ -1862,18 +1917,6 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
-
-    <script>
-        let cardHeight = [];
-        $('.testimonial-slider .slick-slide>div').each(function () {
-            cardHeight.push($(this).height())
-        })
-        let maxHeight = Math.max.apply(Math, cardHeight);
-        $('.testimonial-slider .slick-slide>div').each(function () {
-            $(this).css("height", maxHeight + "px")
-        })
-
-    </script>
 
 
 </body>
