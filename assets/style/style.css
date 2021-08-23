@@ -443,6 +443,10 @@ header .cart_qty_cls {
   }
 }
 
+.left-with-controller .slider-controller {
+  margin-bottom: 0;
+}
+
 .slider-controller {
   display: inline-flex;
   align-items: center;
@@ -1037,13 +1041,13 @@ header .cart_qty_cls {
   color: var(--primary);
 }
 
-.title-inner1 {
+.title-inner1.has-controller {
   margin-bottom: 3rem;
   display: flex;
   align-items: baseline;
 }
 
-.title-inner1 img {
+.title-inner1.has-controller img {
   width: 1.1rem;
   margin-right: 1.5rem;
 }
