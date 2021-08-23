@@ -306,15 +306,25 @@ header .cart_qty_cls {
   font-weight: 800;
   padding: 0.4rem 1rem;
   border: 1px solid var(--sixth-white);
-  border-radius: 0.2rem;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
 .add-to-cart img {
   width: 1rem;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
 .add-to-cart span {
@@ -928,7 +938,6 @@ header .cart_qty_cls {
   left: 0;
   top: 4px;
   color: var(--primary);
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
 }
 
 .title-inner1 {
@@ -964,6 +973,7 @@ header .cart_qty_cls {
 .product-wrap .cart-wrap.cart-wrap a i {
   background: rgba(0, 0, 0, 0.17);
   color: var(--primary-white);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
