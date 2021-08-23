@@ -929,3 +929,7 @@ header .cart_qty_cls {
   top: 5px;
   color: var(--primary);
 }
+
+.title-inner1 {
+  margin-bottom: 2rem;
+}
