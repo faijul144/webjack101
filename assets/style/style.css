@@ -10,6 +10,81 @@
   --sixth-white: #f0f0f0;
 }
 
+@keyframes ring {
+  0% {
+    transform: rotateZ(0);
+  }
+  1% {
+    transform: rotateZ(15deg);
+  }
+  3% {
+    transform: rotateZ(-14deg);
+  }
+  5% {
+    transform: rotateZ(17deg);
+  }
+  7% {
+    transform: rotateZ(-16deg);
+  }
+  9% {
+    transform: rotateZ(15deg);
+  }
+  11% {
+    transform: rotateZ(-14deg);
+  }
+  13% {
+    transform: rotateZ(13deg);
+  }
+  15% {
+    transform: rotateZ(-12deg);
+  }
+  17% {
+    transform: rotateZ(12deg);
+  }
+  19% {
+    transform: rotateZ(-10deg);
+  }
+  21% {
+    transform: rotateZ(9deg);
+  }
+  23% {
+    transform: rotateZ(-8deg);
+  }
+  25% {
+    transform: rotateZ(7deg);
+  }
+  27% {
+    transform: rotateZ(-5deg);
+  }
+  29% {
+    transform: rotateZ(5deg);
+  }
+  31% {
+    transform: rotateZ(-4deg);
+  }
+  33% {
+    transform: rotateZ(3deg);
+  }
+  35% {
+    transform: rotateZ(-2deg);
+  }
+  37% {
+    transform: rotateZ(1deg);
+  }
+  39% {
+    transform: rotateZ(-1deg);
+  }
+  41% {
+    transform: rotateZ(1deg);
+  }
+  43% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -358,13 +433,13 @@ header .cart_qty_cls {
 
 @media screen and (min-width: 1200px) {
   .left-with-controller p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .left-with-controller p {
-    font-size: 2.5rem;
+    font-size: 2.16rem;
   }
 }
 
@@ -793,6 +868,11 @@ header .cart_qty_cls {
   font-size: 0.8rem;
 }
 
+.testimonial-box:hover .quotes {
+  animation: ring 4s 0.5s ease-in-out forwards;
+  -webkit-animation: ring 4s 0.5s ease-in-out forwards;
+}
+
 .sm-info-card {
   background-color: var(--primary);
   padding: 1rem;
@@ -959,6 +1039,13 @@ header .cart_qty_cls {
 
 .title-inner1 {
   margin-bottom: 3rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.title-inner1 img {
+  width: 1.1rem;
+  margin-right: 1.5rem;
 }
 
 .ratio_asos .bg-size:before {
@@ -974,18 +1061,6 @@ header .cart_qty_cls {
 @media screen and (min-width: 1400px) {
   .ratio_asos .bg-size:before {
     padding-top: 16.5rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .ratio_asos .tenproducts-slider .bg-size:before {
-    padding-top: 12.5rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .ratio_asos .tenproducts-slider .bg-size:before {
-    padding-top: 15.5rem;
   }
 }
 
@@ -1045,4 +1120,19 @@ footer h3 {
 .no-slider.row {
   margin-left: -8px;
   margin-right: -8px;
+}
+
+input::placeholder {
+  color: var(--fourth-white);
+}
+
+.custome-width.col-md-4 {
+  max-width: 29.1%;
+  flex: 0 0 29.1%;
+}
+
+.custome-width.col-md-8 {
+  max-width: 70.1%;
+  flex: 0 0 70.1%;
+  padding-left: 0;
 }

@@ -677,6 +677,7 @@ header {
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   right: 0;
   padding: 15px 20px;
   border-radius: .2rem !important;
@@ -696,6 +697,7 @@ header {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   visibility: visible;
+  pointer-events: all;
 }
 
 .onhover-div {
@@ -2290,7 +2292,7 @@ header {
 }
 
 .product-m .slick-slide > div {
-  margin: 0 10px;
+  margin: 0 8px;
 }
 
 .color-variant li {
@@ -4440,7 +4442,6 @@ footer p {
 .tap-top {
   width: 50px;
   height: 50px;
-  border-radius: 100%;
   position: fixed;
   bottom: 50px;
   right: 30px;
@@ -4453,7 +4454,22 @@ footer p {
   font-size: 22px;
   padding: 7px;
   cursor: pointer;
+  opacity: .6;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
 }
+.tap-top:hover{
+  opacity: 1;
+}
+
 .tap-top.top-cls {
   bottom: 130px;
 }
@@ -5851,15 +5867,15 @@ footer p {
   -o-border-radius: .3rem;
 }
 .slider-nav .slick-slide.slick-current > div, .rtl-slider-nav .slick-slide.slick-current > div, .slider-right-nav .slick-slide.slick-current > div, .rtl-slider-right-nav .slick-slide.slick-current > div {
-  border-color: rgba(4, 171, 237, 0.55);
+  border-color: rgba(4, 171, 237, 0.22);
   opacity: 1;
-  box-shadow: 0 0 3px #0da3df;
+  box-shadow: 0 0 3px rgba(13, 164, 223, 0.57);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.slider-nav .slick-slide.slick-current img, .rtl-slider-nav .slick-slide.slick-current img, .slider-right-nav .slick-slide.slick-current img, .rtl-slider-right-nav .slick-slide.slick-current img {
-  /* border: 1px solid #dddddd; */
-}
+/* .slider-nav .slick-slide.slick-current img, .rtl-slider-nav .slick-slide.slick-current img, .slider-right-nav .slick-slide.slick-current img, .rtl-slider-right-nav .slick-slide.slick-current img {
+ border: 1px solid #dddddd;
+} */
 .slider-nav .slick-slide.slick-active, .rtl-slider-nav .slick-slide.slick-active, .slider-right-nav .slick-slide.slick-active, .rtl-slider-right-nav .slick-slide.slick-active {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
