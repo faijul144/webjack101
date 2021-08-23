@@ -940,13 +940,13 @@ header .cart_qty_cls {
 
 @media screen and (min-width: 1200px) {
   .ratio_asos .bg-size:before {
-    padding-top: 13rem;
+    padding-top: 13.5rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .ratio_asos .bg-size:before {
-    padding-top: 16rem;
+    padding-top: 16.5rem;
   }
 }
 
@@ -963,11 +963,11 @@ header .cart_qty_cls {
 .product-wrap .cart-wrap.cart-wrap a i {
   background: rgba(0, 0, 0, 0.17);
   color: var(--primary-white);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
