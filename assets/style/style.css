@@ -986,6 +986,7 @@ header .cart_qty_cls {
   padding: 0.8rem 1rem !important;
   top: 60px !important;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
+  width: 39rem !important;
 }
 
 #main-menu li ul.mega-menu .link-section a {
@@ -993,11 +994,12 @@ header .cart_qty_cls {
   padding: 0.5rem 0;
 }
 
-#main-menu li ul.mega-menu .link-section .preview-menu-img {
-  height: 100%;
+#main-menu li ul.mega-menu .link-section #preview-menu-img {
+  height: 14rem;
   width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #main-menu li ul li a:hover {

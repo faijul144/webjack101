@@ -2086,11 +2086,26 @@ $(".quantity-right-plus").on("click", function (e) {
   }
 });
 
+$("#preview-menu-img").css(
+  "background-image",
+  `url('${$(".has-preview li:first-child a").data("preview-src")}')`
+);
+
 $(".has-preview li").each(function () {
   $(this)
     .find("a")
-    .on("hover", function (e) {
+    .on("mouseenter", function () {
       let previewSRC = $(this).data("preview-src");
-      console.log(previewSRC);
+      $("#preview-menu-img").css("background-image", `url('${previewSRC}')`);
+    });
+  $(this)
+    .find("a")
+    .on("mouseleave", function () {
+      let previewSRC = $(this)
+        .parent()
+        .parent()
+        .find("li:first-child a")
+        .data("preview-src");
+      $("#preview-menu-img").css("background-image", `url('${previewSRC}')`);
     });
 });
