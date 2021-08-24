@@ -2115,3 +2115,28 @@ $(".has-preview li").each(function () {
       $("#preview-menu-img").css("background-image", `url('${previewSRC}')`);
     });
 });
+
+// Ratting
+
+$(".product-rating").each(function () {
+  $(this).on("rateyo.init", function (e, data) {
+    $(this)
+      .parent()
+      .parent()
+      .find(".rating-count")
+      .text(`${data.rating} OUT OF 5`);
+  });
+  $(this)
+    .rateYo({
+      normalFill: "#dddddd",
+      ratedFill: "#04abed",
+      spacing: "3px",
+      starWidth: "26px",
+      onChange: function (rating, rateYoInstance) {
+        $(this).next().text(rating);
+      },
+    })
+    .on("rateyo.set", function (e, data) {
+      alert("The rating is set to " + data.rating + "!");
+    });
+});

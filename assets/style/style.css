@@ -1318,11 +1318,44 @@ input::placeholder {
 }
 
 .customize-btn {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.8rem;
   padding: 1.2rem 1rem;
 }
 
 .f-highlight {
   font-size: 2.4rem !important;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.product-rating-container .rating-count {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+}
+
+.price-detail {
+  color: var(--primary-dark);
+}
+
+.pro-main .border-product .product-title {
+  font-size: 1.5rem;
+}
+
+.pro-main .border-product .product-features-list li {
+  font-size: 1.1rem;
+  padding-left: 1.3rem;
+}
+
+.pro-main .border-product .product-features-list li:before {
+  font-size: 1.05rem;
+  top: 5px;
 }
