@@ -985,7 +985,7 @@ header .cart_qty_cls {
 }
 
 #main-menu li ul.mega-menu {
-  padding: 0.8rem 1rem !important;
+  padding: 0.8rem !important;
   top: 60px !important;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
   width: 35rem !important;
