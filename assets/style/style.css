@@ -1141,6 +1141,9 @@ header .cart_qty_cls {
 
 .product-features-list {
   margin: 1rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .product-features-list li {
@@ -1316,4 +1319,10 @@ input::placeholder {
 
 .countDowntimer .text {
   text-transform: capitalize;
+}
+
+.customize-btn {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  padding: 0.8rem 1rem;
 }

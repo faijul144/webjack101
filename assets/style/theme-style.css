@@ -5843,15 +5843,15 @@ footer p {
   left: 20px;
 }
 
-.slider-nav .slick-track {
+.slider-nav .slick-track,.slider-nav-detail .slick-track {
   height: auto !important;
 }
 
-.slider-nav .slick-slide, .rtl-slider-nav .slick-slide, .slider-right-nav .slick-slide, .rtl-slider-right-nav .slick-slide {
+.slider-nav .slick-slide,.slider-nav-detail .slick-slide, .rtl-slider-nav .slick-slide, .slider-right-nav .slick-slide, .rtl-slider-right-nav .slick-slide {
   padding: 0 15px 15px;
   padding-bottom: 0;
 }
-.slider-nav .slick-slide > div, .rtl-slider-nav .slick-slide > div, .slider-right-nav .slick-slide > div, .rtl-slider-right-nav .slick-slide > div {
+.slider-nav .slick-slide > div,.slider-nav-detail .slick-slide > div, .rtl-slider-nav .slick-slide > div, .slider-right-nav .slick-slide > div, .rtl-slider-right-nav .slick-slide > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5867,7 +5867,7 @@ footer p {
   -ms-border-radius: .3rem;
   -o-border-radius: .3rem;
 }
-.slider-nav .slick-slide.slick-current > div, .rtl-slider-nav .slick-slide.slick-current > div, .slider-right-nav .slick-slide.slick-current > div, .rtl-slider-right-nav .slick-slide.slick-current > div {
+.slider-nav .slick-slide.slick-current > div,.slider-nav-detail .slick-slide.slick-current > div, .rtl-slider-nav .slick-slide.slick-current > div, .slider-right-nav .slick-slide.slick-current > div, .rtl-slider-right-nav .slick-slide.slick-current > div {
   border-color: rgba(4, 171, 237, 0.22);
   opacity: 1;
   box-shadow: 0 0 3px rgba(13, 164, 223, 0.57);
@@ -5877,7 +5877,7 @@ footer p {
 /* .slider-nav .slick-slide.slick-current img, .rtl-slider-nav .slick-slide.slick-current img, .slider-right-nav .slick-slide.slick-current img, .rtl-slider-right-nav .slick-slide.slick-current img {
  border: 1px solid #dddddd;
 } */
-.slider-nav .slick-slide.slick-active, .rtl-slider-nav .slick-slide.slick-active, .slider-right-nav .slick-slide.slick-active, .rtl-slider-right-nav .slick-slide.slick-active {
+.slider-nav .slick-slide.slick-active,.slider-nav-detail .slick-slide.slick-active, .rtl-slider-nav .slick-slide.slick-active, .slider-right-nav .slick-slide.slick-active, .rtl-slider-right-nav .slick-slide.slick-active {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
