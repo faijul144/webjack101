@@ -1317,12 +1317,12 @@ input::placeholder {
   font-size: 1.2rem;
 }
 
-.countDowntimer .text {
-  text-transform: capitalize;
-}
-
 .customize-btn {
   margin-bottom: 2rem;
   font-size: 1.8rem;
-  padding: 0.8rem 1rem;
+  padding: 1.2rem 1rem;
+}
+
+.f-highlight {
+  font-size: 2.4rem !important;
 }
