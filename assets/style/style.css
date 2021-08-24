@@ -960,6 +960,11 @@ header .cart_qty_cls {
   -moz-border-radius: 0.8rem;
   -ms-border-radius: 0.8rem;
   -o-border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .sm-info-card img {
@@ -972,6 +977,14 @@ header .cart_qty_cls {
   font-weight: 700;
   font-size: 1.25rem;
   padding-left: 1rem;
+}
+
+.sm-info-card:hover {
+  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
 }
 
 .has-shape {
