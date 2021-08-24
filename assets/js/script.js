@@ -2085,3 +2085,12 @@ $(".quantity-right-plus").on("click", function (e) {
     $(this).parent().parent().find(".input-number").val(currentVal);
   }
 });
+
+$(".has-preview li").each(function () {
+  $(this)
+    .find("a")
+    .on("hover", function (e) {
+      let previewSRC = $(this).data("preview-src");
+      console.log(previewSRC);
+    });
+});

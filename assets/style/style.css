@@ -150,6 +150,58 @@ header #main-menu .hotDeal img {
   width: 0.75rem;
 }
 
+header .search-bar {
+  position: relative;
+  width: 100%;
+}
+
+header .search-bar input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1rem 3rem 1rem 1rem;
+  border: 1px solid var(--secondary-white);
+  width: 100%;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.13);
+}
+
+header .search-bar input:focus {
+  background: var(--tertiary-white);
+  outline: none;
+  border-color: var(--primary);
+}
+
+header .search-bar .btn {
+  position: absolute;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: var(--primary-white);
+  right: 0.4rem;
+  top: 50%;
+  background: var(--fourth-white);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+header .search-bar .btn:hover {
+  color: var(--primary-white);
+  background: var(--primary);
+}
+
 header .brand-logo img {
   width: 10rem;
 }
@@ -930,8 +982,22 @@ header .cart_qty_cls {
   z-index: -1;
 }
 
-#main-menu li ul {
+#main-menu li ul.mega-menu {
+  padding: 0.8rem 1rem !important;
   top: 60px !important;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
+}
+
+#main-menu li ul.mega-menu .link-section a {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+#main-menu li ul.mega-menu .link-section .preview-menu-img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 #main-menu li ul li a:hover {
