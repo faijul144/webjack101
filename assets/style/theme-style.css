@@ -5870,7 +5870,7 @@ footer p {
 .slider-nav .slick-slide.slick-current > div,.slider-nav-detail .slick-slide.slick-current > div, .rtl-slider-nav .slick-slide.slick-current > div, .slider-right-nav .slick-slide.slick-current > div, .rtl-slider-right-nav .slick-slide.slick-current > div {
   border-color: rgba(4, 171, 237, 0.22);
   opacity: 1;
-  box-shadow: 0 0 3px rgba(13, 164, 223, 0.57);
+  box-shadow: 0 0 3px rgba(13, 164, 223, 0.22);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
