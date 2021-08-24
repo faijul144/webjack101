@@ -9,8 +9,13 @@ function makeMeTwoDigits(n) {
 }
 
 $(document).ready(function () {
+  // get future date
+  let toDate = document
+    .getElementById("countdownTime")
+    .getAttribute("data-to-date");
+
   //    Set the date we're counting down to
-  var countDownDate = new Date("Sep 5, 2021 15:37:25").getTime();
+  var countDownDate = new Date(toDate).getTime();
 
   //    Update the count down every 1 second
   var x = setInterval(function () {
