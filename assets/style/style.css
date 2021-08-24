@@ -1291,3 +1291,16 @@ input::placeholder {
 .profile-top .onhover-show-div li:not(:last-child) {
   margin-bottom: 0.5rem;
 }
+
+.countDowntimer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--primary-white);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.countDowntimer .text {
+  text-transform: capitalize;
+}
