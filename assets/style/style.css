@@ -991,11 +991,6 @@ header .cart_qty_cls {
   width: 35rem !important;
 }
 
-#main-menu li ul.mega-menu .row > div:nth-child(2) {
-  padding-left: 4.54rem;
-  padding-right: 0;
-}
-
 #main-menu li ul.mega-menu .link-section a {
   font-size: 1.1rem;
   padding: 0.5rem 0;
@@ -1004,7 +999,7 @@ header .cart_qty_cls {
 #main-menu li ul.mega-menu .link-section #preview-menu-img {
   height: 14rem;
   width: 100%;
-  background-position: center;
+  background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
 }
