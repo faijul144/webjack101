@@ -152,7 +152,7 @@ header #main-menu .hotDeal img {
 
 header .search-bar {
   position: relative;
-  width: 100%;
+  width: 30rem;
 }
 
 header .search-bar input {
@@ -177,7 +177,6 @@ header .search-bar input {
 }
 
 header .search-bar input:focus {
-  background: var(--tertiary-white);
   outline: none;
   border-color: var(--primary);
 }
@@ -189,7 +188,7 @@ header .search-bar .btn {
   color: var(--primary-white);
   right: 0.4rem;
   top: 50%;
-  background: var(--fourth-white);
+  background: var(--primary);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -199,7 +198,6 @@ header .search-bar .btn {
 
 header .search-bar .btn:hover {
   color: var(--primary-white);
-  background: var(--primary);
 }
 
 header .brand-logo img {
