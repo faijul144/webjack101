@@ -153,11 +153,6 @@ header #main-menu .hotDeal img {
 header .search-bar {
   position: relative;
   width: 30rem;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
 }
 
 header .search-bar input {
@@ -165,7 +160,7 @@ header .search-bar input {
   align-items: center;
   justify-content: center;
   height: 3rem;
-  padding: 1rem 7rem 1rem 1rem;
+  padding: 1rem 3rem 1rem 1rem;
   border: 0;
   width: 100%;
   border-radius: 0.3rem;
@@ -183,25 +178,22 @@ header .search-bar input {
 
 header .search-bar input:focus {
   outline: none;
-  box-shadow: 0px 2px 4px rgba(52, 203, 242, 0.32);
+  box-shadow: 0px 0 6px rgba(52, 203, 242, 0.28);
 }
 
 header .search-bar .btn {
   position: absolute;
-  padding: 0 2.5rem;
-  font-size: 1.4rem;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
   color: var(--primary-white);
-  right: 0;
-  top: 0;
-  display: inline-flex;
-  height: 100%;
-  align-items: center;
+  right: 0.4rem;
+  top: 50%;
   background: var(--primary);
-  border-radius: 0 0.3rem 0.3rem 0;
-  -webkit-border-radius: 0 0.3rem 0.3rem 0;
-  -moz-border-radius: 0 0.3rem 0.3rem 0;
-  -ms-border-radius: 0 0.3rem 0.3rem 0;
-  -o-border-radius: 0 0.3rem 0.3rem 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 header .search-bar .btn:hover {
