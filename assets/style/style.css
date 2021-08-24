@@ -1359,3 +1359,14 @@ input::placeholder {
   font-size: 1.05rem;
   top: 5px;
 }
+
+.share-pro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.share-pro ul {
+  margin-top: 0;
+  margin-left: 1rem;
+}
