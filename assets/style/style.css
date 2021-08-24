@@ -988,7 +988,12 @@ header .cart_qty_cls {
   padding: 0.8rem 1rem !important;
   top: 60px !important;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
-  width: 39rem !important;
+  width: 35rem !important;
+}
+
+#main-menu li ul.mega-menu .row > div:nth-child(2) {
+  padding-left: 4.54rem;
+  padding-right: 0;
 }
 
 #main-menu li ul.mega-menu .link-section a {
@@ -1002,6 +1007,22 @@ header .cart_qty_cls {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#main-menu li ul li a {
+  display: inline-flex;
+  align-items: center;
+}
+
+#main-menu li ul li a .menu-icon {
+  width: 1.1rem;
+  padding: 0;
+  margin-right: 0.3rem;
+  transform: rotate(339deg);
+  -webkit-transform: rotate(339deg);
+  -moz-transform: rotate(339deg);
+  -ms-transform: rotate(339deg);
+  -o-transform: rotate(339deg);
 }
 
 #main-menu li ul li a:hover {
