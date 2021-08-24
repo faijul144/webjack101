@@ -821,7 +821,7 @@ header {
 .top-header .header-dropdown .onhover-dropdown .onhover-show-div li:last-child {
   padding-bottom: 0;
 }
-.top-header .header-dropdown .onhover-dropdown .onhover-show-div li a {
+.top-header .header-dropdown .onhover-dropdown .onhover-show-div li a ,.onhover-dropdown .onhover-show-div li a {
   color: #333333;
 }
 .top-header.top-header-dark {
@@ -952,6 +952,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   float: right;
+  height: 3rem;
 }
 .main-menu .menu-right .icon-nav {
   display: inline-block;
