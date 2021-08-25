@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/style/slick-theme.css">
     <link rel="stylesheet" href="./assets/style/animate.css">
     <link rel="stylesheet" href="./assets/style/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="./assets/style/magnific-popup.css">
     <link rel="stylesheet" href="./assets/style/select2.min.css">
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/theme-style.css">
@@ -316,12 +317,14 @@
                             </div>
 
                             <div class="product-description border-product">
+                                <h6 class="product-title mb-3">Available Colors</h6>
                                 <ul class="color-variant mt-2 mb-4">
                                     <li class="bg-light0 active"></li>
                                     <li class="bg-light1"></li>
                                     <li class="bg-light2"></li>
                                 </ul>
                                 <!-- To add men women children to any size add the class "has-gender" in size box -->
+                                <h6 class="product-title mb-3">Available Sizes</h6>
                                 <div class="size-box mt-3 mb-4 has-gender">
                                     <select name="for-whom" id="role" class="form-control">
                                         <option disabled selected>Select For</option>
@@ -336,7 +339,7 @@
                                         <li><a href="javascript:void(0)">XL</a></li>
                                     </ul>
                                 </div>
-                                <h6 class="product-title">quantity</h6>
+                                <h6 class="product-title mb-3">quantity</h6>
                                 <div class="qty-box">
                                     <div class="input-group">
                                         <span class="input-group-prepend">
@@ -498,6 +501,7 @@
                                                     <div class="product-rating-container">
                                                         <div class="product-rating">
                                                         </div>
+                                                        <div class="review-tooltip"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -512,9 +516,68 @@
                                                     required>
                                             </div>
                                             <div class="col-md-12">
-                                                <label for="review">Review Title</label>
+                                                <label for="review">Review</label>
                                                 <textarea class="form-control" placeholder="Wrire Your Testimonial Here"
                                                     id="exampleFormControlTextarea1" rows="6"></textarea>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choose
+                                                        files</label>
+                                                </div>
+                                                <div class="uploaded-files">
+                                                    <div>
+                                                        <div class="file-up">
+                                                            <div class="file-up-name">scene.jpg</div>
+                                                            <a href="javascript:void(0)" class="file-up-remove"><i
+                                                                    class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="file-up">
+                                                            <div class="file-up-name">newimage.jpg</div>
+                                                            <a href="javascript:void(0)" class="file-up-remove"><i
+                                                                    class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="file-up">
+                                                            <div class="file-up-name">scene.jpg</div>
+                                                            <a href="javascript:void(0)" class="file-up-remove"><i
+                                                                    class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="file-up">
+                                                            <div class="file-up-name">newimage.jpg</div>
+                                                            <a href="javascript:void(0)" class="file-up-remove"><i
+                                                                    class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="file-up">
+                                                            <div class="file-up-name">scene.jpg</div>
+                                                            <a href="javascript:void(0)" class="file-up-remove"><i
+                                                                    class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="file-up">
+                                                            <div class="file-up-name">newimage.jpg</div>
+                                                            <a href="javascript:void(0)" class="file-up-remove"><i
+                                                                    class="fa fa-times"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="custom-control custom-checkbox my-4">
+                                                    <input type="checkbox" class="custom-control-input" id="remember">
+                                                    <label class="custom-control-label" for="remember">Save my name,
+                                                        email,
+                                                        and website in this browser for the next time I comment.</label>
+                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <button class="btn btn-primary" type="submit">Submit YOur
@@ -550,15 +613,20 @@
                                                                     </div>
                                                                 </a></li>
                                                         </ul>
+                                                        <div class="uploaded-imgs">
+                                                            <ul>
+                                                                <li></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="reply">
                                                     <div class="media"><img src="./assets/images/person/p2.jpg"
-                                                            alt="John Doe">
+                                                            alt="admin">
                                                         <div class="media-body">
                                                             <div class="product-rating" data-rateyo-read-only="true"
                                                                 data-rateyo-rating="5"></div>
-                                                            <h6>Marchent <span>12 Jannuary 2018 at 1:30AM</span></h6>
+                                                            <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span></h6>
                                                             <p>Thank you for you valuable comment sir.
                                                             </p>
                                                             <ul class="comnt-sec">
@@ -1111,6 +1179,9 @@
 
     <!-- menu js-->
     <script src="./assets/js/menu.js"></script>
+
+    <!-- maginify js-->
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
     <!-- rateyo js-->
     <script src="./assets/js/jquery.rateyo.min.js"></script>

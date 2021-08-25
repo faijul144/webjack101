@@ -2084,6 +2084,7 @@ $(".product-rating").each(function () {
     ratedFill: "#04abed",
     spacing: "3px",
     starWidth: "18px",
+    fullStar: true,
     starSvg: `<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
       width="1280.000000pt" height="1221.000000pt" viewBox="0 0 1280.000000 1221.000000"
       preserveAspectRatio="xMidYMid meet">
@@ -2113,6 +2114,7 @@ $(".product-rating").each(function () {
         .parent()
         .find(".rating-count")
         .text(`${rating} OUT OF 5`);
+      $(this).parent().parent().find(".review-tooltip").text(rating);
     },
   });
 });
