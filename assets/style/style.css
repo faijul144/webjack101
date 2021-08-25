@@ -1370,3 +1370,209 @@ input::placeholder {
   margin-top: 0;
   margin-left: 1rem;
 }
+
+.select2-results__option--selectable {
+  display: block;
+}
+
+.quantity-right-plus {
+  border-top-right-radius: 0.3rem !important;
+  border-bottom-right-radius: 0.3rem !important;
+}
+
+.has-gender {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.select2 {
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 10rem !important;
+  height: 35px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.select2 .select2-selection {
+  height: 100%;
+  border-color: var(--fourth-white);
+}
+
+.select2-dropdown {
+  border-color: var(--fourth-white) !important;
+  overflow: hidden;
+}
+
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow {
+  height: 35px;
+}
+
+.select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
+  line-height: 35px;
+}
+
+.select2-container--default
+.select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--primary);
+}
+
+.tab-product .nav-material.nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-product .nav-material.nav-tabs .nav-item .nav-link {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 0.8rem;
+  position: relative;
+}
+
+.tab-product .nav-material.nav-tabs .nav-item .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  content: "";
+  height: 0.3rem;
+  background: var(--primary);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.tab-product .nav-material.nav-tabs .nav-item .nav-link.active::after {
+  width: 100%;
+}
+
+.tab-product .tab-pane {
+  padding: 2rem 0;
+}
+
+.tab-product .product-tab-discription {
+  color: var(--primary-dark);
+}
+
+.tab-product .product-tab-discription h4 {
+  font-weight: 600;
+}
+
+.tab-product .product-tab-discription p {
+  color: var(--primary-dark);
+}
+
+.tab-product .review-rating p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+
+.tab-product .avg-rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.tab-product .avg-rating-container h4 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.tab-product .avg-rating-container .avg-rating-star p {
+  color: var(--primary-dark);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tab-product .avg-rating-container .avg-rating-star .product-rating {
+  padding: 0;
+}
+
+.tab-product .rating-summury {
+  padding-top: 2rem;
+}
+
+.tab-product .rating-summury-box {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-product .rating-summury-box .product-rating {
+  padding: 0;
+}
+
+.tab-product .rating-summury-box .product-left {
+  display: flex;
+  align-items: center;
+}
+
+.tab-product .rating-summury-box .product-left .slider-bar {
+  height: 0.65rem;
+  margin-right: 1rem;
+}
+
+.tab-product .rating-summury-box .rating-percent {
+  font-weight: 700;
+}
+
+.tab-product .theme-form h4 {
+  display: block;
+  font-weight: 600;
+}
+
+.tab-product .comment-section .media-body h6 {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.tab-product .comment-section .media-body p {
+  color: var(--primary-dark);
+  font-size: 1rem;
+}
+
+.tab-product .comment-section .reply {
+  padding-left: 2rem;
+  margin-top: 0.8rem;
+}
+
+.tab-product .comment-section li,
+.tab-product .comnt-sec li {
+  border: 0;
+}
+
+.tab-product .comnt-sec li {
+  padding: 0.5rem 0 0;
+}
+
+.tab-product .comnt-sec li a {
+  color: var(--primary-dark);
+}
+
+.tab-product .comnt-sec li a span {
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.tab-product .comnt-sec li a .check {
+  color: var(--primary);
+}
+
+.tab-product .product-rating {
+  padding: 0;
+}

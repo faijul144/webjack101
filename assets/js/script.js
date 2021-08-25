@@ -1,38 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
- Template Name:Multikart
- Template URI: themes.pixelstrap.com/multikart
- Description: This is E-commerce website
- Author: Pixelstrap
- Author URI: https://themeforest.net/user/pixelstrap
-
- ----------------------------------------------------------------------------------- */
-// 01.Pre loader
-// 02.Tap on Top
-// 03.Age verify modal
-// 04.Mega menu js
-// 05.Image to background js
-// 06.Filter js
-// 07.Left offer toggle
-// 08.Toggle nav
-// 09.Footer according
-// 10.Add to cart quantity Counter
-// 11.Product page Quantity Counter
-// 12.Full slider
-// 13.Slick slider
-// 14.Header z-index js
-// 15.Tab js
-// 16.Category page
-// 17.Filter sidebar js
-// 18.Add to cart
-// 19.Add to wishlist
-// 20.Color Picker
-// 21.RTL & Dark-light
-// 22.Menu js
-// 23.Theme-setting
-// 24.Add to cart sidebar js
-// 25.Tooltip
-
 (function ($) {
   "use strict";
 
@@ -2056,10 +2021,17 @@ $(".add-extent .animated-btn").on("click", function (e) {
 });
 
 $(".product-left").each(function () {
+  let sideBarValue = $(this).find(".slider-bar").val();
   $(this)
     .find(".progress-bar")
-    .css("width", $(this).find(".slider-bar").val() + "%");
+    .css("width", sideBarValue + "%");
+  $(this)
+    .parent()
+    .find(".rating-percent")
+    .text(sideBarValue + "%");
 });
+
+// Testimonial Card Height Same
 
 let cardHeight = [];
 $(".testimonial-slider .slick-slide>div").each(function () {
@@ -2070,27 +2042,7 @@ $(".testimonial-slider .slick-slide>div").each(function () {
   $(this).css("height", maxHeight + "px");
 });
 
-$(".quantity-left-minus").each(function () {
-  $(this).on("click", function (e) {
-    e.preventDefault();
-    let negcurrentVal = $(this).parent().parent().find(".input-number").val();
-    if (negcurrentVal > 1) {
-      negcurrentVal--;
-      $(this).parent().parent().find(".input-number").val(negcurrentVal);
-    }
-  });
-});
-
-$(".quantity-right-plus").each(function () {
-  $(this).on("click", function (e) {
-    e.preventDefault();
-    let poscurrentVal = $(this).parent().parent().find(".input-number").val();
-    if (poscurrentVal >= 1) {
-      poscurrentVal++;
-      $(this).parent().parent().find(".input-number").val(poscurrentVal);
-    }
-  });
-});
+// Menu Category Preview
 
 $("#preview-menu-img").css(
   "background-image",
@@ -2125,14 +2077,14 @@ $(".product-rating").each(function () {
       .parent()
       .find(".rating-count")
       .text(`${data.rating} OUT OF 5`);
+    $(this).parent().parent().find("h4.avg-rate").text(data.rating);
   });
-  $(this)
-    .rateYo({
-      normalFill: "#dddddd",
-      ratedFill: "#04abed",
-      spacing: "3px",
-      starWidth: "18px",
-      starSvg: `<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+  $(this).rateYo({
+    normalFill: "#dddddd",
+    ratedFill: "#04abed",
+    spacing: "3px",
+    starWidth: "18px",
+    starSvg: `<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
       width="1280.000000pt" height="1221.000000pt" viewBox="0 0 1280.000000 1221.000000"
       preserveAspectRatio="xMidYMid meet">
      <g transform="translate(0.000000,1221.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -2155,11 +2107,20 @@ $(".product-rating").each(function () {
      -81 152 -129 246 -110 215 -153 271 -240 314 -78 39 -177 49 -239 26z"/>
      </g>
      </svg>`,
-      onChange: function (rating, rateYoInstance) {
-        $(this).next().text(rating);
-      },
-    })
-    .on("rateyo.set", function (e, data) {
-      alert("The rating is set to " + data.rating + "!");
-    });
+    onChange: function (rating, rateYoInstance) {
+      $(this)
+        .parent()
+        .parent()
+        .find(".rating-count")
+        .text(`${rating} OUT OF 5`);
+    },
+  });
+});
+
+// Select 2 Initialize
+$("select").each(function () {
+  $(this).select2({
+    minimumResultsForSearch: -1,
+    width: "resolve",
+  });
 });

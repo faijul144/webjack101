@@ -302,15 +302,33 @@
                                     <li>Thick quilted lining. You have the option of having a light satin linin for
                                         those warm/hot areas.</li>
                                     <li>Strong snaps front closure.</li>
+                                    <li>Elasticized ribbing on the cuffs and waist.</li>
+                                    <li>Two slash outside pockets with leather trim.</li>
+                                    <li>One inside pocket</li>
+                                    <li>Our extremely high workmanship in putting the jacket together and in the
+                                        embroidery field, you are guaranteed to have a piece of art. Whether it is for
+                                        your school, organization or yourself, the jacket will definitely get your
+                                        message and logo across when it is personalized and it will definitely give you
+                                        the image you are looking for.</li>
+                                    <li>Made in ISTANBUL. European quality standards material and workmanship.</li>
+                                    <li><b>READY TO BE CUSTOMIZED BY YOU!</b></li>
                                 </ul>
                             </div>
+
                             <div class="product-description border-product">
                                 <ul class="color-variant mt-2 mb-4">
                                     <li class="bg-light0 active"></li>
                                     <li class="bg-light1"></li>
                                     <li class="bg-light2"></li>
                                 </ul>
-                                <div class="size-box mt-3 mb-4">
+                                <!-- To add men women children to any size add the class "has-gender" in size box -->
+                                <div class="size-box mt-3 mb-4 has-gender">
+                                    <select name="for-whom" id="role" class="form-control">
+                                        <option disabled selected>Select For</option>
+                                        <option value="Men">Men</option>
+                                        <option value="Women">Women</option>
+                                        <option value="Children">Children</option>
+                                    </select>
                                     <ul>
                                         <li class="active"><a href="javascript:void(0)">S</a></li>
                                         <li><a href="javascript:void(0)">M</a></li>
@@ -320,13 +338,21 @@
                                 </div>
                                 <h6 class="product-title">quantity</h6>
                                 <div class="qty-box">
-                                    <div class="input-group"><span class="input-group-prepend"><button type="button"
-                                                class="btn quantity-left-minus" data-type="minus" data-field=""><i
-                                                    class="fa fa-minus"></i></button> </span>
-                                        <input type="text" name="quantity" class="form-control input-number" value="1">
-                                        <span class="input-group-prepend"><button type="button"
-                                                class="btn quantity-right-plus" data-type="plus" data-field=""><i
-                                                    class="fa fa-plus"></i></button></span>
+                                    <div class="input-group">
+                                        <span class="input-group-prepend">
+                                            <button type="button" class="btn quantity-left-minus" data-type="minus"
+                                                data-field="quantity-main">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </span>
+                                        <input type="text" name="quantity-main" class="form-control input-number"
+                                            value="1">
+                                        <span class="input-group-prepend">
+                                            <button type="button" class="btn quantity-right-plus" data-type="plus"
+                                                data-field="quantity-main">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -361,82 +387,203 @@
                 <div class="col-sm-12 col-lg-12">
                     <ul class="nav nav-tabs nav-material" id="top-tab" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="top-home-tab" data-bs-toggle="tab"
-                                href="#top-home" role="tab" aria-selected="true"><i
-                                    class="icofont icofont-ui-home"></i>Details</a>
-                            <div class="material-border"></div>
+                                href="#top-home" role="tab" aria-selected="true">Description</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" id="review-top-tab" data-bs-toggle="tab"
-                                href="#top-review" role="tab" aria-selected="false"><i
-                                    class="icofont icofont-contacts"></i>Write Review</a>
-                            <div class="material-border"></div>
+                                href="#top-review" role="tab" aria-selected="false">Review</a>
                         </li>
                     </ul>
                     <div class="tab-content nav-material" id="top-tabContent">
                         <div class="tab-pane fade show active" id="top-home" role="tabpanel"
                             aria-labelledby="top-home-tab">
                             <div class="product-tab-discription">
-                                <div class="part">
-                                    <p>The Model is wearing a white blouse from our stylist's collection, see the image
-                                        for a mock-up of what the actual blouse would look like.it has text written on
-                                        it in a black cursive language which looks great on a white color.</p>
-                                </div>
-                                <div class="part">
-                                    <h5 class="inner-title">fabric:</h5>
-                                    <p>Art silk is manufactured by synthetic fibres like rayon. It's light in weight and
-                                        is soft on the skin for comfort in summers.Art silk is manufactured by synthetic
-                                        fibres like rayon. It's light in weight and is soft on the skin for comfort in
-                                        summers.</p>
-                                </div>
-                                <div class="part">
-                                    <h5 class="inner-title">size & fit:</h5>
-                                    <p>The model (height 5'8") is wearing a size S</p>
-                                </div>
-                                <div class="part">
-                                    <h5 class="inner-title">Material & Care:</h5>
-                                    <p>Top fabric: pure cotton</p>
-                                    <p>Bottom fabric: pure cotton</p>
-                                    <p>Hand-wash</p>
-                                </div>
+                                <p>
+                                    The jacket is made in ISTANBUL with European quality standard materials and
+                                    workmanships.
+                                </p>
+                                <h4 class="product-title">product Features</h4>
+                                <ul class="product-features-list">
+                                    <li>Melton wool body.</li>
+                                    <li>Genuine 100% Napa leather sleeves.</li>
+                                    <li>Zippered on/off hood.</li>
+                                    <li>Thick quilted lining. You have the option of having a light satin linin for
+                                        those warm/hot areas.</li>
+                                    <li>Strong snaps front closure.</li>
+                                    <li>Elasticized ribbing on the cuffs and waist.</li>
+                                    <li>Two slash outside pockets with leather trim.</li>
+                                    <li>One inside pocket</li>
+                                    <li>Our extremely high workmanship in putting the jacket together and in the
+                                        embroidery field, you are guaranteed to have a piece of art. Whether it is for
+                                        your school, organization or yourself, the jacket will definitely get your
+                                        message and logo across when it is personalized and it will definitely give you
+                                        the image you are looking for.</li>
+                                    <li>Made in ISTANBUL. European quality standards material and workmanship.</li>
+                                    <li><b>READY TO BE CUSTOMIZED BY YOU!</b></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="top-review" role="tabpanel" aria-labelledby="review-top-tab">
-                            <form class="theme-form">
-                                <div class="form-row row">
-                                    <div class="col-md-12">
-                                        <div class="media">
-                                            <label>Rating</label>
-                                            <div class="media-body ms-3">
-                                                <div class="rating three-star"><i class="fa fa-star"></i> <i
-                                                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                                                        class="fa fa-star"></i> <i class="fa fa-star"></i></div>
-                                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-lg-3 mb-4">
+                                    <div class="avg-rating-container">
+                                        <h4 class="avg-rate"></h4>
+                                        <div class="avg-rating-star">
+                                            <p>Average Rating</p>
+                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                data-rateyo-rating="4.5"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter Your name"
-                                            required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="email">Email</label>
-                                        <input type="text" class="form-control" id="email" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="review">Review Title</label>
-                                        <input type="text" class="form-control" id="review"
-                                            placeholder="Enter your Review Subjects" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="review">Review Title</label>
-                                        <textarea class="form-control" placeholder="Wrire Your Testimonial Here"
-                                            id="exampleFormControlTextarea1" rows="6"></textarea>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button class="btn btn-solid" type="submit">Submit YOur
-                                            Review</button>
+                                    <div class="rating-summury">
+                                        <div class="rating-summury-box">
+                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                data-rateyo-rating="5"></div>
+                                            <div class="product-left">
+                                                <input class="slider-bar" type="range" min="1" max="100" value="85">
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="rating-percent"></div>
+                                        </div>
+                                        <div class="rating-summury-box">
+                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                data-rateyo-rating="4"></div>
+                                            <div class="product-left">
+                                                <input class="slider-bar" type="range" min="1" max="100" value="70">
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="rating-percent"></div>
+                                        </div>
+                                        <div class="rating-summury-box">
+                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                data-rateyo-rating="3"></div>
+                                            <div class="product-left">
+                                                <input class="slider-bar" type="range" min="1" max="100" value="50">
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="rating-percent"></div>
+                                        </div>
+                                        <div class="rating-summury-box">
+                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                data-rateyo-rating="2"></div>
+                                            <div class="product-left">
+                                                <input class="slider-bar" type="range" min="1" max="100" value="30">
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="rating-percent"></div>
+                                        </div>
+                                        <div class="rating-summury-box">
+                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                data-rateyo-rating="1"></div>
+                                            <div class="product-left">
+                                                <input class="slider-bar" type="range" min="1" max="100" value="70">
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                            <div class="rating-percent"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </form>
+
+                                <div class="col-md-8 col-lg-9 mb-4">
+                                    <form class="theme-form">
+                                        <div class="form-row row">
+                                            <div class="col-12">
+                                                <h4>Submit Your Review</h4>
+                                                <p>Your email address will not be published. Required fields are marked
+                                                    *
+                                                </p>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="d-flex align-items-center review-rating">
+                                                    <p>Your Rating: </p>
+                                                    <div class="product-rating-container">
+                                                        <div class="product-rating">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="Enter Your name" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="email">Email</label>
+                                                <input type="text" class="form-control" id="email" placeholder="Email"
+                                                    required>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="review">Review Title</label>
+                                                <textarea class="form-control" placeholder="Wrire Your Testimonial Here"
+                                                    id="exampleFormControlTextarea1" rows="6"></textarea>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button class="btn btn-primary" type="submit">Submit YOur
+                                                    Review</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="review-page blog-detail-page">
+                                        <ul class="comment-section">
+                                            <li>
+                                                <div class="media"><img src="./assets/images/person/p1.jpg"
+                                                        alt="John Doe">
+                                                    <div class="media-body">
+                                                        <div class="product-rating" data-rateyo-read-only="true"
+                                                            data-rateyo-rating="5"></div>
+                                                        <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span></h6>
+                                                        <p>On time delivary and quality product nice doing purchase.</p>
+                                                        <ul class="comnt-sec">
+                                                            <li class="mr-3"><a href="#">
+                                                                    <div class="like check">
+                                                                        <i class="far fa-thumbs-up"
+                                                                            aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                    <div class="unlike">
+                                                                        <i class="far fa-thumbs-down"
+                                                                            aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                    </div>
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="reply">
+                                                    <div class="media"><img src="./assets/images/person/p2.jpg"
+                                                            alt="John Doe">
+                                                        <div class="media-body">
+                                                            <div class="product-rating" data-rateyo-read-only="true"
+                                                                data-rateyo-rating="5"></div>
+                                                            <h6>Marchent <span>12 Jannuary 2018 at 1:30AM</span></h6>
+                                                            <p>Thank you for you valuable comment sir.
+                                                            </p>
+                                                            <ul class="comnt-sec">
+                                                                <li class="mr-3"><a href="#">
+                                                                        <div class="like check">
+                                                                            <i class="far fa-thumbs-up"
+                                                                                aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li><a href="#">
+                                                                        <div class="unlike">
+                                                                            <i class="far fa-thumbs-down"
+                                                                                aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                        </div>
+                                                                    </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -910,7 +1057,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 rtl-text">
+                        <div class="col-lg-6 rtl-text collection-wrapper">
                             <div class="product-right">
                                 <h2 class="mb-1">LETTERMAN JACKET</h2>
                                 <div class="product-rating-container">
@@ -946,14 +1093,21 @@
                                     </div>
                                     <h6 class="product-title">quantity</h6>
                                     <div class="qty-box">
-                                        <div class="input-group"><span class="input-group-prepend"><button type="button"
-                                                    class="btn quantity-left-minus" data-type="minus" data-field=""><i
-                                                        class="fa fa-minus"></i></button> </span>
-                                            <input type="text" name="quantity" class="form-control input-number"
+                                        <div class="input-group">
+                                            <span class="input-group-prepend">
+                                                <button type="button" class="btn quantity-left-minus" data-type="minus"
+                                                    data-field="quantity-quick">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </span>
+                                            <input type="text" name="quantity-quick" class="form-control input-number"
                                                 value="1">
-                                            <span class="input-group-prepend"><button type="button"
-                                                    class="btn quantity-right-plus" data-type="plus" data-field=""><i
-                                                        class="fa fa-plus"></i></button></span>
+                                            <span class="input-group-prepend">
+                                                <button type="button" class="btn quantity-right-plus" data-type="plus"
+                                                    data-field="quantity-quick">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
