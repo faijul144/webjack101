@@ -392,6 +392,9 @@
                         <li class="nav-item"><a class="nav-link active" id="top-home-tab" data-bs-toggle="tab"
                                 href="#top-home" role="tab" aria-selected="true">Description</a>
                         </li>
+                        <li class="nav-item"><a class="nav-link" id="top-specification-tab" data-bs-toggle="tab"
+                                href="#top-specification" role="tab" aria-selected="true">Specification</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" id="review-top-tab" data-bs-toggle="tab"
                                 href="#top-review" role="tab" aria-selected="false">Review</a>
                         </li>
@@ -404,7 +407,7 @@
                                     The jacket is made in ISTANBUL with European quality standard materials and
                                     workmanships.
                                 </p>
-                                <h4 class="product-title">product Features</h4>
+                                <h4 class="product-title">Product Features</h4>
                                 <ul class="product-features-list">
                                     <li>Melton wool body.</li>
                                     <li>Genuine 100% Napa leather sleeves.</li>
@@ -422,6 +425,22 @@
                                         the image you are looking for.</li>
                                     <li>Made in ISTANBUL. European quality standards material and workmanship.</li>
                                     <li><b>READY TO BE CUSTOMIZED BY YOU!</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="top-specification" role="tabpanel"
+                            aria-labelledby="top-specification-tab">
+                            <div class="product-tab-discription">
+                                <p>
+                                    The jacket is made in ISTANBUL with European quality standard materials and
+                                    workmanships.
+                                </p>
+                                <h4 class="product-title">Product Features</h4>
+                                <ul class="product-features-list">
+                                    <li>Sleeve Length: Long Sleeves</li>
+                                    <li>Print or Pattern Type: Solid</li>
+                                    <li>Closure: Zip</li>
+                                    <li>Number of Pockets: 2</li>
                                 </ul>
                             </div>
                         </div>
@@ -587,7 +606,7 @@
                                     </form>
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-12 rating-review-tab">
                                     <ul class="nav nav-tabs nav-material" id="comment-tab" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active" id="five-star-tab" data-bs-toggle="tab"
@@ -602,88 +621,500 @@
                                                     data-rateyo-rating="4"></div>
                                             </a>
                                         </li>
+                                        <li class="nav-item"><a class="nav-link" id="three-star-tab"
+                                                data-bs-toggle="tab" href="#three-star" role="tab"
+                                                aria-selected="false">
+                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                    data-rateyo-rating="3"></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="two-star-tab" data-bs-toggle="tab" href="#two-star"
+                                                role="tab" aria-selected="false">
+                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                    data-rateyo-rating="2"></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" id="one-star-tab" data-bs-toggle="tab"
+                                                href="#one-star" role="tab" aria-selected="false">
+                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                    data-rateyo-rating="1"></div>
+                                            </a>
+                                        </li>
                                     </ul>
-                                    <div class="review-page blog-detail-page">
-                                        <ul class="comment-section">
-                                            <li>
-                                                <div class="media"><img src="./assets/images/person/p1.jpg"
-                                                        alt="John Doe">
-                                                    <div class="media-body">
-                                                        <div class="product-rating" data-rateyo-read-only="true"
-                                                            data-rateyo-rating="5"></div>
-                                                        <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span></h6>
-                                                        <p>On time delivary and quality product nice doing purchase.</p>
-                                                        <ul class="comnt-sec">
-                                                            <li class="mr-3"><a href="#">
-                                                                    <div class="like check">
-                                                                        <i class="far fa-thumbs-up"
-                                                                            aria-hidden="true"></i><span>Helpful(14)</span>
+                                    <div class="tab-content nav-material" id="review-tabContent">
+                                        <div class="tab-pane fade show active" id="five-star" role="tabpanel"
+                                            aria-labelledby="five-star-tab">
+                                            <div class="review-page blog-detail-page">
+                                                <ul class="comment-section">
+                                                    <li>
+                                                        <div class="media"><img src="./assets/images/person/p1.jpg"
+                                                                alt="John Doe">
+                                                            <div class="media-body">
+                                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                                    data-rateyo-rating="5"></div>
+                                                                <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                </h6>
+                                                                <p>On time delivary and quality product nice doing
+                                                                    purchase.</p>
+                                                                <ul class="comnt-sec">
+                                                                    <li class="mr-3"><a href="#">
+                                                                            <div class="like check">
+                                                                                <i class="far fa-thumbs-up"
+                                                                                    aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li><a href="#">
+                                                                            <div class="unlike">
+                                                                                <i class="far fa-thumbs-down"
+                                                                                    aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                                <div class="uploaded-imgs">
+                                                                    <div class="img-container">
+                                                                        <a
+                                                                            href="./assets/images/products/front-blue.png">
+                                                                            <img src="./assets/images/products/front-blue.png"
+                                                                                alt="blue front">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-tan.png"><img
+                                                                                src="./assets/images/products/front-tan.png"
+                                                                                alt="tan front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-gold.png"><img
+                                                                                src="./assets/images/products/front-gold.png"
+                                                                                alt="gold front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-blue.png">
+                                                                            <img src="./assets/images/products/collar-blue.png"
+                                                                                alt="blue collar">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-tan.png"><img
+                                                                                src="./assets/images/products/collar-tan.png"
+                                                                                alt="tan collar"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-gold.png"><img
+                                                                                src="./assets/images/products/collar-gold.png"
+                                                                                alt="gold collar"></a>
                                                                     </div>
-                                                                </a>
-                                                            </li>
-                                                            <li><a href="#">
-                                                                    <div class="unlike">
-                                                                        <i class="far fa-thumbs-down"
-                                                                            aria-hidden="true"></i><span>Unhelpful(2)</span>
-                                                                    </div>
-                                                                </a></li>
-                                                        </ul>
-                                                        <div class="uploaded-imgs">
-                                                            <div class="img-container">
-                                                                <a href="./assets/images/products/front-blue.png">
-                                                                    <img src="./assets/images/products/front-blue.png"
-                                                                        alt="blue front">
-                                                                </a>
-                                                                <a href="./assets/images/products/front-tan.png"><img
-                                                                        src="./assets/images/products/front-tan.png"
-                                                                        alt="tan front"></a>
-                                                                <a href="./assets/images/products/front-gold.png"><img
-                                                                        src="./assets/images/products/front-gold.png"
-                                                                        alt="gold front"></a>
-                                                                <a href="./assets/images/products/collar-blue.png">
-                                                                    <img src="./assets/images/products/collar-blue.png"
-                                                                        alt="blue collar">
-                                                                </a>
-                                                                <a href="./assets/images/products/collar-tan.png"><img
-                                                                        src="./assets/images/products/collar-tan.png"
-                                                                        alt="tan collar"></a>
-                                                                <a href="./assets/images/products/collar-gold.png"><img
-                                                                        src="./assets/images/products/collar-gold.png"
-                                                                        alt="gold collar"></a>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="reply">
-                                                    <div class="media"><img src="./assets/images/person/p2.jpg"
-                                                            alt="admin">
-                                                        <div class="media-body">
-                                                            <div class="product-rating" data-rateyo-read-only="true"
-                                                                data-rateyo-rating="5"></div>
-                                                            <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span></h6>
-                                                            <p>Thank you for you valuable comment sir.
-                                                            </p>
-                                                            <ul class="comnt-sec">
-                                                                <li class="mr-3"><a href="#">
-                                                                        <div class="like check">
-                                                                            <i class="far fa-thumbs-up"
-                                                                                aria-hidden="true"></i><span>Helpful(14)</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li><a href="#">
-                                                                        <div class="unlike">
-                                                                            <i class="far fa-thumbs-down"
-                                                                                aria-hidden="true"></i><span>Unhelpful(2)</span>
-                                                                        </div>
-                                                                    </a></li>
-                                                            </ul>
+                                                        <div class="reply">
+                                                            <div class="media"><img src="./assets/images/person/p2.jpg"
+                                                                    alt="admin">
+                                                                <div class="media-body">
+                                                                    <div class="product-rating"
+                                                                        data-rateyo-read-only="true"
+                                                                        data-rateyo-rating="5"></div>
+                                                                    <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                    </h6>
+                                                                    <p>Thank you for you valuable comment sir.
+                                                                    </p>
+                                                                    <ul class="comnt-sec">
+                                                                        <li class="mr-3"><a href="#">
+                                                                                <div class="like check">
+                                                                                    <i class="far fa-thumbs-up"
+                                                                                        aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                                </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li><a href="#">
+                                                                                <div class="unlike">
+                                                                                    <i class="far fa-thumbs-down"
+                                                                                        aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                                </div>
+                                                                            </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="four-star" role="tabpanel"
+                                            aria-labelledby="four-star-tab">
+                                            <div class="review-page blog-detail-page">
+                                                <ul class="comment-section">
+                                                    <li>
+                                                        <div class="media"><img src="./assets/images/person/p1.jpg"
+                                                                alt="John Doe">
+                                                            <div class="media-body">
+                                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                                    data-rateyo-rating="4"></div>
+                                                                <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                </h6>
+                                                                <p>On time delivary and quality product nice doing
+                                                                    purchase.</p>
+                                                                <ul class="comnt-sec">
+                                                                    <li class="mr-3"><a href="#">
+                                                                            <div class="like check">
+                                                                                <i class="far fa-thumbs-up"
+                                                                                    aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li><a href="#">
+                                                                            <div class="unlike">
+                                                                                <i class="far fa-thumbs-down"
+                                                                                    aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                                <div class="uploaded-imgs">
+                                                                    <div class="img-container">
+                                                                        <a
+                                                                            href="./assets/images/products/front-blue.png">
+                                                                            <img src="./assets/images/products/front-blue.png"
+                                                                                alt="blue front">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-tan.png"><img
+                                                                                src="./assets/images/products/front-tan.png"
+                                                                                alt="tan front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-gold.png"><img
+                                                                                src="./assets/images/products/front-gold.png"
+                                                                                alt="gold front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-blue.png">
+                                                                            <img src="./assets/images/products/collar-blue.png"
+                                                                                alt="blue collar">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-tan.png"><img
+                                                                                src="./assets/images/products/collar-tan.png"
+                                                                                alt="tan collar"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-gold.png"><img
+                                                                                src="./assets/images/products/collar-gold.png"
+                                                                                alt="gold collar"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reply">
+                                                            <div class="media"><img src="./assets/images/person/p2.jpg"
+                                                                    alt="admin">
+                                                                <div class="media-body">
+                                                                    <div class="product-rating"
+                                                                        data-rateyo-read-only="true"
+                                                                        data-rateyo-rating="5"></div>
+                                                                    <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                    </h6>
+                                                                    <p>Thank you for you valuable comment sir.
+                                                                    </p>
+                                                                    <ul class="comnt-sec">
+                                                                        <li class="mr-3"><a href="#">
+                                                                                <div class="like check">
+                                                                                    <i class="far fa-thumbs-up"
+                                                                                        aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                                </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li><a href="#">
+                                                                                <div class="unlike">
+                                                                                    <i class="far fa-thumbs-down"
+                                                                                        aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                                </div>
+                                                                            </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="three-star" role="tabpanel"
+                                            aria-labelledby="three-star-tab">
+                                            <div class="review-page blog-detail-page">
+                                                <ul class="comment-section">
+                                                    <li>
+                                                        <div class="media"><img src="./assets/images/person/p1.jpg"
+                                                                alt="John Doe">
+                                                            <div class="media-body">
+                                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                                    data-rateyo-rating="3"></div>
+                                                                <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                </h6>
+                                                                <p>On time delivary and quality product nice doing
+                                                                    purchase.</p>
+                                                                <ul class="comnt-sec">
+                                                                    <li class="mr-3"><a href="#">
+                                                                            <div class="like check">
+                                                                                <i class="far fa-thumbs-up"
+                                                                                    aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li><a href="#">
+                                                                            <div class="unlike">
+                                                                                <i class="far fa-thumbs-down"
+                                                                                    aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                                <div class="uploaded-imgs">
+                                                                    <div class="img-container">
+                                                                        <a
+                                                                            href="./assets/images/products/front-blue.png">
+                                                                            <img src="./assets/images/products/front-blue.png"
+                                                                                alt="blue front">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-tan.png"><img
+                                                                                src="./assets/images/products/front-tan.png"
+                                                                                alt="tan front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-gold.png"><img
+                                                                                src="./assets/images/products/front-gold.png"
+                                                                                alt="gold front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-blue.png">
+                                                                            <img src="./assets/images/products/collar-blue.png"
+                                                                                alt="blue collar">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-tan.png"><img
+                                                                                src="./assets/images/products/collar-tan.png"
+                                                                                alt="tan collar"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-gold.png"><img
+                                                                                src="./assets/images/products/collar-gold.png"
+                                                                                alt="gold collar"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reply">
+                                                            <div class="media"><img src="./assets/images/person/p2.jpg"
+                                                                    alt="admin">
+                                                                <div class="media-body">
+                                                                    <div class="product-rating"
+                                                                        data-rateyo-read-only="true"
+                                                                        data-rateyo-rating="5"></div>
+                                                                    <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                    </h6>
+                                                                    <p>Thank you for you valuable comment sir.
+                                                                    </p>
+                                                                    <ul class="comnt-sec">
+                                                                        <li class="mr-3"><a href="#">
+                                                                                <div class="like check">
+                                                                                    <i class="far fa-thumbs-up"
+                                                                                        aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                                </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li><a href="#">
+                                                                                <div class="unlike">
+                                                                                    <i class="far fa-thumbs-down"
+                                                                                        aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                                </div>
+                                                                            </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="two-star" role="tabpanel"
+                                            aria-labelledby="two-star-tab">
+                                            <div class="review-page blog-detail-page">
+                                                <ul class="comment-section">
+                                                    <li>
+                                                        <div class="media"><img src="./assets/images/person/p1.jpg"
+                                                                alt="John Doe">
+                                                            <div class="media-body">
+                                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                                    data-rateyo-rating="2"></div>
+                                                                <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                </h6>
+                                                                <p>On time delivary and quality product nice doing
+                                                                    purchase.</p>
+                                                                <ul class="comnt-sec">
+                                                                    <li class="mr-3"><a href="#">
+                                                                            <div class="like check">
+                                                                                <i class="far fa-thumbs-up"
+                                                                                    aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li><a href="#">
+                                                                            <div class="unlike">
+                                                                                <i class="far fa-thumbs-down"
+                                                                                    aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                                <div class="uploaded-imgs">
+                                                                    <div class="img-container">
+                                                                        <a
+                                                                            href="./assets/images/products/front-blue.png">
+                                                                            <img src="./assets/images/products/front-blue.png"
+                                                                                alt="blue front">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-tan.png"><img
+                                                                                src="./assets/images/products/front-tan.png"
+                                                                                alt="tan front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-gold.png"><img
+                                                                                src="./assets/images/products/front-gold.png"
+                                                                                alt="gold front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-blue.png">
+                                                                            <img src="./assets/images/products/collar-blue.png"
+                                                                                alt="blue collar">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-tan.png"><img
+                                                                                src="./assets/images/products/collar-tan.png"
+                                                                                alt="tan collar"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-gold.png"><img
+                                                                                src="./assets/images/products/collar-gold.png"
+                                                                                alt="gold collar"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reply">
+                                                            <div class="media"><img src="./assets/images/person/p2.jpg"
+                                                                    alt="admin">
+                                                                <div class="media-body">
+                                                                    <div class="product-rating"
+                                                                        data-rateyo-read-only="true"
+                                                                        data-rateyo-rating="5"></div>
+                                                                    <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                    </h6>
+                                                                    <p>Thank you for you valuable comment sir.
+                                                                    </p>
+                                                                    <ul class="comnt-sec">
+                                                                        <li class="mr-3"><a href="#">
+                                                                                <div class="like check">
+                                                                                    <i class="far fa-thumbs-up"
+                                                                                        aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                                </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li><a href="#">
+                                                                                <div class="unlike">
+                                                                                    <i class="far fa-thumbs-down"
+                                                                                        aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                                </div>
+                                                                            </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="one-star" role="tabpanel"
+                                            aria-labelledby="one-star-tab">
+                                            <div class="review-page blog-detail-page">
+                                                <ul class="comment-section">
+                                                    <li>
+                                                        <div class="media"><img src="./assets/images/person/p1.jpg"
+                                                                alt="John Doe">
+                                                            <div class="media-body">
+                                                                <div class="product-rating" data-rateyo-read-only="true"
+                                                                    data-rateyo-rating="1"></div>
+                                                                <h6>John Doe <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                </h6>
+                                                                <p>On time delivary and quality product nice doing
+                                                                    purchase.</p>
+                                                                <ul class="comnt-sec">
+                                                                    <li class="mr-3"><a href="#">
+                                                                            <div class="like check">
+                                                                                <i class="far fa-thumbs-up"
+                                                                                    aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li><a href="#">
+                                                                            <div class="unlike">
+                                                                                <i class="far fa-thumbs-down"
+                                                                                    aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                                <div class="uploaded-imgs">
+                                                                    <div class="img-container">
+                                                                        <a
+                                                                            href="./assets/images/products/front-blue.png">
+                                                                            <img src="./assets/images/products/front-blue.png"
+                                                                                alt="blue front">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-tan.png"><img
+                                                                                src="./assets/images/products/front-tan.png"
+                                                                                alt="tan front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/front-gold.png"><img
+                                                                                src="./assets/images/products/front-gold.png"
+                                                                                alt="gold front"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-blue.png">
+                                                                            <img src="./assets/images/products/collar-blue.png"
+                                                                                alt="blue collar">
+                                                                        </a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-tan.png"><img
+                                                                                src="./assets/images/products/collar-tan.png"
+                                                                                alt="tan collar"></a>
+                                                                        <a
+                                                                            href="./assets/images/products/collar-gold.png"><img
+                                                                                src="./assets/images/products/collar-gold.png"
+                                                                                alt="gold collar"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reply">
+                                                            <div class="media"><img src="./assets/images/person/p2.jpg"
+                                                                    alt="admin">
+                                                                <div class="media-body">
+                                                                    <div class="product-rating"
+                                                                        data-rateyo-read-only="true"
+                                                                        data-rateyo-rating="5"></div>
+                                                                    <h6>Admin <span>12 Jannuary 2018 at 1:30AM</span>
+                                                                    </h6>
+                                                                    <p>Thank you for you valuable comment sir.
+                                                                    </p>
+                                                                    <ul class="comnt-sec">
+                                                                        <li class="mr-3"><a href="#">
+                                                                                <div class="like check">
+                                                                                    <i class="far fa-thumbs-up"
+                                                                                        aria-hidden="true"></i><span>Helpful(14)</span>
+                                                                                </div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li><a href="#">
+                                                                                <div class="unlike">
+                                                                                    <i class="far fa-thumbs-down"
+                                                                                        aria-hidden="true"></i><span>Unhelpful(2)</span>
+                                                                                </div>
+                                                                            </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

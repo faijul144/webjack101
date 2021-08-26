@@ -1712,3 +1712,22 @@ input::placeholder {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
   object-fit: cover;
 }
+
+.rating-review-tab {
+  padding-top: 3rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--tertiary-white);
+}
+
+.rating-review-tab .tab-pane {
+  padding-top: 0;
+}
+
+.rating-review-tab .nav-link .product-rating {
+  cursor: pointer;
+}
+
+.rating-review-tab .blog-detail-page .comment-section li {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
