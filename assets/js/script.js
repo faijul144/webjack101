@@ -225,7 +225,7 @@
   /*=====================
      12. Product page Quantity Counter
      ==========================*/
-  $(".qty-box").each(function () {
+  $(".collection-wrapper .qty-box").each(function () {
     let $qty = $(this).find(".input-number");
     $(this)
       .find(".quantity-right-plus")
@@ -2118,4 +2118,38 @@ $(".img-container").magnificPopup({
   gallery: {
     enabled: true,
   },
+});
+
+// Customize Product No Scroll to body when modal over
+// Custum Color Swatches
+
+$(".swatch-list")
+  .find("li")
+  .each(function () {
+    let colorCode = $(this).data("color");
+    let colorName = $(this).data("colorName");
+    $(this).append(`<div style="background-color:${colorCode}"></d>`);
+    $(this).on("click", function () {
+      $(".swatch-list>li").removeClass("selected-color");
+      $(this)
+        .addClass("selected-color")
+        .parent()
+        .parent()
+        .parent()
+        .find(".swatch-select span")
+        .css("background-color", colorCode);
+      $(this).parent().parent().removeClass("fadeUpIn");
+      $("#add-textinput").css("color", colorCode);
+    });
+  });
+
+$(".added-texts-opt li button").on("click", function () {
+  if ($(this).data("action") == "bold") {
+    $("#add-textinput").toggleClass("font-weight-bold");
+    $(this).toggleClass("active-effect");
+  }
+});
+
+$(".swatch-select").on("click", function () {
+  $(this).parent().find(".swatch-container").toggleClass("fadeUpIn");
 });

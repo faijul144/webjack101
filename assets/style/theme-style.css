@@ -3790,6 +3790,7 @@ header {
 
 .modal-open {
   padding-right: 0 !important;
+  overflow-y: hidden !important;
 }
 
 #sizemodal {

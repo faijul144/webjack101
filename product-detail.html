@@ -1653,9 +1653,8 @@
 
 
     <!-- Cuztomize modal start -->
-    <div class="modal fade bd-example-modal-lg theme-modal" id="cuztomize-modal" tabindex="-1" role="dialog"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal fade theme-modal" id="cuztomize-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body customize-product">
                     <div class="modal-top">
@@ -1690,41 +1689,117 @@
                             <div class="tab-content nav-material" id="top-tabContent">
                                 <div class="tab-pane fade show active" id="add-text" role="tabpanel"
                                     aria-labelledby="text-tab">
-                                    <ul class="added-texts">
-                                        <li>
-                                            <select name="fonts" id="fonts">
-                                                <option selected disable>Slelect Font</option>
-                                                <option>Open Sans</option>
-                                                <option>San Serif</option>
-                                                <option>Arial</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            <div class="qty-box">
-                                                <div class="input-group">
-                                                    <span class="input-group-prepend">
-                                                        <button type="button" class="btn quantity-left-minus"
-                                                            data-type="minus" data-field="cus-font-size">
-                                                            <i class="fa fa-minus"></i>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" name="cus-font-size"
-                                                        class="form-control input-number" value="1">
-                                                    <span class="input-group-prepend">
-                                                        <button type="button" class="btn quantity-right-plus"
-                                                            data-type="plus" data-field="cus-font-size">
-                                                            <i class="fa fa-plus"></i>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+
                                     <div class="add-text-container">
-                                        <textarea name="TextInput" id="textinput" cols="30" rows="10"
-                                            class="text-input"></textarea>
-                                        <ul class="editing-options">
-                                            <li></li>
+                                        <textarea name="TextInput" id="add-textinput" rows="10" class="text-input"
+                                            placeholder="enter your text"></textarea>
+                                        <ul class="added-texts-opt">
+                                            <li>
+                                                <select name="fonts" id="fonts">
+                                                    <option selected disable>Font</option>
+                                                    <option value="Open Sans">Open Sans</option>
+                                                    <option value="San Serif">San Serif</option>
+                                                    <option value="Arial">Arial</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <div class="select-font-color">
+                                                    <div class="select-font-color__selected swatch-select"
+                                                        data-toggle="tooltip" data-placement="bottom"
+                                                        title="Select Font Color">
+                                                        A<span></span>
+                                                    </div>
+                                                    <div class="select-font-color__swatch swatch-container">
+                                                        <ul class="swatch-list">
+                                                            <li data-color="#202020" data-colorName="Black"></li>
+                                                            <li data-color="#000080" data-colorName="Navy Blue"></li>
+                                                            <li data-color="#003ffd" data-colorName="Royal Blue"></li>
+                                                            <li data-color="#9bddff" data-colorName="Columbia Blue">
+                                                            </li>
+                                                            <li data-color="#800000" data-colorName="Maroon"></li>
+                                                            <li data-color="#c41e3a" data-colorName="Cardinal"></li>
+                                                            <li data-color="#FF0000" data-colorName="Red"></li>
+                                                            <li data-color="#b75600" data-colorName="Dark Orange"></li>
+                                                            <li data-color="#FFA500" data-colorName="Bright Orange">
+                                                            </li>
+                                                            <li data-color="#da004b" data-colorName="Pink"></li>
+                                                            <li data-color="#e19d00" data-colorName="Gold"></li>
+                                                            <li data-color="#4f1f91" data-colorName="Purple"></li>
+                                                            <li data-color="#0f4d2a" data-colorName="Forest green"></li>
+                                                            <li data-color="#4cbb17" data-colorName="Kelly green"></li>
+                                                            <li data-color="#cc5500" data-colorName="Texas Orange"></li>
+                                                            <li data-color="#D2B48C" data-colorName="Tan"></li>
+                                                            <li data-color="#8391a1" data-colorName="Oxford Gray"></li>
+                                                            <li data-color="#657485" data-colorName="Dark Gray"></li>
+                                                            <li data-color="#C0C0C0" data-colorName="Silver"></li>
+                                                            <li data-color="#f5f5dc" data-colorName="Beige"></li>
+                                                            <li data-color="#FFFF00" data-colorName="Yellow"></li>
+                                                            <li data-color="#FAF3DC" data-colorName="Off white"></li>
+                                                            <li data-color="#654321" data-colorName="Brown"></li>
+                                                            <li data-color="#FFFFFF" data-colorName="White"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <select name="font-sizes" id="font-sizes">
+                                                    <option selected disable>Font Size</option>
+                                                    <option value="15">0.5"</option>
+                                                    <option value="30">1"</option>
+                                                    <option value="45">1.5"</option>
+                                                    <option value="60">2"</option>
+                                                    <option value="75">2.5"</option>
+                                                    <option value="90">3"</option>
+                                                    <option value="105">3.5"</option>
+                                                    <option value="120">4"</option>
+                                                    <option value="135">4.5"</option>
+                                                    <option value="150">5"</option>
+                                                    <option value="165">5.5"</option>
+                                                    <option value="180">6"</option>
+                                                    <option value="195">6.5"</option>
+                                                    <option value="210">7"</option>
+                                                    <option value="225">7.5"</option>
+                                                    <option value="240">8"</option>
+                                                    <option value="255">8.5"</option>
+                                                    <option value="270">9"</option>
+                                                    <option value="285">9.5"</option>
+                                                    <option value="300">10"</option>
+                                                    <option value="315">10.5"</option>
+                                                    <option value="330">11"</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <button data-action="bold">B</button>
+                                            </li>
+                                            <li>
+                                                <button data-action="stroke">S</button>
+                                            </li>
+                                            <li>
+                                                <select name="shape" id="shape">
+                                                    <option selected disable>Slelect Shape</option>
+                                                    <option value="straight">Straight Line</option>
+                                                    <option value="topBottom">Top Bottom</option>
+                                                    <option value="arc">Arch</option>
+                                                </select>
+                                            </li>
+                                            <li>
+                                                <input type="range" min="-25" max="40" value="4" step="1" name="Spacing"
+                                                    id="Spacing" class="custom-txt-sliders">
+                                                <div class="slider-drop-container">
+                                                    <div class="slider-drop-subcontainer">
+                                                        <h4>0<span></span></h4>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li><input type="range" min="-180" max="180" value="0" name="Rotate"
+                                                    id="Rotate">
+                                            </li>
+                                            <li>
+                                                <input type="range" min="-750" max="750" value="-60" step="5"
+                                                    name="arcHeightRange" id="arcHeightRange">
+                                            </li>
+
                                         </ul>
                                         <div class="text-add-btns">
                                             <button class="btn btn-primary">Add Text</button>
