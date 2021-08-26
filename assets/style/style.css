@@ -1734,8 +1734,8 @@ input::placeholder {
 
 .rating-review-tab .nav-link .product-rating-container .review-tooltip {
   display: inline-block;
-  width: 2rem;
   height: 1.5rem;
+  width: 3.8rem;
   line-height: 0.3rem;
   top: -1.5rem;
   left: 50%;
@@ -1744,6 +1744,7 @@ input::placeholder {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  text-transform: capitalize;
 }
 
 .rating-review-tab .nav-link .product-rating-container .review-tooltip::before {

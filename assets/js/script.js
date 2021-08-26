@@ -2059,7 +2059,11 @@ $(".product-rating").each(function () {
       .find(".rating-count")
       .text(`${data.rating} OUT OF 5`);
     $(this).parent().parent().find("h4.avg-rate").text(data.rating);
-    $(this).parent().parent().find(".review-tooltip").text(data.rating);
+    $(this)
+      .parent()
+      .parent()
+      .find(".review-tooltip")
+      .text(`${data.rating} Star`);
   });
   $(this).rateYo({
     normalFill: "#dddddd",
