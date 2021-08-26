@@ -286,7 +286,8 @@
                     </div>
                     <div class="col-lg-6 rtl-text pro-main">
                         <div class="product-right">
-                            <a href="javascript:void(0)" class="btn btn-primary customize-btn">CLICK TO CUSTOMIZE</a>
+                            <a href="javascript:void(0)" class="btn btn-primary customize-btn" data-bs-toggle="modal"
+                                data-bs-target="#cuztomize-modal">CLICK TO CUSTOMIZE</a>
                             <div class="product-rating-container">
                                 <div class="product-rating" data-rateyo-read-only="true" data-rateyo-rating="4.5"></div>
                                 <div class="rating-count">
@@ -1530,10 +1531,6 @@
     </footer>
 
 
-
-
-
-
     <!-- Quick-view modal popup start-->
     <div class="modal fade bd-example-modal-lg theme-modal" id="quick-view" tabindex="-1" role="dialog"
         aria-hidden="true">
@@ -1655,7 +1652,96 @@
 
 
 
-
+    <!-- Cuztomize modal start -->
+    <div class="modal fade bd-example-modal-lg theme-modal" id="cuztomize-modal" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body customize-product">
+                    <div class="modal-top">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true"><i class="fa fa-times"></i></span></button>
+                    </div>
+                    <div class="row tab-product">
+                        <div class="col-md-12">
+                            <div class="cuztomize-product__img-container">
+                                <img src="./assets/images/products/front-blue.png" alt="Product Customize">
+                                <div class="cuztomize-product__img-container--product-sides">
+                                    <button class="icon"><img src="./assets/images/icons/left.svg"
+                                            alt="Left Icon"></button>
+                                    <button class="icon"><img src="./assets/images/icons/right.svg"
+                                            alt="Right Icon"></button>
+                                    <button class="icon"><img src="./assets/images/icons/front.svg"
+                                            alt="Front Icon"></button>
+                                    <button class="icon"><img src="./assets/images/icons/back.svg"
+                                            alt="Back Icon"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs nav-material" id="img-cutomize-tab" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" id="text-tab" data-bs-toggle="tab"
+                                        href="#add-text" role="tab" aria-selected="true">Custom Text</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" id="img-tab" data-bs-toggle="tab"
+                                        href="#add-img" role="tab" aria-selected="true">Custom Images</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content nav-material" id="top-tabContent">
+                                <div class="tab-pane fade show active" id="add-text" role="tabpanel"
+                                    aria-labelledby="text-tab">
+                                    <ul class="added-texts">
+                                        <li>
+                                            <select name="fonts" id="fonts">
+                                                <option selected disable>Slelect Font</option>
+                                                <option>Open Sans</option>
+                                                <option>San Serif</option>
+                                                <option>Arial</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <div class="qty-box">
+                                                <div class="input-group">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-left-minus"
+                                                            data-type="minus" data-field="cus-font-size">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+                                                    </span>
+                                                    <input type="text" name="cus-font-size"
+                                                        class="form-control input-number" value="1">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-right-plus"
+                                                            data-type="plus" data-field="cus-font-size">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="add-text-container">
+                                        <textarea name="TextInput" id="textinput" cols="30" rows="10"
+                                            class="text-input"></textarea>
+                                        <ul class="editing-options">
+                                            <li></li>
+                                        </ul>
+                                        <div class="text-add-btns">
+                                            <button class="btn btn-primary">Add Text</button>
+                                            <button class="btn btn-primary">Cancle</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="add-img" role="tabpanel" aria-labelledby="img-tab">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cuztomize modal end -->
 
     <!-- tap to top -->
     <div class="tap-top top-cls">
