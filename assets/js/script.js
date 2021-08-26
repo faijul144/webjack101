@@ -2153,3 +2153,15 @@ $(".added-texts-opt li button").on("click", function () {
 $(".swatch-select").on("click", function () {
   $(this).parent().find(".swatch-container").toggleClass("fadeUpIn");
 });
+
+// Custom Range Slider 2
+$(".custom-txt-sliders").each(function () {
+  var rangePercent = $(this).val();
+  $(this).on("change input", function () {
+    rangePercent = $(this).val();
+    $(this)
+      .parent()
+      .find("h4")
+      .html(rangePercent + "<span></span>");
+  });
+});

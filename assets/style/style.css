@@ -2028,7 +2028,7 @@ input::placeholder {
   outline: 0;
   border: 0;
   border-radius: 500px;
-  width: 100%;
+  width: 13rem;
   max-width: 100%;
   margin: 0;
   transition: box-shadow 0.2s ease-in-out;
@@ -2053,14 +2053,14 @@ input::placeholder {
     height: 1rem;
     cursor: ew-resize;
     background: #fff;
-    box-shadow: -340px 0 0 340px #1597ff, inset 0 0 0 1rem #1597ff;
+    box-shadow: -340px 0 0 335px #1597ff, inset 0 0 0 1rem #1597ff;
     border-radius: 50%;
     transition: box-shadow 0.2s ease-in-out;
     position: relative;
   }
   .custom-txt-sliders:active::-webkit-slider-thumb {
     background: #fff;
-    box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 3px #1597ff;
+    box-shadow: -340px 0 0 335px #1597ff, inset 0 0 0 3px #1597ff;
   }
 }
 
@@ -2081,7 +2081,7 @@ input::placeholder {
 }
 
 .slider-drop-container {
-  width: 400px;
+  width: 13rem;
   max-width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
@@ -2089,8 +2089,7 @@ input::placeholder {
 }
 
 .slider-drop-container .slider-drop-subcontainer {
-  width: 100%;
-  position: relative;
+  width: 13rem;
 }
 
 .slider-drop-container .slider-drop-subcontainer h4 {
@@ -2099,11 +2098,11 @@ input::placeholder {
   justify-content: center;
   position: absolute;
   top: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: #fff !important;
   font-size: 12px;
-  transform-origin: center -10px;
+  left: 50%;
   transform: translateX(-50%);
   transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
