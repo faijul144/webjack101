@@ -2126,3 +2126,12 @@ $("select").each(function () {
     width: "resolve",
   });
 });
+
+// Image Popup
+$(".img-container").magnificPopup({
+  delegate: "a",
+  type: "image",
+  gallery: {
+    enabled: true,
+  },
+});
