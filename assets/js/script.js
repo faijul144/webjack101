@@ -1892,25 +1892,6 @@
 })(jQuery);
 
 /*=====================
- 21. Dark Light
- ==========================*/
-
-var body_event = $("body");
-body_event.on("click", ".dark-btn", function () {
-  $(this).toggleClass("dark");
-  $("body").removeClass("dark");
-  if ($(".dark-btn").hasClass("dark")) {
-    $(".dark-btn").text("Light");
-    $("body").addClass("dark");
-  } else {
-    $("#theme-dark").remove();
-    $(".dark-btn").text("Dark");
-  }
-
-  return false;
-});
-
-/*=====================
  22. Menu js
  ==========================*/
 function openNav() {
@@ -2078,6 +2059,7 @@ $(".product-rating").each(function () {
       .find(".rating-count")
       .text(`${data.rating} OUT OF 5`);
     $(this).parent().parent().find("h4.avg-rate").text(data.rating);
+    $(this).parent().parent().find(".review-tooltip").text(data.rating);
   });
   $(this).rateYo({
     normalFill: "#dddddd",

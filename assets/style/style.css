@@ -1723,11 +1723,72 @@ input::placeholder {
   padding-top: 0;
 }
 
-.rating-review-tab .nav-link .product-rating {
-  cursor: pointer;
+.rating-review-tab .nav-link .product-rating-container {
+  margin: 0;
+  cursor: pointer !important;
+}
+
+.rating-review-tab .nav-link .product-rating-container .product-rating {
+  cursor: pointer !important;
+}
+
+.rating-review-tab .nav-link .product-rating-container .review-tooltip {
+  display: inline-block;
+  width: 2rem;
+  height: 1.5rem;
+  line-height: 0.3rem;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.rating-review-tab .nav-link .product-rating-container .review-tooltip::before {
+  top: unset;
+  bottom: -24px;
+  left: 50%;
+  border-color: var(--primary) transparent transparent transparent;
+  border-width: 5px 5px 5px 5px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .rating-review-tab .blog-detail-page .comment-section li {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pro-spec {
+  display: flex;
+  width: 30rem;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.pro-spec li {
+  display: block;
+  width: 50%;
+  flex: 0 0 50%;
+  padding: 0.5rem;
+}
+
+.pro-spec li span {
+  color: var(--primary-dark);
+  display: block;
+  width: 100%;
+}
+
+.pro-spec li .pro-spec-title {
+  font-size: 0.8rem;
+}
+
+.pro-spec li .pro-spec-detail {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
