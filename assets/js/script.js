@@ -2063,7 +2063,7 @@ $(".product-rating").each(function () {
       .parent()
       .parent()
       .find(".review-tooltip")
-      .text(`${data.rating} Star`);
+      .text(`${data.rating} Stars`);
   });
   $(this).rateYo({
     normalFill: "#dddddd",
