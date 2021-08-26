@@ -1698,10 +1698,17 @@ input::placeholder {
   font-size: 1rem;
 }
 
-.uploaded-files .uploaded-imgs a img {
+.uploaded-imgs {
+  margin: 1rem 0 0.5rem;
+}
+
+.uploaded-imgs a img {
   border-radius: 0.3rem !important;
   -webkit-border-radius: 0.3rem !important;
   -moz-border-radius: 0.3rem !important;
   -ms-border-radius: 0.3rem !important;
   -o-border-radius: 0.3rem !important;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  object-fit: cover;
 }
