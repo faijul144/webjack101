@@ -1596,12 +1596,21 @@
                                     </ul>
                                 </div>
                                 <div class="product-description border-product">
+                                    <h6 class="product-title mb-3">Available Colors</h6>
                                     <ul class="color-variant mt-2 mb-4">
                                         <li class="bg-light0 active"></li>
                                         <li class="bg-light1"></li>
                                         <li class="bg-light2"></li>
                                     </ul>
-                                    <div class="size-box mt-3 mb-4">
+                                    <!-- To add men women children to any size add the class "has-gender" in size box -->
+                                    <h6 class="product-title mb-3">Available Sizes</h6>
+                                    <div class="size-box mt-3 mb-4 has-gender">
+                                        <select name="for-whom" id="role" class="form-control">
+                                            <option disabled selected>Select For</option>
+                                            <option value="Men">Men</option>
+                                            <option value="Women">Women</option>
+                                            <option value="Children">Children</option>
+                                        </select>
                                         <ul>
                                             <li class="active"><a href="javascript:void(0)">S</a></li>
                                             <li><a href="javascript:void(0)">M</a></li>
@@ -1609,20 +1618,20 @@
                                             <li><a href="javascript:void(0)">XL</a></li>
                                         </ul>
                                     </div>
-                                    <h6 class="product-title">quantity</h6>
+                                    <h6 class="product-title mb-3">quantity</h6>
                                     <div class="qty-box">
                                         <div class="input-group">
                                             <span class="input-group-prepend">
                                                 <button type="button" class="btn quantity-left-minus" data-type="minus"
-                                                    data-field="quantity-quick">
+                                                    data-field="quantity-main">
                                                     <i class="fa fa-minus"></i>
                                                 </button>
                                             </span>
-                                            <input type="text" name="quantity-quick" class="form-control input-number"
+                                            <input type="text" name="quantity-main" class="form-control input-number"
                                                 value="1">
                                             <span class="input-group-prepend">
                                                 <button type="button" class="btn quantity-right-plus" data-type="plus"
-                                                    data-field="quantity-quick">
+                                                    data-field="quantity-main">
                                                     <i class="fa fa-plus"></i>
                                                 </button>
                                             </span>

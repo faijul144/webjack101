@@ -4205,7 +4205,7 @@ footer p {
   padding-left: 25px;
   line-height: 28px;
 }
-.footer-theme .sub-title .contact-list li a:hover {
+.footer-theme .sub-title .contact-list li a:hover,.footer-theme .sub-title li a:hover {
   color: #04abed;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
