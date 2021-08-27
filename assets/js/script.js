@@ -2139,16 +2139,16 @@ $(".swatch-list")
         .find(".swatch-select span")
         .css("background-color", colorCode);
       $(this).parent().parent().removeClass("fadeUpIn");
-      $(this).data("targetInput").css("color", colorCode);
+      let targetInput = $(this).parent().attr("targetInput");
+      if (targetInput !== undefined || targetInput !== false) {
+        $(targetInput).css("color", colorCode);
+      }
     });
   });
 
 $(".added-texts-opt li button").on("click", function () {
   if ($(this).data("action") == "bold") {
     $("#add-textinput").toggleClass("font-weight-bold");
-    $(this).toggleClass("active-effect");
-  }
-  if ($(this).data("action") == "stroke") {
     $(this).toggleClass("active-effect");
   }
 });
@@ -2170,5 +2170,14 @@ $(".custom-txt-sliders").each(function () {
       .parent()
       .find("h4")
       .html(rangePercent + "<span></span>");
+  });
+});
+
+// Edit Selected Toogle
+$("#edit-img-direct").hide();
+$(".edit-selected").each(function () {
+  $(this).click(function (e) {
+    e.preventDefault();
+    $("#edit-img-direct").slideToggle();
   });
 });

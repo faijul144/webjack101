@@ -2028,7 +2028,7 @@ input::placeholder {
   outline: 0;
   border: 0;
   border-radius: 500px;
-  width: 13rem;
+  width: 9rem;
   max-width: 100%;
   margin: 0;
   transition: box-shadow 0.2s ease-in-out;
@@ -2081,7 +2081,7 @@ input::placeholder {
 }
 
 .slider-drop-container {
-  width: 13rem;
+  width: 9rem;
   max-width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
@@ -2089,7 +2089,7 @@ input::placeholder {
 }
 
 .slider-drop-container .slider-drop-subcontainer {
-  width: 13rem;
+  width: 9rem;
 }
 
 .slider-drop-container .slider-drop-subcontainer h4 {
@@ -2187,7 +2187,7 @@ input:not(:active) + .slider-drop-container h4 {
 
 .img-direct-edit {
   display: flex;
-  margin: 1.6rem -0.5rem;
+  margin: 1.6rem -0.5rem 0.8rem;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -2218,4 +2218,43 @@ input:not(:active) + .slider-drop-container h4 {
 .img-direct-edit li button.active-effect {
   color: var(--primary-white);
   background: var(--primary);
+}
+
+[data-titleText] {
+  position: relative;
+}
+
+[data-titleText]::after {
+  content: attr(data-titletext);
+  position: absolute;
+  top: -2.5rem;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background-color: var(--primary);
+  color: var(--primary-white);
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+[data-titleText]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }

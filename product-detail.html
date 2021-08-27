@@ -1694,13 +1694,14 @@
                                         <li>
                                             New Text
                                             <div class="added-text-action">
-                                                <button><i class="fa fa-pencil-square-o"></i></button>
+                                                <button class="edit-selected"><i
+                                                        class="fa fa-pencil-square-o"></i></button>
                                                 <button><i class="fa fa-trash"></i></button>
                                             </div>
                                         </li>
                                     </ul>
-                                    <div class="img-direct-edit">
-                                        <li>
+                                    <div class="img-direct-edit" id="edit-img-direct">
+                                        <li data-titleText="Add Stroke">
                                             <div class="has-swatch">
                                                 <button data-action="stroke" class="swatch-select">S</button>
                                                 <div class="swatch-container">
@@ -1743,16 +1744,9 @@
                                                 <option value="arc">Arch</option>
                                             </select>
                                         </li>
-                                        <li>
-                                            <input type="range" min="-25" max="40" value="4" step="1" name="Spacing"
-                                                id="Spacing" class="custom-txt-sliders" data-toggle="tooltip"
-                                                data-placement="top" title="Text Spacing">
-
-                                        </li>
-                                        <li>
-                                            <input type="range" min="-180" max="180" value="0" name="Rotate" id="Rotate"
-                                                class="custom-txt-sliders" data-toggle="tooltip" data-placement="top"
-                                                title="Text Rotate">
+                                        <li data-titleText="Arc Type">
+                                            <input type="range" min="-750" max="750" value="-60" step="5"
+                                                name="arcHeightRange" id="arcHeightRange" class="custom-txt-sliders">
                                             <div class="slider-drop-container">
                                                 <div class="slider-drop-subcontainer">
                                                     <h4>0<span></span></h4>
@@ -1760,9 +1754,20 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <input type="range" min="-750" max="750" value="-60" step="5"
-                                                name="arcHeightRange" id="arcHeightRange" class="custom-txt-sliders"
-                                                data-toggle="tooltip" data-placement="top" title="Arc Shape">
+                                            <select name="alignment" id="alignment">
+                                                <option selected disable>Text Align</option>
+                                                <option value="Left">Left</option>
+                                                <option value="Right">Right</option>
+                                                <option value="Center">Center</option>
+                                            </select>
+                                        </li>
+                                        <li data-titleText="Text Spacing">
+                                            <input type="range" min="-25" max="40" value="4" step="1" name="Spacing"
+                                                id="Spacing" class="custom-txt-sliders" data-titleText="Text Spacing">
+                                        </li>
+                                        <li data-titleText="Text Rotate">
+                                            <input type="range" min="-180" max="180" value="0" name="Rotate" id="Rotate"
+                                                class="custom-txt-sliders">
                                             <div class="slider-drop-container">
                                                 <div class="slider-drop-subcontainer">
                                                     <h4>0<span></span></h4>
@@ -1789,55 +1794,33 @@
                                                         A<span></span>
                                                     </div>
                                                     <div class="select-font-color__swatch swatch-container">
-                                                        <ul class="swatch-list">
-                                                            <li data-color="#202020" data-colorName="Black"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#000080" data-colorName="Navy Blue"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#003ffd" data-colorName="Royal Blue"
-                                                                data-targetInput=></li>
+                                                        <ul class="swatch-list" targetInput="#add-textinput">
+                                                            <li data-color="#202020" data-colorName="Black"></li>
+                                                            <li data-color="#000080" data-colorName="Navy Blue"></li>
+                                                            <li data-color="#003ffd" data-colorName="Royal Blue"></li>
                                                             <li data-color="#9bddff" data-colorName="Columbia Blue">
                                                             </li>
-                                                            <li data-color="#800000" data-colorName="Maroon"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#c41e3a" data-colorName="Cardinal"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#FF0000" data-colorName="Red"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#b75600" data-colorName="Dark Orange"
-                                                                data-targetInput=></li>
+                                                            <li data-color="#800000" data-colorName="Maroon"></li>
+                                                            <li data-color="#c41e3a" data-colorName="Cardinal"></li>
+                                                            <li data-color="#FF0000" data-colorName="Red"></li>
+                                                            <li data-color="#b75600" data-colorName="Dark Orange"></li>
                                                             <li data-color="#FFA500" data-colorName="Bright Orange">
                                                             </li>
-                                                            <li data-color="#da004b" data-colorName="Pink"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#e19d00" data-colorName="Gold"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#4f1f91" data-colorName="Purple"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#0f4d2a" data-colorName="Forest green"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#4cbb17" data-colorName="Kelly green"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#cc5500" data-colorName="Texas Orange"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#D2B48C" data-colorName="Tan"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#8391a1" data-colorName="Oxford Gray"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#657485" data-colorName="Dark Gray"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#C0C0C0" data-colorName="Silver"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#f5f5dc" data-colorName="Beige"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#FFFF00" data-colorName="Yellow"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#FAF3DC" data-colorName="Off white"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#654321" data-colorName="Brown"
-                                                                data-targetInput=></li>
-                                                            <li data-color="#FFFFFF" data-colorName="White"
-                                                                data-targetInput=></li>
+                                                            <li data-color="#da004b" data-colorName="Pink"></li>
+                                                            <li data-color="#e19d00" data-colorName="Gold"></li>
+                                                            <li data-color="#4f1f91" data-colorName="Purple"></li>
+                                                            <li data-color="#0f4d2a" data-colorName="Forest green"></li>
+                                                            <li data-color="#4cbb17" data-colorName="Kelly green"></li>
+                                                            <li data-color="#cc5500" data-colorName="Texas Orange"></li>
+                                                            <li data-color="#D2B48C" data-colorName="Tan"></li>
+                                                            <li data-color="#8391a1" data-colorName="Oxford Gray"></li>
+                                                            <li data-color="#657485" data-colorName="Dark Gray"></li>
+                                                            <li data-color="#C0C0C0" data-colorName="Silver"></li>
+                                                            <li data-color="#f5f5dc" data-colorName="Beige"></li>
+                                                            <li data-color="#FFFF00" data-colorName="Yellow"></li>
+                                                            <li data-color="#FAF3DC" data-colorName="Off white"></li>
+                                                            <li data-color="#654321" data-colorName="Brown"></li>
+                                                            <li data-color="#FFFFFF" data-colorName="White"></li>
                                                         </ul>
                                                     </div>
                                                 </div>
