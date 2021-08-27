@@ -2143,6 +2143,12 @@ $(".swatch-list")
       if (targetInput !== undefined || targetInput !== false) {
         $(targetInput).css("color", colorCode);
       }
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .find(".img-icon-color")
+        .css("background", colorCode);
     });
   });
 
@@ -2174,11 +2180,24 @@ $(".custom-txt-sliders").each(function () {
 });
 
 // Edit Selected Toogle
-$("#edit-img-direct").hide();
+$(".img-direct-edit").hide();
 $(".edit-selected").each(function () {
   $(this).click(function (e) {
     e.preventDefault();
-    $("#edit-img-direct").slideToggle();
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".img-direct-edit")
+      .slideUp();
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".img-direct-edit")
+      .slideDown();
   });
 });
 
