@@ -2414,12 +2414,6 @@ input:not(:active) + .slider-drop-container h4 {
   color: var(--primary-white);
 }
 
-@media screen and (min-width: 992px) {
-  #cuztomize-modal .modal-lg {
-    max-width: 1000px;
-  }
-}
-
 .parts-color-list li {
   display: flex;
   align-items: center;
@@ -2434,4 +2428,14 @@ input:not(:active) + .slider-drop-container h4 {
 .parts-color-list li__color .swatch-img {
   display: inline-flex;
   align-items: center;
+}
+
+.slider-detail-custom .slick-list,
+.slider-nav-custom .slick-list {
+  margin: 0 -5px;
+}
+
+.slider-detail-custom .slick-slide > div,
+.slider-nav-custom .slick-slide > div {
+  padding: 0 5px;
 }

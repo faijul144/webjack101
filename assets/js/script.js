@@ -1219,6 +1219,24 @@
     focusOnSelect: true,
   });
 
+  $(".product-slick-custom").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: ".slider-nav-custom",
+  });
+
+  $(".slider-nav-custom").slick({
+    vertical: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".product-slick-custom",
+    arrows: false,
+    dots: false,
+    focusOnSelect: true,
+  });
+
   $("#quick-view").on("show.bs.modal", function (e) {
     $("#quick-view").css("opacity", 0);
     setTimeout(function () {
@@ -1226,7 +1244,7 @@
     }, 500);
   });
 
-  $(".product-slick-detail .slick-slide > div>div").zoom({
+  $(".product-detail-zoom .slick-slide > div>div").zoom({
     magnify: 0.6,
   });
 
@@ -2138,17 +2156,14 @@ $(".swatch-list")
       .find(".selected-color")
       .attr("data-colorName");
     if (thisLi.hasClass("selected-color")) {
-      console.log(selectedcolorCode);
+      $(".swatch-img").html(
+        `<div style="background-color:${selectedcolorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${selectedcolorName}</span>`
+      );
     }
     $(this).append(
       `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div>`
     );
-    // $(".swatch-img").html(
-    //   `${selectedHTML}<span>${$(this)
-    //     .parent()
-    //     .find(".selected-color")
-    //     .attr("data-colorName")}</span>`
-    // );
+
     $(this).on("click", function () {
       $(".swatch-list>li").removeClass("selected-color");
       $(this)
