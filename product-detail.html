@@ -1662,18 +1662,23 @@
                                 aria-hidden="true"><i class="fa fa-times"></i></span></button>
                     </div>
                     <div class="row tab-product">
-                        <div class="col-md-12">
+                        <div class="col-md-12 mb-4">
                             <div class="cuztomize-product__img-container">
                                 <img src="./assets/images/products/front-blue.png" alt="Product Customize">
                                 <div class="cuztomize-product__img-container--product-sides">
-                                    <button class="icon"><img src="./assets/images/icons/left.svg"
-                                            alt="Left Icon"></button>
-                                    <button class="icon"><img src="./assets/images/icons/right.svg"
-                                            alt="Right Icon"></button>
-                                    <button class="icon"><img src="./assets/images/icons/front.svg"
-                                            alt="Front Icon"></button>
-                                    <button class="icon"><img src="./assets/images/icons/back.svg"
-                                            alt="Back Icon"></button>
+                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Zoom In"><img
+                                            src="./assets/images/icons/zoomin.svg" alt="Zoom In Icon"></button>
+                                    <button class="icon" data-toggle="tooltip" data-placement="top"
+                                        title="Zoom Out"><img src="./assets/images/icons/zoomout.svg"
+                                            alt="Zoom Out Icon"></button>
+                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Left"><img
+                                            src="./assets/images/icons/left.svg" alt="Left Icon"></button>
+                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Right"><img
+                                            src="./assets/images/icons/right.svg" alt="Right Icon"></button>
+                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Front"><img
+                                            src="./assets/images/icons/front.svg" alt="Front Icon"></button>
+                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Back"><img
+                                            src="./assets/images/icons/back.svg" alt="Back Icon"></button>
                                 </div>
                             </div>
                         </div>
@@ -1775,10 +1780,8 @@
                                             </div>
                                         </li>
                                     </div>
-                                    <div class="add-text-container">
 
-                                        <textarea name="TextInput" id="add-textinput" rows="10" class="text-input"
-                                            placeholder="enter your text"></textarea>
+                                    <div class="add-text-container">
                                         <ul class="added-texts-opt">
                                             <li>
                                                 <select name="fonts" id="fonts">
@@ -1856,6 +1859,8 @@
                                                 <button data-action="bold">B</button>
                                             </li>
                                         </ul>
+                                        <textarea name="TextInput" id="add-textinput" rows="10" class="text-input"
+                                            placeholder="enter your text"></textarea>
                                         <div class="text-add-btns">
                                             <button class="btn btn-primary">Add Text</button>
                                             <button class="btn btn-primary">Cancle</button>

@@ -1807,7 +1807,7 @@ input::placeholder {
 }
 
 .cuztomize-product__img-container img {
-  width: 60%;
+  width: 80%;
   object-fit: cover;
   -o-object-fit: cover;
 }
@@ -1862,7 +1862,7 @@ input::placeholder {
 .add-text-container textarea {
   width: 100%;
   border-color: var(--tertiary-white);
-  padding: 5rem 0.8rem 1rem;
+  padding: 1rem 0.8rem;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1888,9 +1888,6 @@ input::placeholder {
   justify-content: flex-start;
   margin: 0.5rem -0.5rem;
   padding: 0 0.5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .add-text-container .added-texts-opt li {
@@ -2134,7 +2131,7 @@ input:not(:active) + .slider-drop-container h4 {
   align-items: center;
   padding: 0.8rem 7rem 0.8rem 1.2rem;
   font-size: 1.2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.17);
   position: relative;
   width: 100%;
   white-space: nowrap;
