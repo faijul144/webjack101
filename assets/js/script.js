@@ -2139,13 +2139,16 @@ $(".swatch-list")
         .find(".swatch-select span")
         .css("background-color", colorCode);
       $(this).parent().parent().removeClass("fadeUpIn");
-      $("#add-textinput").css("color", colorCode);
+      $(this).data("targetInput").css("color", colorCode);
     });
   });
 
 $(".added-texts-opt li button").on("click", function () {
   if ($(this).data("action") == "bold") {
     $("#add-textinput").toggleClass("font-weight-bold");
+    $(this).toggleClass("active-effect");
+  }
+  if ($(this).data("action") == "stroke") {
     $(this).toggleClass("active-effect");
   }
 });
@@ -2157,6 +2160,10 @@ $(".swatch-select").on("click", function () {
 // Custom Range Slider 2
 $(".custom-txt-sliders").each(function () {
   var rangePercent = $(this).val();
+  $(this)
+    .parent()
+    .find("h4")
+    .html(rangePercent + "<span></span>");
   $(this).on("change input", function () {
     rangePercent = $(this).val();
     $(this)

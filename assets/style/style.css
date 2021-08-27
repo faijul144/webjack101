@@ -1925,18 +1925,18 @@ input::placeholder {
   background: var(--primary);
 }
 
-.add-text-container .added-texts-opt .select-font-color {
+.has-swatch {
   position: relative;
 }
 
-.add-text-container .added-texts-opt .select-font-color__selected {
+.has-swatch .swatch-select {
   font-size: 1.3rem;
   position: relative;
   padding: 0 0.5rem;
   cursor: pointer;
 }
 
-.add-text-container .added-texts-opt .select-font-color__selected span {
+.has-swatch .swatch-select span {
   position: absolute;
   height: 0.3rem;
   width: 100%;
@@ -1945,7 +1945,7 @@ input::placeholder {
   background-color: #202020;
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch {
+.has-swatch .swatch-container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1968,18 +1968,18 @@ input::placeholder {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch .swatch-list {
+.has-swatch .swatch-container .swatch-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0.5rem;
   width: 8rem;
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch .swatch-list li {
+.has-swatch .swatch-container .swatch-list li {
   padding: 0.2rem 0.5rem;
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch .swatch-list li div {
+.has-swatch .swatch-container .swatch-list li div {
   height: 1rem;
   width: 1rem;
   border-radius: 0.1rem;
@@ -1989,7 +1989,7 @@ input::placeholder {
   -o-border-radius: 0.1rem;
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch.fadeUpIn {
+.has-swatch .swatch-container.fadeUpIn {
   pointer-events: all;
   opacity: 1;
   visibility: visible;
@@ -2000,11 +2000,11 @@ input::placeholder {
   -o-transform: translateY(0);
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch .selected-color div {
+.has-swatch .swatch-container .selected-color div {
   position: relative;
 }
 
-.add-text-container .added-texts-opt .select-font-color__swatch .selected-color div::after {
+.has-swatch .swatch-container .selected-color div::after {
   font: normal normal normal 12px/1 FontAwesome;
   content: "\f00c";
   position: absolute;
@@ -2051,7 +2051,7 @@ input::placeholder {
     width: 1rem;
     -webkit-appearance: none;
     height: 1rem;
-    cursor: ew-resize;
+    cursor: pointer;
     background: #fff;
     box-shadow: -340px 0 0 335px #1597ff, inset 0 0 0 1rem #1597ff;
     border-radius: 50%;
@@ -2123,4 +2123,99 @@ input:not(:active) + .slider-drop-container h4 {
   opacity: 0;
   margin-top: -50px;
   pointer-events: none;
+}
+
+.added-text-list {
+  margin: 1rem 0;
+}
+
+.added-text-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 7rem 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  text-transform: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.added-text-list li .added-text-action {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.added-text-list li .added-text-action button {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  background: var(--primary-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  border: 0;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.added-text-list li .added-text-action button:hover {
+  background-color: var(--primary);
+  color: var(--primary-white);
+}
+
+.img-direct-edit {
+  display: flex;
+  margin: 1.6rem -0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-direct-edit li {
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.img-direct-edit li button {
+  border: 0;
+  background: var(--fourth-white);
+  padding: 0.3rem 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.img-direct-edit li button.active-effect {
+  color: var(--primary-white);
+  background: var(--primary);
 }
