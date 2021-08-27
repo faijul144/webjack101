@@ -2414,20 +2414,48 @@ input:not(:active) + .slider-drop-container h4 {
   color: var(--primary-white);
 }
 
-.parts-color-list li {
+.parts-color-list > li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
-.parts-color-list li__title {
+.parts-color-list__title {
   font-size: 1.1rem;
   font-weight: 700;
+  width: 50%;
 }
 
-.parts-color-list li__color .swatch-img {
+.parts-color-list__colors {
+  width: 50%;
+  text-align: left;
+}
+
+.parts-color-list__colors .has-swatch .swatch-select.swatch-img {
   display: inline-flex;
   align-items: center;
+}
+
+.parts-color-list__colors .has-swatch .swatch-select.swatch-img > div {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.parts-color-list__colors .has-swatch .swatch-select.swatch-img > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.parts-color-list__colors .has-swatch .swatch-select.swatch-img > span {
+  position: relative;
+  background-color: transparent;
+  font-size: 1rem;
+  height: auto;
+  width: auto;
 }
 
 .slider-detail-custom .slick-list,
