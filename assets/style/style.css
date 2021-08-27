@@ -1806,8 +1806,13 @@ input::placeholder {
   position: relative;
 }
 
-.cuztomize-product__img-container img {
-  width: 80%;
+.cuztomize-product__img-container .editable-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cuztomize-product__img-container .editable-img img {
+  width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
 }
@@ -1981,7 +1986,7 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0.5rem;
-  width: 8rem;
+  width: 15rem;
 }
 
 .has-swatch .swatch-container .swatch-list li {
@@ -1989,13 +1994,18 @@ input::placeholder {
 }
 
 .has-swatch .swatch-container .swatch-list li div {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 0.1rem;
-  -webkit-border-radius: 0.1rem;
-  -moz-border-radius: 0.1rem;
-  -ms-border-radius: 0.1rem;
-  -o-border-radius: 0.1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.has-swatch .swatch-container .swatch-list li div img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .has-swatch .swatch-container.fadeUpIn {
@@ -2030,7 +2040,7 @@ input::placeholder {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .custom-txt-sliders {
@@ -2146,7 +2156,7 @@ input:not(:active) + .slider-drop-container h4 {
   align-items: center;
   padding: 0.8rem 7rem 0.8rem 1.2rem;
   font-size: 1.2rem;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.17);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.13);
   position: relative;
   width: 100%;
   white-space: nowrap;
@@ -2402,4 +2412,26 @@ input:not(:active) + .slider-drop-container h4 {
 .add-cus-img button:hover {
   background: var(--primary);
   color: var(--primary-white);
+}
+
+@media screen and (min-width: 992px) {
+  #cuztomize-modal .modal-lg {
+    max-width: 1000px;
+  }
+}
+
+.parts-color-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parts-color-list li__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.parts-color-list li__color .swatch-img {
+  display: inline-flex;
+  align-items: center;
 }

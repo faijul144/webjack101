@@ -2126,9 +2126,29 @@ $(".img-container").magnificPopup({
 $(".swatch-list")
   .find("li")
   .each(function () {
+    let thisLi = $(this);
     let colorCode = $(this).data("color");
-    let colorName = $(this).data("colorName");
-    $(this).append(`<div style="background-color:${colorCode}"></d>`);
+    let colorName = $(this).attr("data-colorName");
+    let selectedcolorCode = thisLi
+      .parent()
+      .find(".selected-color")
+      .data("color");
+    let selectedcolorName = thisLi
+      .parent()
+      .find(".selected-color")
+      .attr("data-colorName");
+    if (thisLi.hasClass("selected-color")) {
+      console.log(selectedcolorCode);
+    }
+    $(this).append(
+      `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div>`
+    );
+    // $(".swatch-img").html(
+    //   `${selectedHTML}<span>${$(this)
+    //     .parent()
+    //     .find(".selected-color")
+    //     .attr("data-colorName")}</span>`
+    // );
     $(this).on("click", function () {
       $(".swatch-list>li").removeClass("selected-color");
       $(this)
@@ -2149,6 +2169,14 @@ $(".swatch-list")
         .parent()
         .find(".img-icon-color")
         .css("background", colorCode);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .find(".swatch-img")
+        .html(
+          `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${colorName}</span>`
+        );
     });
   });
 

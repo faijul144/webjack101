@@ -1664,7 +1664,9 @@
                     <div class="row tab-product">
                         <div class="col-md-12 mb-4">
                             <div class="cuztomize-product__img-container">
-                                <img src="./assets/images/products/front-blue.png" alt="Product Customize">
+                                <div class="editable-img">
+                                    <img src="./assets/images/products/front-blue.png" alt="Product Customize">
+                                </div>
                                 <div class="cuztomize-product__img-container--product-sides">
                                     <button class="icon" data-titleText="Zoom In"><img
                                             src="./assets/images/icons/zoomin.svg" alt="Zoom In Icon"></button>
@@ -1683,7 +1685,10 @@
                         </div>
                         <div class="col-md-12">
                             <ul class="nav nav-tabs nav-material" id="img-cutomize-tab" role="tablist">
-                                <li class="nav-item"><a class="nav-link active" id="text-tab" data-bs-toggle="tab"
+                                <li class="nav-item"><a class="nav-link active" id="color-img-tab" data-bs-toggle="tab"
+                                        href="#color-img" role="tab" aria-selected="true">Colorize</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" id="text-tab" data-bs-toggle="tab"
                                         href="#add-text" role="tab" aria-selected="true">Custom Text</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" id="img-tab" data-bs-toggle="tab"
@@ -1691,8 +1696,51 @@
                                 </li>
                             </ul>
                             <div class="tab-content nav-material" id="top-tabContent">
-                                <div class="tab-pane fade show active" id="add-text" role="tabpanel"
-                                    aria-labelledby="text-tab">
+                                <div class="tab-pane fade show active" id="color-img" role="tabpanel"
+                                    aria-labelledby="color-img-tab">
+                                    <ul class="parts-color-list">
+                                        <li>
+                                            <div class="parts-color-list__title">Body (Wool):</div>
+                                            <div class="parts-color-list__colors">
+                                                <div class="has-swatch">
+                                                    <div class="swatch-select swatch-img"></div>
+                                                    <div class="swatch-container">
+                                                        <ul class="swatch-list">
+                                                            <li data-color="#202020" data-colorName="Black"
+                                                                class="selected-color"></li>
+                                                            <li data-color="#000080" data-colorName="Navy Blue"></li>
+                                                            <li data-color="#003ffd" data-colorName="Royal Blue"></li>
+                                                            <li data-color="#9bddff" data-colorName="Columbia Blue">
+                                                            </li>
+                                                            <li data-color="#800000" data-colorName="Maroon"></li>
+                                                            <li data-color="#c41e3a" data-colorName="Cardinal"></li>
+                                                            <li data-color="#FF0000" data-colorName="Red"></li>
+                                                            <li data-color="#b75600" data-colorName="Dark Orange"></li>
+                                                            <li data-color="#FFA500" data-colorName="Bright Orange">
+                                                            </li>
+                                                            <li data-color="#da004b" data-colorName="Pink"></li>
+                                                            <li data-color="#e19d00" data-colorName="Gold"></li>
+                                                            <li data-color="#4f1f91" data-colorName="Purple"></li>
+                                                            <li data-color="#0f4d2a" data-colorName="Forest green"></li>
+                                                            <li data-color="#4cbb17" data-colorName="Kelly green"></li>
+                                                            <li data-color="#cc5500" data-colorName="Texas Orange"></li>
+                                                            <li data-color="#D2B48C" data-colorName="Tan"></li>
+                                                            <li data-color="#8391a1" data-colorName="Oxford Gray"></li>
+                                                            <li data-color="#657485" data-colorName="Dark Gray"></li>
+                                                            <li data-color="#C0C0C0" data-colorName="Silver"></li>
+                                                            <li data-color="#f5f5dc" data-colorName="Beige"></li>
+                                                            <li data-color="#FFFF00" data-colorName="Yellow"></li>
+                                                            <li data-color="#FAF3DC" data-colorName="Off white"></li>
+                                                            <li data-color="#654321" data-colorName="Brown"></li>
+                                                            <li data-color="#FFFFFF" data-colorName="White"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="add-text" role="tabpanel" aria-labelledby="text-tab">
 
                                     <ul class="added-text-list">
                                         <li>
