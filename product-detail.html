@@ -1666,19 +1666,18 @@
                             <div class="cuztomize-product__img-container">
                                 <img src="./assets/images/products/front-blue.png" alt="Product Customize">
                                 <div class="cuztomize-product__img-container--product-sides">
-                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Zoom In"><img
+                                    <button class="icon" data-titleText="Zoom In"><img
                                             src="./assets/images/icons/zoomin.svg" alt="Zoom In Icon"></button>
-                                    <button class="icon" data-toggle="tooltip" data-placement="top"
-                                        title="Zoom Out"><img src="./assets/images/icons/zoomout.svg"
-                                            alt="Zoom Out Icon"></button>
-                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Left"><img
-                                            src="./assets/images/icons/left.svg" alt="Left Icon"></button>
-                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Right"><img
+                                    <button class="icon" data-titleText="Zoom Out"><img
+                                            src="./assets/images/icons/zoomout.svg" alt="Zoom Out Icon"></button>
+                                    <button class="icon" data-titleText="Left"><img src="./assets/images/icons/left.svg"
+                                            alt="Left Icon"></button>
+                                    <button class="icon" data-titleText="Right"><img
                                             src="./assets/images/icons/right.svg" alt="Right Icon"></button>
-                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Front"><img
+                                    <button class="icon" data-titleText="Front"><img
                                             src="./assets/images/icons/front.svg" alt="Front Icon"></button>
-                                    <button class="icon" data-toggle="tooltip" data-placement="top" title="Back"><img
-                                            src="./assets/images/icons/back.svg" alt="Back Icon"></button>
+                                    <button class="icon" data-titleText="Back"><img src="./assets/images/icons/back.svg"
+                                            alt="Back Icon"></button>
                                 </div>
                             </div>
                         </div>
@@ -1701,7 +1700,8 @@
                                             <div class="added-text-action">
                                                 <button class="edit-selected"><i
                                                         class="fa fa-pencil-square-o"></i></button>
-                                                <button><i class="fa fa-trash"></i></button>
+                                                <button class="sure-btn" data-message="Remove Text?"><i
+                                                        class="fa fa-trash"></i></button>
                                             </div>
                                         </li>
                                     </ul>
@@ -1911,6 +1911,9 @@
 
     <!-- Bootstrap js-->
     <script src="./assets/js/select2.min.js"></script>
+
+    <!-- Sweetalert 2 js-->
+    <script src="./assets/js/sweetalert2.js"></script>
 
     <!-- Bootstrap js-->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
