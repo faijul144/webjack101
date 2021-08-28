@@ -1849,6 +1849,7 @@ input::placeholder {
 
 .img-direct-edit {
   padding: 0 0.5rem;
+  width: 100%;
 }
 
 .img-direct-edit .select2 {
@@ -1943,8 +1944,7 @@ input::placeholder {
 .has-swatch.img-icon-color .swatch-select {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
   min-width: 8rem;
 }
 
@@ -1964,21 +1964,13 @@ input::placeholder {
   display: block;
   font-size: 1rem;
   position: relative;
-  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   height: auto;
   width: auto;
 }
 
 .has-swatch.img-icon-color .swatch-container {
   top: 4rem;
-}
-
-.has-swatch.img-sm-icon-color .swatch-select {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-width: 5rem;
 }
 
 .has-swatch.img-sm-icon-color .swatch-select > div {
@@ -1994,7 +1986,7 @@ input::placeholder {
 
 .has-swatch.img-sm-icon-color .swatch-select span {
   background: transparent;
-  display: block;
+  display: none;
   font-size: 1rem;
   position: relative;
   margin-top: 0.5rem;
@@ -2414,6 +2406,34 @@ input:not(:active) + .slider-drop-container h4 {
 .img-direct-edit li button.active-effect {
   color: var(--primary-white);
   background: var(--primary);
+}
+
+.img-direct-edit.img-add-edit {
+  margin: 1rem 0 0;
+}
+
+.img-direct-edit.img-add-edit > ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem;
+}
+
+.img-direct-edit.img-add-edit > ul > li {
+  padding: 0;
+}
+
+.img-direct-edit.img-add-edit > ul > li:nth-child(1) {
+  flex: 0 0 25%;
+}
+
+.img-direct-edit.img-add-edit > ul > li:nth-child(2) {
+  flex: 0 0 40%;
+}
+
+.img-direct-edit.img-add-edit > ul > li:nth-child(3) {
+  flex: 0 0 35%;
+  text-align: right;
 }
 
 [data-titleText] {
