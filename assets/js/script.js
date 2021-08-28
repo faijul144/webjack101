@@ -2123,10 +2123,20 @@ $(".product-rating").each(function () {
 
 // Select 2 Initialize
 $("select").each(function () {
-  $(this).select2({
+  let myselect = $(this).select2({
     minimumResultsForSearch: -1,
     width: "resolve",
   });
+
+  //Custom Change Events
+  // myselect.on("change", function () {
+  //   if ($(this).val() == "arc") {
+  //     $(".selected-" + $(this).val()).removeClass("hidden");
+  //   }
+  //   else{
+
+  //   }
+  // });
 });
 
 // Image Popup
@@ -2217,6 +2227,12 @@ $(".swatch-list")
         .parent()
         .find(".swatch-img")
         .html(selectedFabric);
+      thisLi
+        .parent()
+        .parent()
+        .parent()
+        .find(".stroke")
+        .css("background-color", selectedFabric);
     }
     $(this).append(chosenFabric);
 
@@ -2238,7 +2254,15 @@ $(".swatch-list")
         .parent()
         .parent()
         .parent()
-        .find(".img-icon-color")
+        .parent()
+        .find(".img-icon-color button")
+        .css("background", colorCode);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .find(".img-sm-icon-color button")
         .css("background", colorCode);
 
       // For Fabric Divs
@@ -2266,10 +2290,28 @@ $(".swatch-list")
     });
   });
 
-$(".added-texts-opt li button").on("click", function () {
+// Text Options Action Behave
+$("[data-related]").each(function () {
+  $($(this).data("related"))
+    .addClass("hidden")
+    .css("transition", "all .3s ease");
+  $(this).on("change", function () {
+    if ($(this).val() == "arc") {
+      $($(this).data("related")).removeClass("hidden");
+    } else {
+      $($(this).data("related")).addClass("hidden");
+    }
+  });
+});
+
+$("button[data-action]").on("click", function () {
   if ($(this).data("action") == "bold") {
     $("#add-textinput").toggleClass("font-weight-bold");
     $(this).toggleClass("active-effect");
+  }
+  if ($(this).data("action") == "stroke") {
+    $(this).toggleClass("active-effect");
+    $($(this).data("related")).toggleClass("hidden");
   }
 });
 
@@ -2280,6 +2322,7 @@ $(".swatch-select").on("click", function (e) {
   } else {
     $(".swatch-container").removeClass("fadeUpIn");
     $(this).parent().find(".swatch-container").addClass("fadeUpIn");
+    $($(this).data("related")).addClass("slideRight");
   }
 });
 
@@ -2308,14 +2351,6 @@ $(".custom-txt-sliders").each(function () {
 $(".img-direct-edit").hide();
 $(".edit-selected").each(function () {
   $(this).click(function (e) {
-    e.preventDefault();
-    $(this)
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".img-direct-edit")
-      .slideUp();
     $(this)
       .parent()
       .parent()
@@ -2349,4 +2384,17 @@ $(".sure-btn").click(function (e) {
       });
     }
   });
+});
+
+// Custom Add
+
+$("#add-new-text").hide();
+$("[data-action]").click(function (e) {
+  e.preventDefault();
+  if ($(this).data("action") == "new-text-field") {
+    $("#add-new-text").slideDown();
+  }
+  if ($(this).data("action") == "cancel-field") {
+    $(this).parent().parent().slideUp();
+  }
 });
