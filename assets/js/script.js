@@ -2395,7 +2395,7 @@ $("[data-action]").click(function (e) {
     $("#add-new-text").slideDown();
   }
   if ($(this).data("action") == "cancel-field") {
-    $(this).parent().parent().parent().slideUp();
+    $(this).parent().parent().parent().find(".img-direct-edit").slideUp();
   }
 });
 
