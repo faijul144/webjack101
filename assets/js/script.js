@@ -2395,6 +2395,15 @@ $("[data-action]").click(function (e) {
     $("#add-new-text").slideDown();
   }
   if ($(this).data("action") == "cancel-field") {
-    $(this).parent().parent().slideUp();
+    $(this).parent().parent().parent().slideUp();
   }
+});
+
+$(".clipart-container").hide();
+$(".clipart-add").click(function (e) {
+  e.preventDefault();
+  $(".clipart-container").slideDown();
+});
+$(".btn-cancle").click(function () {
+  $($(this).data("target")).slideUp();
 });
