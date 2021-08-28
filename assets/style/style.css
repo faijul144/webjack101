@@ -1994,8 +1994,8 @@ input::placeholder {
 }
 
 .has-swatch .swatch-container .swatch-list li div {
-  height: 2rem;
-  width: 2rem;
+  height: 1.9rem;
+  width: 1.9rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2423,7 +2423,6 @@ input:not(:active) + .slider-drop-container h4 {
 
 .parts-color-list__title {
   font-size: 1.1rem;
-  font-weight: 700;
   width: 50%;
 }
 
@@ -2437,14 +2436,13 @@ input:not(:active) + .slider-drop-container h4 {
   align-items: center;
 }
 
-.parts-color-list__colors .has-swatch .swatch-select.swatch-img > div {
-  width: 3rem;
-  height: 3rem;
+.parts-color-list__colors .has-swatch .swatch-select.swatch-img div {
+  width: 2.9rem;
+  height: 2.9rem;
   border-radius: 50%;
-  margin-right: 0.3rem;
 }
 
-.parts-color-list__colors .has-swatch .swatch-select.swatch-img > div img {
+.parts-color-list__colors .has-swatch .swatch-select.swatch-img div img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -2456,6 +2454,11 @@ input:not(:active) + .slider-drop-container h4 {
   font-size: 1rem;
   height: auto;
   width: auto;
+  margin-left: 0.3rem;
+}
+
+.parts-color-list__colors .has-swatch .swatch-container {
+  top: 2.9rem;
 }
 
 .slider-detail-custom .slick-list,

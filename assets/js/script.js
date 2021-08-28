@@ -2146,23 +2146,79 @@ $(".swatch-list")
   .each(function () {
     let thisLi = $(this);
     let colorCode = $(this).data("color");
+    let colorCode2 = $(this).data("color2");
+    let colorCode3 = $(this).data("color3");
     let colorName = $(this).attr("data-colorName");
+    let chosenFabric, selectedFabric;
+
+    let fabricType = $(this).parent().attr("fabric-type");
+    let fabricWool = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div>`;
+    let fabricLeather = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/Genuine_Leather.png"/></div>`;
+    let fabricSnaps = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/snaps.png"/></div>`;
+    let fabricBands = `<div style="display: inline-block; position: relative; top:0; left:0; margin: 0 auto; overflow: hidden; position: relative;">
+    <div style="position: absolute; top: 0; left:0; background-color:${colorCode}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_main_color.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+    <div style="position: absolute; top: 0; left:0; background-color:${colorCode2}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_4_lines.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+    <div style="position: absolute;top: 0; left:0; background-color:${colorCode3}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_2_lines.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+    <div style="display: inline-block; position: absolute; top:0; left:0;"><img src="./assets/images/icons/band-combo/tricot.png" style="display: inline-block; width:100%"></div>
+    </div>`;
+
+    if (fabricType == "leather") {
+      chosenFabric = fabricLeather;
+    } else if (fabricType == "snaps") {
+      chosenFabric = fabricSnaps;
+    } else if (fabricType == "bands") {
+      chosenFabric = fabricBands;
+    } else {
+      chosenFabric = fabricWool;
+    }
+
     let selectedcolorCode = thisLi
       .parent()
       .find(".selected-color")
       .data("color");
+    let selectedcolorCode2 = thisLi
+      .parent()
+      .find(".selected-color")
+      .data("color2");
+    let selectedcolorCode3 = thisLi
+      .parent()
+      .find(".selected-color")
+      .data("color3");
     let selectedcolorName = thisLi
       .parent()
       .find(".selected-color")
       .attr("data-colorName");
-    if (thisLi.hasClass("selected-color")) {
-      $(".swatch-img").html(
-        `<div style="background-color:${selectedcolorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${selectedcolorName}</span>`
-      );
+
+    // For Fabric Divs
+    let selectedfabricWool = `<div style="background-color:${selectedcolorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${selectedcolorName}</span>`;
+    let selectedfabricLeather = `<div style="background-color:${selectedcolorCode}"><img src="./assets/images/icons/Genuine_Leather.png"/></div><span>${selectedcolorName}</span>`;
+    let selectedfabricSnaps = `<div style="background-color:${selectedcolorCode}"><img src="./assets/images/icons/snaps.png"/></div><span>${selectedcolorName}</span>`;
+    let selectedfabricBands = `<div style="display: inline-block; position: relative; top:0; left:0; margin: 0 auto; overflow: hidden; position: relative;">
+    <div style="position: absolute; top: 0; left:0; background-color:${selectedcolorCode}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_main_color.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+    <div style="position: absolute; top: 0; left:0; background-color:${selectedcolorCode2}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_4_lines.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+    <div style="position: absolute;top: 0; left:0; background-color:${selectedcolorCode3}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_2_lines.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+    <div style="display: inline-block; position: absolute; top:0; left:0;"><img src="./assets/images/icons/band-combo/tricot.png" style="display: inline-block; width:100%"></div>
+    </div><span>${selectedcolorName}</span>`;
+
+    if (fabricType == "leather") {
+      selectedFabric = selectedfabricLeather;
+    } else if (fabricType == "snaps") {
+      selectedFabric = selectedfabricSnaps;
+    } else if (fabricType == "bands") {
+      selectedFabric = selectedfabricBands;
+    } else {
+      selectedFabric = selectedfabricWool;
     }
-    $(this).append(
-      `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div>`
-    );
+
+    if (thisLi.hasClass("selected-color")) {
+      thisLi
+        .parent()
+        .parent()
+        .parent()
+        .find(".swatch-img")
+        .html(selectedFabric);
+    }
+    $(this).append(chosenFabric);
 
     $(this).on("click", function () {
       $(".swatch-list>li").removeClass("selected-color");
@@ -2184,14 +2240,24 @@ $(".swatch-list")
         .parent()
         .find(".img-icon-color")
         .css("background", colorCode);
-      $(this)
-        .parent()
-        .parent()
-        .parent()
-        .find(".swatch-img")
-        .html(
-          `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${colorName}</span>`
-        );
+
+      // For Fabric Divs
+      let newfabricWool = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${colorName}</span>`;
+      let newfabricLeather = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/Genuine_Leather.png"/></div><span>${colorName}</span>`;
+      let newfabricSnaps = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/snaps.png"/></div><span>${colorName}</span>`;
+      let newfabricBands = ``;
+
+      if (fabricType == "leather") {
+        chosenFabric = newfabricLeather;
+      } else if (fabricType == "snaps") {
+        chosenFabric = newfabricSnaps;
+      } else if (fabricType == "bands") {
+        chosenFabric = newfabricBands;
+      } else {
+        chosenFabric = newfabricWool;
+      }
+
+      $(this).parent().parent().parent().find(".swatch-img").html(chosenFabric);
     });
   });
 
