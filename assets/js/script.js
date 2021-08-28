@@ -2237,7 +2237,7 @@ $(".swatch-list")
     $(this).append(chosenFabric);
 
     $(this).on("click", function () {
-      $(".swatch-list>li").removeClass("selected-color");
+      $(this).parent().find("li").removeClass("selected-color");
       $(this)
         .addClass("selected-color")
         .parent()
@@ -2406,4 +2406,12 @@ $(".clipart-add").click(function (e) {
 });
 $(".btn-cancle").click(function () {
   $($(this).data("target")).slideUp();
+});
+
+// Zoom In Zoom Out Btn
+$(".container-zoom-out").click(function () {
+  let target = $(this).data("target");
+  let width = $(target).find("div.slick-current > div > div").style.width;
+  result = width -= 10;
+  console.log(result);
 });
