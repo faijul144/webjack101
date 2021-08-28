@@ -2381,19 +2381,19 @@ input:not(:active) + .slider-drop-container h4 {
   object-fit: contain;
 }
 
-.img-direct-edit ul {
+.img-direct-edit {
   display: flex;
   margin: 1.6rem -0.5rem 0.8rem;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.img-direct-edit ul li {
+.img-direct-edit li {
   margin-bottom: 1rem;
   padding: 0 0.5rem;
 }
 
-.img-direct-edit ul li button {
+.img-direct-edit li button {
   border: 0;
   background: var(--fourth-white);
   padding: 0.3rem 1rem;
@@ -2411,7 +2411,7 @@ input:not(:active) + .slider-drop-container h4 {
   -o-transition: all 0.3s ease;
 }
 
-.img-direct-edit ul li button.active-effect {
+.img-direct-edit li button.active-effect {
   color: var(--primary-white);
   background: var(--primary);
 }
