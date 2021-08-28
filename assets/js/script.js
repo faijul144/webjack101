@@ -2273,8 +2273,19 @@ $(".added-texts-opt li button").on("click", function () {
   }
 });
 
-$(".swatch-select").on("click", function () {
-  $(this).parent().find(".swatch-container").toggleClass("fadeUpIn");
+$(".swatch-select").on("click", function (e) {
+  e.stopPropagation();
+  if ($(this).parent().find(".swatch-container").hasClass("fadeUpIn")) {
+    $(this).parent().find(".swatch-container").removeClass("fadeUpIn");
+  } else {
+    $(".swatch-container").removeClass("fadeUpIn");
+    $(this).parent().find(".swatch-container").addClass("fadeUpIn");
+  }
+});
+
+$("body").click(function (evt) {
+  if ($(".swatch-container").hasClass("fadeUpIn"))
+    $(".swatch-container").removeClass("fadeUpIn");
 });
 
 // Custom Range Slider 2
