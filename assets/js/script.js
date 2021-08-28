@@ -2227,12 +2227,6 @@ $(".swatch-list")
         .parent()
         .find(".swatch-img")
         .html(selectedFabric);
-      thisLi
-        .parent()
-        .parent()
-        .parent()
-        .find(".stroke")
-        .css("background-color", selectedFabric);
     }
     $(this).append(chosenFabric);
 
@@ -2250,20 +2244,6 @@ $(".swatch-list")
       if (targetInput !== undefined || targetInput !== false) {
         $(targetInput).css("color", colorCode);
       }
-      $(this)
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .find(".img-icon-color button")
-        .css("background", colorCode);
-      $(this)
-        .parent()
-        .parent()
-        .parent()
-        .parent()
-        .find(".img-sm-icon-color button")
-        .css("background", colorCode);
 
       // For Fabric Divs
       let newfabricWool = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${colorName}</span>`;
@@ -2350,14 +2330,12 @@ $(".custom-txt-sliders").each(function () {
 // Edit Selected Toogle
 $(".img-direct-edit").hide();
 $(".edit-selected").each(function () {
+  let type = $(this).data("for");
+  let target = $(this).data("target");
   $(this).click(function (e) {
-    $(this)
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".img-direct-edit")
-      .slideDown();
+    if (type == "images") {
+      $(this).parent().parent().parent().find(target).slideDown();
+    }
   });
 });
 
@@ -2391,11 +2369,18 @@ $(".sure-btn").click(function (e) {
 $("#add-new-text").hide();
 $("[data-action]").click(function (e) {
   e.preventDefault();
+  let type = $(this).data("for");
+  let target = $(this).data("target");
   if ($(this).data("action") == "new-text-field") {
-    $("#add-new-text").slideDown();
+    $(target).slideDown();
   }
   if ($(this).data("action") == "cancel-field") {
-    $($(this).data("target")).slideUp();
+    if (type == "images") {
+      $(this).parent().parent().parent().parent().find(target).slideUp();
+    }
+    if (type == "text") {
+      $(target).slideUp();
+    }
   }
 });
 
@@ -2409,9 +2394,9 @@ $(".btn-cancle").click(function () {
 });
 
 // Zoom In Zoom Out Btn
-$(".container-zoom-out").click(function () {
-  let target = $(this).data("target");
-  let width = $(target).find("div.slick-current > div > div").style.width;
-  result = width -= 10;
-  console.log(result);
-});
+// $(".container-zoom-out").click(function () {
+//   let target = $(this).data("target");
+//   let width = $(target).find("div.slick-current > div > div").style.width;
+//   result = width -= 10;
+//   console.log(result);
+// });
