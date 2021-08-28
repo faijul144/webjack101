@@ -2245,7 +2245,12 @@ $(".swatch-list")
       let newfabricWool = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div><span>${colorName}</span>`;
       let newfabricLeather = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/Genuine_Leather.png"/></div><span>${colorName}</span>`;
       let newfabricSnaps = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/snaps.png"/></div><span>${colorName}</span>`;
-      let newfabricBands = ``;
+      let newfabricBands = `<div style="display: inline-block; position: relative; top:0; left:0; margin: 0 auto; overflow: hidden; position: relative;">
+      <div style="position: absolute; top: 0; left:0; background-color:${colorCode}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_main_color.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+      <div style="position: absolute; top: 0; left:0; background-color:${colorCode2}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_4_lines.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+      <div style="position: absolute;top: 0; left:0; background-color:${colorCode3}; -webkit-mask-image: url(./assets/images/icons/band-combo/tricot_2_lines.png); -webkit-mask-position: center; -webkit-mask-repeat: no-repeat; -webkit-mask-size: contain;"></div>
+      <div style="display: inline-block; position: absolute; top:0; left:0;"><img src="./assets/images/icons/band-combo/tricot.png" style="display: inline-block; width:100%"></div>
+      </div><span>${colorName}</span>`;
 
       if (fabricType == "leather") {
         chosenFabric = newfabricLeather;
