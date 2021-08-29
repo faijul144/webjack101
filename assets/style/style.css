@@ -1237,6 +1237,10 @@ header .cart_qty_cls {
   -o-transition: all 0.3s ease;
 }
 
+.ratio_asos .product-wrapper-grid .product-box {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.24);
+}
+
 .product-box .cart-info.cart-wrap,
 .product-box .cart-wrap.cart-wrap,
 .product-wrap .cart-info.cart-wrap,
