@@ -1973,6 +1973,13 @@ input::placeholder {
   top: 4rem;
 }
 
+.has-swatch.img-sm-icon-color .swatch-select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 8rem;
+}
+
 .has-swatch.img-sm-icon-color .swatch-select > div {
   width: 2.5rem;
   height: 2.5rem;
@@ -1986,10 +1993,10 @@ input::placeholder {
 
 .has-swatch.img-sm-icon-color .swatch-select span {
   background: transparent;
-  display: none;
+  display: block;
   font-size: 1rem;
   position: relative;
-  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   height: auto;
   width: auto;
 }
@@ -2046,9 +2053,11 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0.5rem;
-  max-height: 13rem;
-  overflow: auto;
   width: 16rem;
+}
+
+.has-swatch .swatch-container .swatch-list [data-titleText]::before {
+  top: -2rem;
 }
 
 .has-swatch .swatch-container .swatch-list li {
@@ -2248,7 +2257,8 @@ input:not(:active) + .slider-drop-container h4 {
 .added-text-list li .added-text-action button {
   padding: 0.5rem 0.8rem;
   font-size: 0.8rem;
-  background: var(--primary-white);
+  background: var(--primary);
+  color: var(--primary-white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
   border: 0;
   border-radius: 0.3rem;
@@ -2265,15 +2275,7 @@ input:not(:active) + .slider-drop-container h4 {
 }
 
 .added-text-list li .added-text-action button:hover {
-  color: var(--primary-white);
-}
-
-.added-text-list li .added-text-action button:hover:first-child {
-  background-color: var(--warning);
-}
-
-.added-text-list li .added-text-action button:hover:last-child {
-  background-color: var(--danger);
+  background-color: var(--primary-dark);
 }
 
 .added-text-list li > img {
@@ -2440,7 +2442,7 @@ input:not(:active) + .slider-drop-container h4 {
   position: relative;
 }
 
-[data-titleText]::after {
+[data-titleText]::before {
   content: attr(data-titletext);
   position: absolute;
   top: -2.5rem;
@@ -2469,7 +2471,7 @@ input:not(:active) + .slider-drop-container h4 {
   -o-transition: all 0.3s ease;
 }
 
-[data-titleText]:hover::after {
+[data-titleText]:hover::before {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -2814,7 +2816,7 @@ input:not(:active) + .slider-drop-container h4 {
   padding: 0.4rem 1rem;
   font-size: 1rem;
   text-transform: capitalize;
-  background-color: var(--danger);
+  background-color: var(--primary);
   border: 0;
   color: var(--primary-white);
   text-transform: uppercase;
@@ -2826,7 +2828,7 @@ input:not(:active) + .slider-drop-container h4 {
 }
 
 .btn-cancle:hover {
-  background-color: #c82333;
+  background-color: var(--primary-dark);
 }
 
 .btn-primary.customize-buy-btn {
@@ -2917,4 +2919,8 @@ input:not(:active) + .slider-drop-container h4 {
 
 .text-area-con {
   padding: 0 0.5rem;
+}
+
+.w-80 {
+  width: 80%;
 }

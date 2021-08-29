@@ -2161,6 +2161,8 @@ $(".swatch-list")
     let colorName = $(this).attr("data-colorName");
     let chosenFabric, selectedFabric;
 
+    $(this).attr("data-titleText", colorName);
+
     let fabricType = $(this).parent().attr("fabric-type");
     let fabricWool = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/wool.png"/></div>`;
     let fabricLeather = `<div style="background-color:${colorCode}"><img src="./assets/images/icons/Genuine_Leather.png"/></div>`;
@@ -2286,7 +2288,7 @@ $("[data-related]").each(function () {
 
 $("button[data-action]").on("click", function () {
   if ($(this).data("action") == "bold") {
-    $("#add-textinput").toggleClass("font-weight-bold");
+    $($(this).data("target")).toggleClass("font-weight-bold");
     $(this).toggleClass("active-effect");
   }
   if ($(this).data("action") == "stroke") {
@@ -2392,11 +2394,3 @@ $(".clipart-add").click(function (e) {
 $(".btn-cancle").click(function () {
   $($(this).data("target")).slideUp();
 });
-
-// Zoom In Zoom Out Btn
-// $(".container-zoom-out").click(function () {
-//   let target = $(this).data("target");
-//   let width = $(target).find("div.slick-current > div > div").style.width;
-//   result = width -= 10;
-//   console.log(result);
-// });
