@@ -13,7 +13,7 @@
   display: block;
   overflow: hidden;
   outline: none !important;
-  height: 18px;
+  height: 16px;
   top: 30px;
   background: #f1f1f1;
   border-radius: 16px;
@@ -25,7 +25,7 @@
   top: 0;
   left: 0;
   width: 11%;
-  height: 18px; }
+  height: 16px; }
 
 .irs-line-mid {
   position: absolute;
@@ -33,7 +33,7 @@
   top: 0;
   left: 9%;
   width: 82%;
-  height: 18px; }
+  height: 16px; }
 
 .irs-line-right {
   position: absolute;
@@ -41,14 +41,14 @@
   top: 0;
   right: 0;
   width: 11%;
-  height: 18px; }
+  height: 16px; }
 
 .irs-bar {
   position: absolute;
   display: block;
   left: 0;
   width: 0;
-  height: 18px;
+  height: 16px;
   top: 30px;
   background: #04abed;
 }
@@ -60,7 +60,7 @@
   left: 0;
   height: 10px;
   top: 33px;
-  width: 14px;
+  width: 12px;
   border: 1px solid #428bca;
   border-right: 0;
   background: #428bca;
@@ -87,8 +87,8 @@
   cursor: default;
   z-index: 1;
   top: 30px;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background: #14bcff;
   border-radius: 27px;
   cursor: pointer; }

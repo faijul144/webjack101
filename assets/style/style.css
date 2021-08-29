@@ -1237,10 +1237,6 @@ header .cart_qty_cls {
   -o-transition: all 0.3s ease;
 }
 
-.ratio_asos .product-wrapper-grid .product-box {
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.24);
-}
-
 .product-box .cart-info.cart-wrap,
 .product-box .cart-wrap.cart-wrap,
 .product-wrap .cart-info.cart-wrap,
@@ -2187,31 +2183,15 @@ input::placeholder {
     height: 1rem;
     cursor: pointer;
     background: #055394;
-    box-shadow: -340px 0 0 328.5px #1597ff, inset 0 0 0 3px #1597ff;
+    box-shadow: -340px 0 0 328.5px #04abed, inset 0 0 0 3.5px #1597ff;
     border-radius: 50%;
     transition: box-shadow 0.2s ease-in-out;
     position: relative;
   }
   .custom-txt-sliders:active::-webkit-slider-thumb {
-    background: #0d7fdb;
-    box-shadow: -340px 0 0 328.5px #1597ff, inset 0 0 0 3px #1597ff;
+    background: #055394;
+    box-shadow: -340px 0 0 328.5px #04abed, inset 0 0 0 3.5px #1597ff;
   }
-}
-
-.custom-txt-sliders::-moz-range-progress {
-  background-color: #43e5f7;
-}
-
-.custom-txt-sliders::-moz-range-track {
-  background-color: #9a905d;
-}
-
-.custom-txt-sliders::-ms-fill-lower {
-  background-color: #43e5f7;
-}
-
-.custom-txt-sliders::-ms-fill-upper {
-  background-color: #9a905d;
 }
 
 .slider-drop-container {
@@ -2247,7 +2227,7 @@ input::placeholder {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #1597ff;
+  background-color: #04abed;
   border-radius: 0 50% 50% 50%;
   transform: rotate(45deg);
   z-index: -1;
@@ -2977,14 +2957,10 @@ input:not(:active) + .slider-drop-container h4 {
   font-size: 1rem;
 }
 
-.irs-slider {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.18);
-}
-
 .irs-slider::after {
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 9px;
+  width: 9px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

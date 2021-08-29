@@ -5148,7 +5148,8 @@ footer p {
 .product-pagination .pagination .page-item a:hover{
   background-color: #04abed;
   color: #fff;
-  border-color: #04abed;
+  border-color: rgba(255, 255, 255, 0.2);
+
 }
 
 .product-pagination .pagination .page-item:last-child .page-link {
@@ -5164,7 +5165,7 @@ footer p {
 .product-pagination .pagination .page-item.active a {
   background-color: #04abed;
   color: #fff;
-  border-color: #04abed;
+  border-color: #dddddd;
 }
 .product-pagination .product-search-count-bottom {
   -webkit-box-pack: end;
