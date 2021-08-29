@@ -1690,9 +1690,12 @@
     if (thisItem.hasClass("open")) {
       thisItem.removeClass("open");
       nextLevel.slideUp(speed);
+      nextLevel.removeClass("overflow-visible");
     } else {
       thisItem.addClass("open");
-      nextLevel.slideDown(speed);
+      nextLevel.slideDown(speed, function () {
+        nextLevel.addClass("overflow-visible");
+      });
     }
   });
   $(".color-selector ul li").on("click", function (e) {
@@ -2391,4 +2394,9 @@ $(".clipart-add").click(function (e) {
 });
 $(".btn-cancle").click(function () {
   $($(this).data("target")).slideUp();
+});
+
+$(".collapse-block-title").on("shown.bs.collapse", function () {
+  console.log("works");
+  $(this).next(".collection-collapse-block-content").css("overflow", "visible");
 });
