@@ -2943,7 +2943,7 @@ input:not(:active) + .slider-drop-container h4 {
 }
 
 .swal2-styled:focus {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .text-add-btns .btn {
