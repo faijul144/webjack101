@@ -2924,3 +2924,7 @@ input:not(:active) + .slider-drop-container h4 {
 .w-80 {
   width: 80%;
 }
+
+.swal2-styled:focus {
+  box-shadow: none;
+}

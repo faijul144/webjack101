@@ -2347,10 +2347,12 @@ $(".sure-btn").click(function (e) {
   var mes = $(this).data("message");
   Swal.fire({
     title: mes,
+    icon: "warning",
     showDenyButton: false,
     showCancelButton: true,
     confirmButtonText: `Yes`,
     confirmButtonColor: "#f74646",
+    iconColor: "#f74646",
     cancelButtonColor: "#04abed",
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
