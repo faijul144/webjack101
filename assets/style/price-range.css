@@ -48,9 +48,15 @@
   display: block;
   left: 0;
   width: 0;
-  height: 4px;
-  top: 33px;
-  background: red; }
+  height: 1.2rem;
+  top: 28px;
+  background: #04abed;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
 
 .irs-bar-edge {
   position: absolute;
@@ -86,9 +92,9 @@
   cursor: default;
   z-index: 1;
   top: 30px;
-  width: 8px;
-  height: 12px;
-  background: red;
+  width: 15px;
+  height: 15px;
+  background: #04abed;
   border-radius: 27px;
   cursor: pointer; }
 
@@ -160,7 +166,7 @@
   border-radius: 3px;
   -moz-border-radius: 3px;
   font-weight: 700;
-  background-color: red;
+  background-color: #04abed;
   color: white;
   padding: 3px; }
 

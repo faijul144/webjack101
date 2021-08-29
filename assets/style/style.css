@@ -2046,7 +2046,7 @@ input::placeholder {
   padding: 0.8rem 0rem;
   z-index: 999;
   background: var(--primary-white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.13);
 }
 
 .has-swatch .swatch-container .swatch-list {
@@ -2924,4 +2924,9 @@ input:not(:active) + .slider-drop-container h4 {
 .text-add-btns .btn {
   padding: 0.4rem 0.8rem;
   font-size: 0.95rem;
+}
+
+.product-filter-content .select2 {
+  width: 100% !important;
+  font-size: 1rem;
 }
