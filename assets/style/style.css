@@ -2336,7 +2336,8 @@ input:not(:active) + .slider-drop-container h4 {
 .added-img-list > li > div:nth-child(1) .added-text-action button {
   padding: 0.5rem 0.8rem;
   font-size: 0.8rem;
-  background: var(--primary-white);
+  background: var(--primary);
+  color: var(--primary-white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
   border: 0;
   border-radius: 0.3rem;
@@ -2353,15 +2354,7 @@ input:not(:active) + .slider-drop-container h4 {
 }
 
 .added-img-list > li > div:nth-child(1) .added-text-action button:hover {
-  color: var(--primary-white);
-}
-
-.added-img-list > li > div:nth-child(1) .added-text-action button:hover:first-child {
-  background-color: var(--warning);
-}
-
-.added-img-list > li > div:nth-child(1) .added-text-action button:hover:last-child {
-  background-color: var(--danger);
+  background: var(--primary-dark);
 }
 
 .added-img-list > li > div:nth-child(1) > img {
