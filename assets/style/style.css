@@ -2569,8 +2569,8 @@ input:not(:active) + .slider-drop-container h4 {
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
-  background: var(--secondary-white);
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.16);
+  background: var(--primary);
+  color: var(--primary-white);
   cursor: pointer;
   border: 0;
   transition: all 0.3s ease;
@@ -2584,8 +2584,7 @@ input:not(:active) + .slider-drop-container h4 {
 
 .add-cus-img label:hover,
 .add-cus-img button:hover {
-  background: var(--primary);
-  color: var(--primary-white);
+  background: var(--primary-dark);
 }
 
 .parts-color-list > li {
@@ -2611,11 +2610,11 @@ input:not(:active) + .slider-drop-container h4 {
 
 .parts-color-list__title {
   font-size: 1.1rem;
-  width: 50%;
+  width: 55%;
 }
 
 .parts-color-list__colors {
-  width: 50%;
+  width: 45%;
   text-align: left;
 }
 
