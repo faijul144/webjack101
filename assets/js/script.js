@@ -316,6 +316,11 @@
   /*=====================
      14. slick slider
      ==========================*/
+  $(".home-slider").slick({
+    dots: true,
+    arrows: true,
+  });
+
   $(".slide-1").slick({
     dots: false,
     arrows: false,
