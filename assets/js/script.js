@@ -317,12 +317,8 @@
      14. slick slider
      ==========================*/
   $(".slide-1").slick({
-    dots: true,
+    dots: false,
     arrows: false,
-    // prevArrow:
-    //   '<button class="slick-prev" aria-label="Previous" type="button"><i class="fas fa-chevron-left"></i></button>',
-    // nextArrow:
-    //   '<button class="slick-next" aria-label="Next" type="button"><i class="fas fa-chevron-right"></i></button>',
   });
 
   $(".tenproducts-slider").slick({

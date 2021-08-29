@@ -87,6 +87,27 @@
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1196,6 +1217,26 @@ header .cart_qty_cls {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .ratio_asos .product-wrapper-grid .col-lg-6 .bg-size:before {
+    padding-top: 25.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .ratio_asos .product-wrapper-grid .col-lg-6 .bg-size:before {
+    padding-top: 30.5rem;
+  }
+}
+
+.ratio_asos .product-wrapper-grid > div > div {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
 .product-box .cart-info.cart-wrap,
 .product-box .cart-wrap.cart-wrap,
 .product-wrap .cart-info.cart-wrap,
@@ -2090,11 +2131,11 @@ input::placeholder {
   -o-transform: translateY(0);
 }
 
-.has-swatch .swatch-container .selected-color div {
+.selected-color div {
   position: relative;
 }
 
-.has-swatch .swatch-container .selected-color div::after {
+.selected-color div::after {
   font: normal normal normal 12px/1 FontAwesome;
   content: "\f00c";
   position: absolute;
@@ -2961,4 +3002,55 @@ input:not(:active) + .slider-drop-container h4 {
   border-color: var(--primary);
   box-shadow: none;
   outline: none;
+}
+
+.offer-slider .product-box {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+}
+
+.collection-collapse-block-content .swatch-list {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 0.5rem;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.collection-collapse-block-content .swatch-list li {
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.collection-collapse-block-content .swatch-list li::before {
+  left: 0;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  top: 2.5rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  z-index: 9999;
+}
+
+.collection-collapse-block-content .swatch-list li img {
+  width: 2rem;
+  height: auto;
+}
+
+.open-overflow-visible.open .collection-collapse-block-content {
+  overflow: visible !important;
+}
+
+.btn.btn-icon-sm {
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.9rem;
+  width: 1.9rem;
 }
