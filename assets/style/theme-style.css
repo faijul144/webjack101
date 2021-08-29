@@ -6525,15 +6525,25 @@ footer p {
 }
 .checkout-page .checkout-form input[type="text"], .checkout-page .checkout-form input[type="email"], .checkout-page .checkout-form input[type="password"], .checkout-page .checkout-form input[type="tel"], .checkout-page .checkout-form input[type="number"], .checkout-page .checkout-form input[type="url"] {
   width: 100%;
-  padding: 0 22px;
-  height: 45px;
+  padding: 0 .5rem;
+  height: 35px;
   border: 1px solid #dddddd;
+  border-radius: .3rem;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 .checkout-page .checkout-form select, .checkout-page .checkout-form textarea {
   width: 100%;
-  padding: 0 22px;
-  height: 45px;
+  padding: 0 .5rem;
+  height: 35px;
   border: 1px solid #dddddd;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
 }
 .checkout-page .check-box {
   line-height: 24px;
@@ -6623,8 +6633,8 @@ footer p {
 }
 .order-box .sub-total .shopping-option label {
   position: relative;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   padding-left: 10px;
   color: #6f6f6f;
 }
@@ -12268,10 +12278,10 @@ footer p {
     margin-bottom: 15px;
   }
   .checkout-page .checkout-form input[type="text"], .checkout-page .checkout-form input[type="email"], .checkout-page .checkout-form input[type="password"], .checkout-page .checkout-form input[type="tel"], .checkout-page .checkout-form input[type="number"], .checkout-page .checkout-form input[type="url"] {
-    height: 40px;
+    height: 35px;
   }
   .checkout-page .checkout-form select, .checkout-page .checkout-form textarea {
-    height: 40px;
+    height: 35px;
   }
 
   .rtl .full-box .center-slider .offer-slider .product-box .product-detail .rating, .rtl .full-box .center-slider .offer-slider .product-box .product-detail h4, .rtl .full-box .center-slider .offer-slider .product-box .product-detail h6, .rtl .full-box .center-slider .offer-slider .product-box .product-detail .color-variant {
