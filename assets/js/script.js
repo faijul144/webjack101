@@ -1682,6 +1682,7 @@
   /*=====================
      17 .category page
      ==========================*/
+
   $(".collapse-block-title").on("click", function (e) {
     e.preventDefault;
     var speed = 300;
@@ -2394,9 +2395,4 @@ $(".clipart-add").click(function (e) {
 });
 $(".btn-cancle").click(function () {
   $($(this).data("target")).slideUp();
-});
-
-$(".collapse-block-title").on("shown.bs.collapse", function () {
-  console.log("works");
-  $(this).next(".collection-collapse-block-content").css("overflow", "visible");
 });
