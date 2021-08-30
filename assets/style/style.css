@@ -344,6 +344,12 @@ header .cart_qty_cls {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1F1F1',endColorstr='#F1F1F1' , GradientType=0);
 }
 
+@media (min-width: 1200px) {
+  .slider-bg .container {
+    max-width: 1140px;
+  }
+}
+
 .slider-img {
   width: 65%;
 }
@@ -1072,15 +1078,15 @@ header .cart_qty_cls {
   width: 1.45rem;
 }
 
-@media screen and (min-width: 1400) {
+@media screen and (max-width: 1367px) {
   .home-slider:hover .slick-prev {
-    left: 50px;
+    left: 30px;
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (max-width: 1367px) {
   .home-slider:hover .slick-next {
-    right: 50px;
+    right: 30px;
   }
 }
 
@@ -1096,11 +1102,11 @@ header .cart_qty_cls {
 
 .home-slider .slick-prev::before,
 .home-slider .slick-next::before {
-  transition: all 0.1s ease;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .home-slider .slick-prev:hover::before,
@@ -1976,6 +1982,38 @@ input::placeholder {
 .img-direct-edit .added-texts-opt li button.active-effect {
   color: var(--primary-white);
   background: var(--primary);
+}
+
+.add-text-container .added-texts-opt li .range-slider,
+.img-direct-edit .added-texts-opt li .range-slider {
+  width: 6rem;
+}
+
+.add-text-container .added-texts-opt li .range-slider .irs-single,
+.img-direct-edit .added-texts-opt li .range-slider .irs-single {
+  background: var(--primary);
+  color: var(--primary-white);
+}
+
+.add-text-container .added-texts-opt li .range-slider .irs-bar,
+.add-text-container .added-texts-opt li .range-slider .irs-line,
+.add-text-container .added-texts-opt li .range-slider .irs-bar-edge,
+.add-text-container .added-texts-opt li .range-slider .irs-slider,
+.img-direct-edit .added-texts-opt li .range-slider .irs-bar,
+.img-direct-edit .added-texts-opt li .range-slider .irs-line,
+.img-direct-edit .added-texts-opt li .range-slider .irs-bar-edge,
+.img-direct-edit .added-texts-opt li .range-slider .irs-slider {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.add-text-container .added-texts-opt li .range-slider .irs-single,
+.img-direct-edit .added-texts-opt li .range-slider .irs-single {
+  top: -5px;
 }
 
 .has-swatch {

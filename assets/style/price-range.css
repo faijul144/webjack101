@@ -58,14 +58,13 @@
   display: block;
   top: 0;
   left: 0;
-  height: 10px;
-  top: 33px;
-  width: 12px;
-  border: 1px solid #428bca;
+  height: 16px;
+  top: 30px;
+  width: 9px;
   border-right: 0;
-  background: #428bca;
-  background: -webkit-gradient(linear, left bottom, left top, from(#428bca), to(#7fc3e8));
-  background: linear-gradient(to top, #428bca 0%, #7fc3e8 100%);
+  background: #04abed;
+  background: -webkit-gradient(linear, left bottom, left top, from(#04abed), to(#04abed));
+  background: linear-gradient(to top, #04abed 0%, #04abed 100%);
   border-radius: 16px 0 0 16px;
   -moz-border-radius: 16px 0 0 16px; }
 

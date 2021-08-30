@@ -319,6 +319,10 @@
   $(".home-slider").slick({
     dots: true,
     arrows: true,
+    prevArrow:
+      '<button class="slick-prev" aria-label="Previous" type="button"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button class="slick-next" aria-label="Next" type="button"><i class="fas fa-chevron-right"></i></button>',
   });
 
   $(".slide-1").slick({
@@ -2332,6 +2336,67 @@ $(".custom-txt-sliders").each(function () {
       .find("h4")
       .html(rangePercent + "<span></span>");
   });
+});
+
+$(".single-range-slider").each(function () {
+  let cusSlider = $(this),
+    instanceNew,
+    min = $(this).data("min"),
+    max = $(this).data("max"),
+    from = $(this).val(),
+    step = $(this).data("step");
+
+  cusSlider.ionRangeSlider({
+    skin: "big",
+    min: min,
+    max: max,
+    // onStart: updateInputs,
+    // onChange: updateInputs,
+    step: step,
+    from: from,
+    prettify_enabled: true,
+    force_edges: true,
+  });
+
+  instanceNew = cusSlider.data("ionRangeSlider");
+
+  // function updateInputs(data) {
+  //   from = data.from;
+  //   to = data.to;
+
+  //   $inputFrom.prop("value", from);
+  //   $inputTo.prop("value", to);
+  // }
+
+  // $inputFrom.on("input", function () {
+  //   var val = $(this).prop("value");
+
+  //   // validate
+  //   if (val < min) {
+  //     val = min;
+  //   } else if (val > to) {
+  //     val = to;
+  //   }
+
+  //   instance.update({
+  //     from: val,
+  //   });
+  // });
+
+  // $inputTo.on("input", function () {
+  //   var val = $(this).prop("value");
+
+  //   // validate
+  //   if (val < from) {
+  //     val = from;
+  //   } else if (val > max) {
+  //     val = max;
+  //   }
+
+  //   instance.update({
+  //     to: val,
+  //   });
+  // });
 });
 
 // Edit Selected Toogle

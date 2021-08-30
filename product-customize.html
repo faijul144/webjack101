@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/style/jquery.rateyo.min.css">
     <link rel="stylesheet" href="./assets/style/magnific-popup.css">
     <link rel="stylesheet" href="./assets/style/select2.min.css">
+    <link rel="stylesheet" href="./assets/style/price-range.css">
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/theme-style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -933,13 +934,9 @@
                                                     </select>
                                                 </li>
                                                 <li data-titleText="Arc Type" class="selected-arc">
-                                                    <input type="range" min="-750" max="750" value="-60" step="5"
-                                                        name="arcHeightRange" id="arcHeightRange"
-                                                        class="custom-txt-sliders">
-                                                    <div class="slider-drop-container">
-                                                        <div class="slider-drop-subcontainer">
-                                                            <h4>0<span></span></h4>
-                                                        </div>
+                                                    <div class="range-slider">
+                                                        <input type="text" data-min="-750" data-max="750"
+                                                            class="single-range-slider" value="-60" data-step="5" />
                                                     </div>
                                                 </li>
                                                 <li data-titleText="Underlying Arc" class="selected-arc">
@@ -960,17 +957,15 @@
                                                     </select>
                                                 </li>
                                                 <li data-titleText="Text Spacing">
-                                                    <input type="range" min="-25" max="40" value="4" step="1"
-                                                        name="Spacing" id="Spacing" class="custom-txt-sliders"
-                                                        data-titleText="Text Spacing">
+                                                    <div class="range-slider">
+                                                        <input type="text" data-min="-25" data-max="40"
+                                                            class="single-range-slider" value="4" data-step="1" />
+                                                    </div>
                                                 </li>
                                                 <li data-titleText="Text Rotate">
-                                                    <input type="range" min="-180" max="180" value="0" name="Rotate"
-                                                        id="Rotate" class="custom-txt-sliders">
-                                                    <div class="slider-drop-container">
-                                                        <div class="slider-drop-subcontainer">
-                                                            <h4>0<span></span></h4>
-                                                        </div>
+                                                    <div class="range-slider">
+                                                        <input type="text" data-min="-180" data-max="180"
+                                                            class="single-range-slider" value="0" data-step="1" />
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1532,6 +1527,9 @@
 
     <!-- Sweetalert 2 js-->
     <script src="./assets/js/sweetalert2.js"></script>
+
+    <!-- Sweetalert 2 js-->
+    <script src="./assets/js/price-range.js"></script>
 
     <!-- Bootstrap js-->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
