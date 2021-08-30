@@ -5551,8 +5551,13 @@ footer p {
   margin-top: 10px;
 }
 .cart-section tbody tr td .mobile-cart-content .qty-box, .wishlist-section tbody tr td .mobile-cart-content .qty-box {
-  border-right: 1px solid #dddddd;
-  border-radius: 5px;
+  border-right: 0;
+  /*border-right: 1px solid #dddddd;
+  */border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .cart-section tbody tr td .mobile-cart-content .qty-box .input-group .form-control, .wishlist-section tbody tr td .mobile-cart-content .qty-box .input-group .form-control {
   width: 48px;
