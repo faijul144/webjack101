@@ -2438,6 +2438,17 @@ $(".sure-btn").on("click", function (e) {
   });
 });
 
+// Password View
+$(".password-input i").on("click", function () {
+  if ($(this).hasClass("fa-eye-slash")) {
+    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+    $(this).parent().find("input").attr("type", "text");
+  } else {
+    $(this).addClass("fa-eye-slash").removeClass("fa-eye");
+    $(this).parent().find("input").attr("type", "password");
+  }
+});
+
 // Custom Add
 
 $("#add-new-text").hide();
