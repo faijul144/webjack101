@@ -1,5 +1,5 @@
 var countDiv = document.getElementById("timer"),
-  sec = countDiv.getAttribute("data-sec"),
+  endDay = new Date(countDiv.getAttribute("end-day")),
   secpass,
   countDown = setInterval(function () {
     "use strict";
@@ -10,19 +10,29 @@ var countDiv = document.getElementById("timer"),
 function secpass() {
   "use strict";
 
-  var min = Math.floor(sec / 60),
-    remSec = sec % 60;
+  var now = new Date();
 
-  if (remSec < 10) {
-    remSec = "0" + remSec;
-  }
-  if (min < 10) {
-    min = "0" + min;
-  }
-  countDiv.innerHTML = min + ":" + remSec;
+  var days = endDay - now;
 
-  if (sec > 0) {
-    sec = sec - 1;
+  var hours = Math.floor(days / 1000 / (60 * 60));
+  var minutes = Math.floor((days % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((days % (1000 * 60)) / 1000);
+
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
+
+  countDiv.innerHTML = hours + ":" + minutes + ":" + seconds;
+
+  if (seconds > 0) {
+    seconds = seconds - 1;
   } else {
     clearInterval(countDown);
 

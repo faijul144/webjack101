@@ -3005,3 +3005,78 @@ input::placeholder {
 .overflow-visible {
   overflow: visible !important;
 }
+
+.cart-table .qty-box input {
+  border-right: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.extra-txt-link {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.extra-txt-link:hover {
+  color: var(--primary);
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 1px;
+  background: var(--tertiary-white);
+  margin: 3rem 0;
+}
+
+.divider::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background: var(--primary-white);
+  color: var(--primary-dark);
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 1rem;
+  top: -13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--tertiary-white);
+}
+
+.btn-fb {
+  background: #3b5998;
+}
+
+.btn-google {
+  background: #d34836;
+}
+
+.btn-fb,
+.btn-google {
+  color: var(--primary-white);
+  margin-bottom: 1rem;
+}
+
+.btn-fb i,
+.btn-google i {
+  margin-right: 1rem;
+}
+
+.btn-fb:hover,
+.btn-google:hover {
+  color: var(--primary-white);
+}

@@ -2412,7 +2412,7 @@ $(".edit-selected").each(function () {
 });
 
 // Delete Sure
-$(".sure-btn").click(function (e) {
+$(".sure-btn").on("click", function (e) {
   e.preventDefault();
   var mes = $(this).data("message");
   Swal.fire({

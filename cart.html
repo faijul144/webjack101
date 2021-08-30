@@ -263,7 +263,8 @@
                 <div class="col-sm-12">
                     <div class="cart_counter">
                         <div class="countdownholder">
-                            Your cart will be expired in<span id="timer" data-sec="7200"></span> minutes!
+                            Your cart will be expired in<span id="timer" end-day="2021-09-04 00:00:00"></span>
+                            hours!
                         </div>
                         <a href="checkout.html" class="cart_checkout btn btn-primary btn-xs">check out</a>
                     </div>
@@ -287,11 +288,23 @@
                                 </td>
                                 <td><a href="#">cotton shirt</a>
                                     <div class="mobile-cart-content row">
-                                        <div class="col">
+                                        <div class="col collection-wrapper">
                                             <div class="qty-box">
                                                 <div class="input-group">
-                                                    <input type="text" name="quantity" class="form-control input-number"
-                                                        value="1">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-left-minus"
+                                                            data-type="minus" data-field="quantity-main">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+                                                    </span>
+                                                    <input type="text" name="quantity-main"
+                                                        class="form-control input-number" value="1">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-right-plus"
+                                                            data-type="plus" data-field="quantity-main">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -299,8 +312,8 @@
                                             <h2 class="td-color">$63.00</h2>
                                         </div>
                                         <div class="col">
-                                            <h2 class="td-color"><a href="#" class="icon"><i class="ti-close"></i></a>
-                                            </h2>
+                                            <button class="btn btn-primary btn-icon-sm sure-btn"
+                                                data-message="Remove Item?"><i class="fa fa-times"></i></button>
                                         </div>
                                     </div>
                                 </td>
@@ -327,48 +340,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#" class="icon"><i class="ti-close"></i></a></td>
-                                <td>
-                                    <h2 class="td-color">$4539.00</h2>
+                                <td><button class="btn btn-primary btn-icon-sm sure-btn" data-message="Remove Item?"><i
+                                            class="fa fa-times"></i></button>
                                 </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="#"><img src="./assets/images/products/front-tan.png" alt=""></a>
-                                </td>
-                                <td><a href="#">cotton shirt</a>
-                                    <div class="mobile-cart-content row">
-                                        <div class="col">
-                                            <div class="qty-box">
-                                                <div class="input-group">
-                                                    <input type="number" name="quantity"
-                                                        class="form-control input-number" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="td-color">$63.00</h2>
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="td-color"><a href="#" class="icon"><i class="ti-close"></i></a>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <h2>$63.00</h2>
-                                </td>
-                                <td>
-                                    <div class="qty-box">
-                                        <div class="input-group">
-                                            <input type="number" name="quantity" class="form-control input-number"
-                                                value="1">
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><a href="#" class="icon"><i class="ti-close"></i></a></td>
                                 <td>
                                     <h2 class="td-color">$4539.00</h2>
                                 </td>
@@ -381,11 +355,23 @@
                                 </td>
                                 <td><a href="#">cotton shirt</a>
                                     <div class="mobile-cart-content row">
-                                        <div class="col">
+                                        <div class="col collection-wrapper">
                                             <div class="qty-box">
                                                 <div class="input-group">
-                                                    <input type="number" name="quantity"
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-left-minus"
+                                                            data-type="minus" data-field="quantity-main">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+                                                    </span>
+                                                    <input type="text" name="quantity-main"
                                                         class="form-control input-number" value="1">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-right-plus"
+                                                            data-type="plus" data-field="quantity-main">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -393,23 +379,102 @@
                                             <h2 class="td-color">$63.00</h2>
                                         </div>
                                         <div class="col">
-                                            <h2 class="td-color"><a href="#" class="icon"><i class="ti-close"></i></a>
-                                            </h2>
+                                            <button class="btn btn-primary btn-icon-sm sure-btn"
+                                                data-message="Remove Item?"><i class="fa fa-times"></i></button>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <h2>$63.00</h2>
                                 </td>
-                                <td>
+                                <td class="collection-wrapper">
                                     <div class="qty-box">
                                         <div class="input-group">
-                                            <input type="number" name="quantity" class="form-control input-number"
+                                            <span class="input-group-prepend">
+                                                <button type="button" class="btn quantity-left-minus" data-type="minus"
+                                                    data-field="quantity-main">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </span>
+                                            <input type="text" name="quantity-main" class="form-control input-number"
                                                 value="1">
+                                            <span class="input-group-prepend">
+                                                <button type="button" class="btn quantity-right-plus" data-type="plus"
+                                                    data-field="quantity-main">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#" class="icon"><i class="ti-close"></i></a></td>
+                                <td><button class="btn btn-primary btn-icon-sm sure-btn" data-message="Remove Item?"><i
+                                            class="fa fa-times"></i></button></td>
+                                <td>
+                                    <h2 class="td-color">$4539.00</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#"><img src="./assets/images/products/front-tan.png" alt=""></a>
+                                </td>
+                                <td><a href="#">cotton shirt</a>
+                                    <div class="mobile-cart-content row">
+                                        <div class="col collection-wrapper">
+                                            <div class="qty-box">
+                                                <div class="input-group">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-left-minus"
+                                                            data-type="minus" data-field="quantity-main">
+                                                            <i class="fa fa-minus"></i>
+                                                        </button>
+                                                    </span>
+                                                    <input type="text" name="quantity-main"
+                                                        class="form-control input-number" value="1">
+                                                    <span class="input-group-prepend">
+                                                        <button type="button" class="btn quantity-right-plus"
+                                                            data-type="plus" data-field="quantity-main">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="td-color">$63.00</h2>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-primary btn-icon-sm sure-btn"
+                                                data-message="Remove Item?"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2>$63.00</h2>
+                                </td>
+                                <td class="collection-wrapper">
+                                    <div class="qty-box">
+                                        <div class="input-group">
+                                            <span class="input-group-prepend">
+                                                <button type="button" class="btn quantity-left-minus" data-type="minus"
+                                                    data-field="quantity-main">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </span>
+                                            <input type="text" name="quantity-main" class="form-control input-number"
+                                                value="1">
+                                            <span class="input-group-prepend">
+                                                <button type="button" class="btn quantity-right-plus" data-type="plus"
+                                                    data-field="quantity-main">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-primary btn-icon-sm sure-btn" data-message="Remove Item?"><i
+                                            class="fa fa-times"></i></button></td>
                                 <td>
                                     <h2 class="td-color">$4539.00</h2>
                                 </td>
