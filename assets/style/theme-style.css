@@ -4748,11 +4748,12 @@ footer p {
   margin-bottom: 12px;
 }
 .collection-collapse-block .collection-collapse-block-content .collection-brand-filter .collection-filter-checkbox:first-child {
-  margin-top: 30px;
+  margin-top: 12px;
 }
 .collection-collapse-block .collection-collapse-block-content .collection-brand-filter .collection-filter-checkbox:last-child {
   margin-bottom: 0;
 }
+
 /* .collection-collapse-block .collection-collapse-block-content .collection-brand-filter .collection-filter-checkbox label {
   text-transform: uppercase;
   cursor: pointer;

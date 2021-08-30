@@ -2477,3 +2477,9 @@ $(".clipart-add").click(function (e) {
 $(".btn-cancle").click(function () {
   $($(this).data("target")).slideUp();
 });
+
+$(".date").each(function () {
+  $(this).datepicker({
+    format: "dd-mm-yy",
+  });
+});
