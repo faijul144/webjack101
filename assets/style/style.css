@@ -1038,17 +1038,30 @@ header .cart_qty_cls {
   padding: 0.8rem !important;
   top: 60px !important;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
-  width: 35rem !important;
+  width: 38rem !important;
 }
 
 #main-menu li ul.mega-menu .has-subcat h5 {
   font-size: 1.1rem;
   font-weight: normal;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
-#main-menu li ul.mega-menu .has-subcat ul {
-  padding-left: 1rem;
+#main-menu li ul.mega-menu .has-subcat > ul {
+  padding-left: 1.5rem;
+}
+
+#main-menu li ul.mega-menu .has-subcat > ul li {
+  position: relative;
+}
+
+#main-menu li ul.mega-menu .has-subcat > ul li::before {
+  content: "\f101";
+  font: normal normal normal 20px/1 FontAwesome;
+  position: absolute;
+  left: -1rem;
+  top: 8px;
 }
 
 #main-menu li ul.mega-menu .link-section a {

@@ -2483,3 +2483,15 @@ $(".date").each(function () {
     format: "dd-mm-yy",
   });
 });
+
+// Subcategory under mega menu hide
+
+$("#main-menu .has-subcat").each(function () {
+  $(this).find("ul").slideUp();
+  $(this).on("mouseenter", function () {
+    $(this).find("ul").slideDown();
+  });
+  $(this).on("mouseleave", function () {
+    $(this).find("ul").slideUp();
+  });
+});
