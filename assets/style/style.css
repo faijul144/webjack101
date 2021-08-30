@@ -1041,6 +1041,15 @@ header .cart_qty_cls {
   width: 35rem !important;
 }
 
+#main-menu li ul.mega-menu .has-subcat h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+#main-menu li ul.mega-menu .has-subcat ul {
+  padding-left: 1rem;
+}
+
 #main-menu li ul.mega-menu .link-section a {
   font-size: 1.1rem;
   padding: 0.5rem 0;
