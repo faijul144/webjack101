@@ -3212,3 +3212,25 @@ a.ui-button:active,
 .cat-name .sub-cats {
   padding-left: 1.4rem;
 }
+
+.dashboard .theme-form input {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.dashboard .theme-form input:focus {
+  box-shadow: none;
+}
+
+.dashboard .theme-form .select2,
+.dashboard .theme-form .select2-selection,
+.dashboard .theme-form .select2-selection__arrow {
+  height: 40px !important;
+}
+
+.dashboard .theme-form .select2-selection__rendered {
+  line-height: 40px;
+}
