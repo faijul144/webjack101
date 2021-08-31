@@ -2358,8 +2358,6 @@ $(".single-range-slider").each(function () {
     skin: "big",
     min: min,
     max: max,
-    // onStart: updateInputs,
-    // onChange: updateInputs,
     step: step,
     from: from,
     prettify_enabled: true,
@@ -2367,44 +2365,6 @@ $(".single-range-slider").each(function () {
   });
 
   instanceNew = cusSlider.data("ionRangeSlider");
-
-  // function updateInputs(data) {
-  //   from = data.from;
-  //   to = data.to;
-
-  //   $inputFrom.prop("value", from);
-  //   $inputTo.prop("value", to);
-  // }
-
-  // $inputFrom.on("input", function () {
-  //   var val = $(this).prop("value");
-
-  //   // validate
-  //   if (val < min) {
-  //     val = min;
-  //   } else if (val > to) {
-  //     val = to;
-  //   }
-
-  //   instance.update({
-  //     from: val,
-  //   });
-  // });
-
-  // $inputTo.on("input", function () {
-  //   var val = $(this).prop("value");
-
-  //   // validate
-  //   if (val < from) {
-  //     val = from;
-  //   } else if (val > max) {
-  //     val = max;
-  //   }
-
-  //   instance.update({
-  //     to: val,
-  //   });
-  // });
 });
 
 // Edit Selected Toogle
@@ -2502,4 +2462,33 @@ $("#main-menu .has-subcat").each(function () {
   $(this).on("mouseleave", function () {
     $(this).find("ul").slideUp();
   });
+});
+
+$(".reply-field").hide();
+$(".reply-btn").each(function () {
+  $(this).on("click", function (e) {
+    e.preventDefault();
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".reply-field")
+      .slideToggle();
+  });
+});
+
+$("#size-table").find("td span:first-child").removeClass("d-none");
+$("#size-table").find("td span:last-child").addClass("d-none");
+
+$(".size-change input").on("change", function () {
+  let target = $(this).data("target");
+  if ($(this).prop("checked")) {
+    $(target).find("td span:first-child").addClass("d-none");
+    $(target).find("td span:last-child").removeClass("d-none");
+  } else {
+    $(target).find("td span:first-child").removeClass("d-none");
+    $(target).find("td span:last-child").addClass("d-none");
+  }
 });

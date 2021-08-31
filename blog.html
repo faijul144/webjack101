@@ -60,11 +60,11 @@
                             <img src="./assets/images/icons/user.svg" alt="User Icon" witdth="24" />
                             <span>My Account</span>
                             <ul class="onhover-show-div pl-3 pr-1">
-                                <!-- <li><a href="javascript:void(0)">Dashboard</a></li>
+                                <li><a href="dashboard.html">Dashboard</a></li>
                                 <li><a href="javascript:void(0)">Settings</a></li>
-                                <li><a href="javascript:void(0)">Logout</a></li> -->
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="register.html">Sign Up</a></li>
+                                <li><a href="javascript:void(0)">Logout</a></li>
+                                <!-- <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Sign Up</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -261,7 +261,7 @@
                     <nav aria-label="breadcrumb" class="theme-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Address Book</li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
                         </ol>
                     </nav>
                 </div>
@@ -272,97 +272,273 @@
 
 
     <!-- section start -->
-    <section class="section-b-space">
+    <section class="section-b-space blog-page ratio2_3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="account-sidebar"><a class="popup-btn">my account</a></div>
-                    <div class="dashboard-left">
-                        <div class="collection-mobile-back"><span class="filter-back"><i class="fa fa-angle-left"
-                                    aria-hidden="true"></i> back</span></div>
-                        <div class="block-content">
-                            <ul>
-                                <li><a href="dashboard.html">Dashboard</a></li>
-                                <li><a href="./profile.html">My Account</a></li>
-                                <li class="active"><a href="./address.html">Address Book</a></li>
-                                <li><a href="wishlist.html">My Wishlist</a></li>
-                                <li class="last"><a href="#">Log Out</a></li>
+                <!--Blog sidebar start-->
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="blog-sidebar">
+                        <div class="theme-card">
+                            <h4>Recent Blog</h4>
+                            <ul class="recent-blog">
+                                <li>
+                                    <div class="media"><a href="blog-details.html"><img class="img-fluid"
+                                                src="./assets/images/blog/1.jpg" alt="Generic placeholder image"></a>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>25 Dec 2018</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media"><a href="blog-details.html"><img class="img-fluid"
+                                                src="./assets/images/blog/2.jpg" alt="Generic placeholder image"></a>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>25 Dec 2018</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media"><a href="blog-details.html"><img class="img-fluid"
+                                                src="./assets/images/blog/3.jpg" alt="Generic placeholder image"></a>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>25 Dec 2018</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media"><a href="blog-details.html"><img class="img-fluid"
+                                                src="./assets/images/blog/4.jpg" alt="Generic placeholder image"></a>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>25 Dec 2018</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media"><a href="blog-details.html"><img class="img-fluid"
+                                                src="./assets/images/blog/5.jpg" alt="Generic placeholder image"></a>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>25 Dec 2018</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="theme-card">
+                            <h4>Popular Blog</h4>
+                            <ul class="popular-blog">
+                                <li>
+                                    <div class="media">
+                                        <div class="blog-date"><span>03 </span><span>may</span></div>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>Injected humour the like</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                    <p>it look like readable English. Many desktop publishing text.</p>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="blog-date"><span>03 </span><span>may</span></div>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>Injected humour the like</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                    <p>it look like readable English. Many desktop publishing text.</p>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="blog-date"><span>03 </span><span>may</span></div>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>Injected humour the like</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                    <p>it look like readable English. Many desktop publishing text.</p>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="blog-date"><span>03 </span><span>may</span></div>
+                                        <div class="media-body align-self-center">
+                                            <a href="blog-details.html">
+                                                <h6>Injected humour the like</h6>
+                                            </a>
+                                            <p>0 hits</p>
+                                        </div>
+                                    </div>
+                                    <p>it look like readable English. Many desktop publishing text.</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="dashboard-right">
-                        <div class="dashboard">
-                            <div class="page-title">
-                                <h2>Address Book</h2>
+                <!--Blog sidebar start-->
+                <!--Blog List start-->
+                <div class="col-xl-9 col-lg-8 col-md-7 order-sec">
+                    <div class="row blog-media">
+                        <div class="col-xl-6">
+                            <div class="blog-left">
+                                <a href="blog-details.html"><img src="./assets/images/blog/1.jpg"
+                                        class="img-fluid bg-img" alt=""></a>
                             </div>
-                            <form class="theme-form">
-                                <div class="form-row row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="country">Country</label>
-                                            <select name="country" id="country">
-                                                <option value="us" selected>United Stated</option>
-                                                <option value="au">Australia</option>
-                                                <option value="ca">Canada</option>
-                                                <option value="in">India</option>
-                                                <option value="nz">New Zealand</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="region">Region</label>
-                                            <select name="region" id="region">
-                                                <option value="tn" selected>Northeast</option>
-                                                <option value="tm">Midwest</option>
-                                                <option value="ts">South</option>
-                                                <option value="tw">West</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="area">Area</label>
-                                            <select name="area" id="area">
-                                                <option value="tn" selected>Northeast</option>
-                                                <option value="tm">Midwest</option>
-                                                <option value="ts">South</option>
-                                                <option value="tw">West</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="city">City</label>
-                                            <select name="city" id="city">
-                                                <option value="Florida" selected>Florida</option>
-                                                <option value="Toronto">Toronto</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="address">Address</label>
-                                            <input type="text" class="form-control" id="address"
-                                                placeholder="Your Address">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mt-4">
-                                        <button class="btn btn-primary">Save</button>
-                                        <button class="btn btn-primary sure-btn"
-                                            data-message="Your Changes Will Be Dicarded. Are You Sure?">Cancle</button>
-                                    </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="blog-right">
+                                <div>
+                                    <h6>25 January 2018</h6><a href="blog-details.html">
+                                        <h4>you how all this mistaken idea of denouncing pleasure and praising pain was
+                                            born.</h4>
+                                    </a>
+                                    <ul class="post-social">
+                                        <li>Posted By : Admin Admin</li>
+                                        <li><i class="fa fa-heart"></i> 5 Hits</li>
+                                        <li><i class="fa fa-comments"></i> 10 Comment</li>
+                                    </ul>
+                                    <p>Consequences that are extremely painful. Nor again is there anyone who loves or
+                                        pursues or desires to obtain pain of itself, because it is pain, but because
+                                        occasionally circumstances occur in which toil and pain can procure him some
+                                        great pleasure.</p>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
+                    <div class="row blog-media">
+                        <div class="col-xl-6">
+                            <div class="blog-left">
+                                <a href="blog-details.html"><img src="./assets/images/blog/2.jpg"
+                                        class="img-fluid bg-img" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="blog-right">
+                                <div>
+                                    <h6>25 January 2018</h6><a href="blog-details.html">
+                                        <h4>you how all this mistaken idea of denouncing pleasure and praising pain was
+                                            born.</h4>
+                                    </a>
+                                    <ul class="post-social">
+                                        <li>Posted By : Admin Admin</li>
+                                        <li><i class="fa fa-heart"></i> 5 Hits</li>
+                                        <li><i class="fa fa-comments"></i> 10 Comment</li>
+                                    </ul>
+                                    <p>Consequences that are extremely painful. Nor again is there anyone who loves or
+                                        pursues or desires to obtain pain of itself, because it is pain, but because
+                                        occasionally circumstances occur in which toil and pain can procure him some
+                                        great pleasure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog-media">
+                        <div class="col-xl-6">
+                            <div class="blog-left">
+                                <a href="blog-details.html"><img src="./assets/images/blog/3.jpg"
+                                        class="img-fluid bg-img" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="blog-right">
+                                <div>
+                                    <h6>25 January 2018</h6><a href="blog-details.html">
+                                        <h4>you how all this mistaken idea of denouncing pleasure and praising pain was
+                                            born.</h4>
+                                    </a>
+                                    <ul class="post-social">
+                                        <li>Posted By : Admin Admin</li>
+                                        <li><i class="fa fa-heart"></i> 5 Hits</li>
+                                        <li><i class="fa fa-comments"></i> 10 Comment</li>
+                                    </ul>
+                                    <p>Consequences that are extremely painful. Nor again is there anyone who loves or
+                                        pursues or desires to obtain pain of itself, because it is pain, but because
+                                        occasionally circumstances occur in which toil and pain can procure him some
+                                        great pleasure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog-media">
+                        <div class="col-xl-6">
+                            <div class="blog-left">
+                                <a href="blog-details.html"><img src="./assets/images/blog/4.jpg"
+                                        class="img-fluid bg-img" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="blog-right">
+                                <div>
+                                    <h6>25 January 2018</h6><a href="blog-details.html">
+                                        <h4>you how all this mistaken idea of denouncing pleasure and praising pain was
+                                            born.</h4>
+                                    </a>
+                                    <ul class="post-social">
+                                        <li>Posted By : Admin Admin</li>
+                                        <li><i class="fa fa-heart"></i> 5 Hits</li>
+                                        <li><i class="fa fa-comments"></i> 10 Comment</li>
+                                    </ul>
+                                    <p>Consequences that are extremely painful. Nor again is there anyone who loves or
+                                        pursues or desires to obtain pain of itself, because it is pain, but because
+                                        occasionally circumstances occur in which toil and pain can procure him some
+                                        great pleasure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-pagination only-count">
+                        <div class="theme-paggination-block">
+                            <div class="row">
+                                <div class="col-xl-6 col-md-6 col-sm-12">
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination">
+                                            <li class="page-item"><a class="page-link" href="#"
+                                                    aria-label="Previous"><span aria-hidden="true"><i
+                                                            class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                                                    <span class="sr-only">Previous</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
+                                                        aria-hidden="true"><i class="fa fa-chevron-right"
+                                                            aria-hidden="true"></i></span> <span
+                                                        class="sr-only">Next</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-xl-6 col-md-6 col-sm-12">
+                                    <div class="product-search-count-bottom">
+                                        <h5>Showing Blogs 4 of 10 Result</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <!--Blog List start-->
             </div>
         </div>
     </section>
-    <!-- section end -->
+    <!-- Section ends -->
 
 
     <!-- footer -->
@@ -397,7 +573,7 @@
                             </div>
                             <div class="footer-contant">
                                 <ul>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
                                     <li><a href="#">Review</a></li>
                                     <li><a href="./product-collection.html">Products</a></li>
                                     <li><a href="#">Size Chart</a></li>
@@ -412,7 +588,7 @@
                             </div>
                             <div class="footer-contant">
                                 <ul>
-                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="dashboard.html">My Account</a></li>
                                     <li><a href="./faq.html">Help & Faq’s</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Terms</a></li>
@@ -456,7 +632,6 @@
     </footer>
 
 
-
     <!-- tap to top -->
     <div class="tap-top top-cls">
         <div>
@@ -489,9 +664,6 @@
 
     <!-- Bootstrap js-->
     <script src="./assets/js/select2.min.js"></script>
-
-    <!-- Sweetalert 2 js-->
-    <script src="./assets/js/sweetalert2.js"></script>
 
     <!-- Bootstrap js-->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
