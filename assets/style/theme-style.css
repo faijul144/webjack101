@@ -4175,7 +4175,7 @@ footer p {
 }
 
 .footer-theme .footer-logo {
-  margin-bottom: 18px;
+  margin-bottom: 7px;
 }
 .footer-theme .sub-title h4 {
   color: #1a1a1a;
@@ -5287,8 +5287,8 @@ footer p {
 }
 .faq-section .accordion.theme-accordion .card .card-body p {
   margin-bottom: 0;
-  font-size: 14px;
-  color: #555555;
+  font-size: 16px;
+  color: #1a1a1a;
   line-height: 1.8;
   letter-spacing: 0.06em;
 }

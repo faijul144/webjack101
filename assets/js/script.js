@@ -1253,6 +1253,14 @@
     magnify: 0.6,
   });
 
+  // Go To Specific Slider Using External Btn
+  $("[data-slide]").click(function (e) {
+    e.preventDefault();
+    let slider = $(this).data("slider");
+    let slideno = $(this).data("slide");
+    $(slider).slick("slickGoTo", slideno - 1);
+  });
+
   $("#quick-view").on("shown.bs.modal", function (e) {
     $(".product-slick").slick({
       slidesToShow: 1,

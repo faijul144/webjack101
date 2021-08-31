@@ -820,13 +820,14 @@ header .cart_qty_cls {
 }
 
 .footer-logo img {
-  width: 20rem;
-  margin-bottom: 1rem;
+  width: 12rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer-logo p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--primary-dark);
+  line-height: 30px;
 }
 
 .footer-title {
@@ -1879,6 +1880,18 @@ input::placeholder {
   flex-direction: column;
   top: 0.8rem;
   left: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.cuztomize-product--product-sides.right {
+  left: unset;
+  right: 2rem;
 }
 
 .cuztomize-product--product-sides .icon {
@@ -1915,6 +1928,11 @@ input::placeholder {
 .cuztomize-product--product-sides .icon:hover img {
   filter: brightness(0) invert(100%);
   -webkit-filter: brightness(0) invert(100%);
+}
+
+.cuztomize-product:hover .cuztomize-product--product-sides {
+  opacity: 1;
+  visibility: visible;
 }
 
 .img-direct-edit {
@@ -3233,4 +3251,8 @@ a.ui-button:active,
 
 .dashboard .theme-form .select2-selection__rendered {
   line-height: 40px;
+}
+
+.btn-link:focus {
+  text-decoration: none;
 }
