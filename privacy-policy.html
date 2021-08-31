@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/fontawesome.css">
+    <link rel="stylesheet" href="./assets/style/all.min.css">
+
+    <link rel="stylesheet" href="./assets/style/slick.css">
+    <link rel="stylesheet" href="./assets/style/slick-theme.css">
+    <link rel="stylesheet" href="./assets/style/animate.css">
+    <link rel="stylesheet" href="./assets/style/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="./assets/style/select2.min.css">
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/theme-style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Webjacket</title>
+</head>
+
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="mobile-fix-option"></div>
+        <div class="top-header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="header-contact">
+                        <ul>
+                            <li><img src="./assets/images/icons/phone.svg" alt="phone icon" /> 1-888-869-1555</li>
+                            <li><a href="mailto:sales@webjacket.com"><img src="./assets/images/icons/mail.svg"
+                                        alt="mail icon" /> sales@webjacket.com</a></li>
+                        </ul>
+                    </div>
+                    <ul class="header-dropdown">
+                        <li><a href="order-tracking.html"><img src="./assets/images/icons/order-track.svg"
+                                    alt="track icon" /> track your order</a>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <img src="./assets/images/icons/globe.svg" alt="globe icon" />
+                            <span>Language</span>
+                            <ul class="onhover-show-div px-1">
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/united-states.png"
+                                            witdth="24" class="my-0 mx-2" />English</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/france.png" witdth="24"
+                                            class="my-0 mx-2" />Frence</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/australia.png"
+                                            witdth="24" class="my-0 mx-2" />Australia</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/afghanistan.png"
+                                            witdth="24" class="my-0 mx-2" />Afghanistan</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/argentina.png"
+                                            witdth="24" class="my-0 mx-2" />Argentina</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/belgium.png"
+                                            witdth="24" class="my-0 mx-2" />Belgium</a></li>
+                            </ul>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <img src="./assets/images/icons/user.svg" alt="User Icon" witdth="24" />
+                            <span>My Account</span>
+                            <ul class="onhover-show-div pl-3 pr-1">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="javascript:void(0)">Settings</a></li>
+                                <li><a href="javascript:void(0)">Logout</a></li>
+                                <!-- <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Sign Up</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-menu">
+                        <div class="row w-100 m-0 align-items-center">
+                            <div class="col-md-3">
+                                <div class="brand-logo">
+                                    <a href="index.html"><img src="./assets/images/logo.svg" class="img-fluid"
+                                            alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-right">
+                                    <div class="icon-nav">
+                                        <ul>
+                                            <li>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <div class="search-bar">
+                                                        <input type="text" placeholder="search product">
+                                                        <a class="btn"><i class="fa fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="position-relative">
+                                                <a href="wishlist.html" class="wishlist-link">
+                                                    <div>
+                                                        <img src="./assets/images/icons/heart.svg" class="img-fluid"
+                                                            alt="">
+                                                    </div>
+                                                    <span class="cart_qty_cls">2</span>
+                                                </a>
+                                            </li>
+                                            <li class="onhover-div mobile-cart">
+                                                <div><img src="./assets/images/icons/shopping-basket.svg"
+                                                        class="img-fluid" alt="">
+                                                    <i class="ti-shopping-cart"></i>
+                                                </div>
+                                                <span class="cart_qty_cls">2</span>
+                                                <ul class="show-div shopping-cart">
+                                                    <li>
+                                                        <div class="media">
+                                                            <a href="#"><img alt="" class="me-3"
+                                                                    src="./assets/images/products/collar-gold.png"></a>
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <h4>item name</h4>
+                                                                </a>
+                                                                <h4><span>1 x $ 299.00</span></h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                                                    aria-hidden="true"></i></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media">
+                                                            <a href="#"><img alt="" class="me-3"
+                                                                    src="./assets/images/products/collar-blue.png"></a>
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <h4>item name</h4>
+                                                                </a>
+                                                                <h4><span>1 x $ 299.00</span></h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                                                    aria-hidden="true"></i></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="total">
+                                                            <h5>
+                                                                <span>subtotal :</span> <span>$299.00</span>
+                                                            </h5>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="buttons"><a href="cart.html" class="view-cart">view
+                                                                cart</a> <a href="checkout.html"
+                                                                class="checkout">checkout</a></div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="#" class="btn btn-primary ml-2" tabindex="0"><img
+                                                        src="./assets/images/icons/user.svg" alt="User Icon" /> Join
+                                                    Now</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div>
+                                    <nav id="main-nav">
+                                        <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                                        <ul id="main-menu"
+                                            class="sm pixelstrap sm-horizontal d-flex justify-content-center">
+                                            <li>
+                                                <div class="mobile-back text-end">Back<i class="fa fa-angle-right ps-2"
+                                                        aria-hidden="true"></i></div>
+                                            </li>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li>
+                                                <a href="javascript:void(0)">Product Category</a>
+                                                <ul class="mega-menu clothing-menu">
+                                                    <li>
+                                                        <div class="row m-0">
+                                                            <div class="col-md-7 pl-0">
+                                                                <div class="link-section">
+                                                                    <ul class="has-preview">
+                                                                        <li class="has-subcat">
+                                                                            <h5>Versity Jackets</h5>
+                                                                            <ul>
+                                                                                <li><a href="./product-collection.html"
+                                                                                        data-preview-src="./assets/images/products/front-blue.png">All
+                                                                                        Versity
+                                                                                        Jackets</a></li>
+                                                                                <li><a href="./product-collection-2.html"
+                                                                                        data-preview-src="./assets/images/products/front-tan.png">Wool
+                                                                                        and
+                                                                                        genuine
+                                                                                        leather<span
+                                                                                            class="new-tag">new</span></a>
+                                                                                </li>
+                                                                                <li><a href="./product-collection-3.html"
+                                                                                        data-preview-src="./assets/images/products/front-gold.png">Wool
+                                                                                        and faux
+                                                                                        leather</a></li>
+                                                                                <li><a href="./product-collection-4.html"
+                                                                                        data-preview-src="./assets/images/products/front-blue.png">Cheerleader
+                                                                                        zipper
+                                                                                        jackets</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="./product-collection-5.html"
+                                                                                data-preview-src="./assets/images/products/front-blue.png">The
+                                                                                Classic</a></li>
+                                                                        <li><a href="./product-collection-6.html"
+                                                                                data-preview-src="./assets/images/products/front-tan.png">Byron
+                                                                                (Shirt) Collar</a>
+                                                                        </li>
+                                                                        <li><a href="./product-collection-7.html"
+                                                                                data-preview-src="./assets/images/products/front-gold.png">Zippered
+                                                                                Hood</a></li>
+                                                                        <li><a href="./product-collection-8.html"
+                                                                                data-preview-src="./assets/images/products/front-blue.png">Sailor
+                                                                                Hood</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-5 p-0">
+                                                                <div class="link-section">
+                                                                    <div id="preview-menu-img"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+
+
+
+                                            </li>
+                                            <li>
+                                                <a href="./hot-deals.html" class="hotDeal"><img
+                                                        src="./assets/images/icons/flame.svg" alt="Hot Deal"
+                                                        class="mr-1" /> Hot
+                                                    Deal</a>
+                                            </li>
+                                            <li><a href="javascript:void(0)">Size Chart</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb End -->
+
+
+    <!-- privacy section start -->
+    <section class="privacy-page section-b-space">
+        <div class="container">
+
+            <h1>Privacy Policy</h1>
+
+            <p>At Webjacket, accessible from https://webjacket.com/, one of our main priorities is the privacy of
+                our visitors. This Privacy Policy document contains types of information that is collected and
+                recorded by Webjacket and how we use it.</p>
+
+            <p>If you have additional questions or require more information about our Privacy Policy, do not
+                hesitate to contact us.</p>
+
+            <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website
+                with regards to the information that they shared and/or collect in Webjacket. This policy is not
+                applicable to any information collected offline or via channels other than this website.</p>
+
+            <h2>Consent</h2>
+
+            <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+
+            <h2>Information we collect</h2>
+
+            <p>The personal information that you are asked to provide, and the reasons why you are asked to provide
+                it, will be made clear to you at the point we ask you to provide your personal information.</p>
+            <p>If you contact us directly, we may receive additional information about you such as your name, email
+                address, phone number, the contents of the message and/or attachments you may send us, and any other
+                information you may choose to provide.</p>
+            <p>When you register for an Account, we may ask for your contact information, including items such as
+                name, company name, address, email address, and telephone number.</p>
+
+            <h2>How we use your information</h2>
+
+            <p>We use the information we collect in various ways, including to:</p>
+
+            <ul>
+                <li>Provide, operate, and maintain our website</li>
+                <li>Improve, personalize, and expand our website</li>
+                <li>Understand and analyze how you use our website</li>
+                <li>Develop new products, services, features, and functionality</li>
+                <li>Communicate with you, either directly or through one of our partners, including for customer
+                    service, to provide you with updates and other information relating to the website, and for
+                    marketing and promotional purposes</li>
+                <li>Send you emails</li>
+                <li>Find and prevent fraud</li>
+            </ul>
+
+            <h2>Log Files</h2>
+
+            <p>Webjacket follows a standard procedure of using log files. These files log visitors when they visit
+                websites. All hosting companies do this and a part of hosting services' analytics. The information
+                collected by log files include internet protocol (IP) addresses, browser type, Internet Service
+                Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These
+                are not linked to any information that is personally identifiable. The purpose of the information is
+                for analyzing trends, administering the site, tracking users' movement on the website, and gathering
+                demographic information.</p>
+
+            <h2>Cookies and Web Beacons</h2>
+
+            <p>Like any other website, Webjacket uses 'cookies'. These cookies are used to store information
+                including visitors' preferences, and the pages on the website that the visitor accessed or visited.
+                The information is used to optimize the users' experience by customizing our web page content based
+                on visitors' browser type and/or other information.</p>
+
+            <p>For more general information on cookies, please read <a
+                    href="https://www.generateprivacypolicy.com/#cookies">"Cookies" article from the Privacy Policy
+                    Generator</a>.</p>
+
+            <h2>Google DoubleClick DART Cookie</h2>
+
+            <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to
+                serve ads to our site visitors based upon their visit to www.website.com and other sites on the
+                internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad
+                and content network Privacy Policy at the following URL – <a
+                    href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>
+            </p>
+
+
+            <h2>Advertising Partners Privacy Policies</h2>
+
+            <P>You may consult this list to find the Privacy Policy for each of the advertising partners of
+                Webjacket.</p>
+
+            <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that
+                are used in their respective advertisements and links that appear on Webjacket, which are sent
+                directly to users' browser. They automatically receive your IP address when this occurs. These
+                technologies are used to measure the effectiveness of their advertising campaigns and/or to
+                personalize the advertising content that you see on websites that you visit.</p>
+
+            <p>Note that Webjacket has no access to or control over these cookies that are used by third-party
+                advertisers.</p>
+
+            <h2>Third Party Privacy Policies</h2>
+
+            <p>Webjacket's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you
+                to consult the respective Privacy Policies of these third-party ad servers for more detailed
+                information. It may include their practices and instructions about how to opt-out of certain
+                options. </p>
+
+            <p>You can choose to disable cookies through your individual browser options. To know more detailed
+                information about cookie management with specific web browsers, it can be found at the browsers'
+                respective websites.</p>
+
+            <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+
+            <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+            <p>Request that a business that collects a consumer's personal data disclose the categories and specific
+                pieces of personal data that a business has collected about consumers.</p>
+            <p>Request that a business delete any personal data about the consumer that a business has collected.
+            </p>
+            <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+            </p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of
+                these rights, please contact us.</p>
+
+            <h2>GDPR Data Protection Rights</h2>
+
+            <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is
+                entitled to the following:</p>
+            <p>The right to access – You have the right to request copies of your personal data. We may charge you a
+                small fee for this service.</p>
+            <p>The right to rectification – You have the right to request that we correct any information you
+                believe is inaccurate. You also have the right to request that we complete the information you
+                believe is incomplete.</p>
+            <p>The right to erasure – You have the right to request that we erase your personal data, under certain
+                conditions.</p>
+            <p>The right to restrict processing – You have the right to request that we restrict the processing of
+                your personal data, under certain conditions.</p>
+            <p>The right to object to processing – You have the right to object to our processing of your personal
+                data, under certain conditions.</p>
+            <p>The right to data portability – You have the right to request that we transfer the data that we have
+                collected to another organization, or directly to you, under certain conditions.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of
+                these rights, please contact us.</p>
+
+            <h2>Children's Information</h2>
+
+            <p>Another part of our priority is adding protection for children while using the internet. We encourage
+                parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+            </p>
+
+            <p>Webjacket does not knowingly collect any Personal Identifiable Information from children under the
+                age of 13. If you think that your child provided this kind of information on our website, we
+                strongly encourage you to contact us immediately and we will do our best efforts to promptly remove
+                such information from our records.</p>
+
+
+        </div>
+    </section>
+    <!-- privacy section end -->
+
+
+
+    <!-- footer -->
+    <footer class="footer-light">
+        <section class="section-b-space bg-grey">
+            <div class="container">
+                <div class="row footer-theme partition-f">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-title footer-mobile-title">
+                            <h4>about</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <div class="footer-logo">
+                                <img src="./assets/images/logo.svg" alt="Logo">
+                                <p>DRAW AND DESIGN</p>
+                                <p>THAT YOU WISH FOR.</p>
+                            </div>
+
+                            <div class="footer-tel">
+                                <img src="./assets/images/icons/headphone.svg" alt="Call">
+                                <div class="contact-num">
+                                    <p>HAVE ANY QUESTION?</p>
+                                    <p class="number">1-888-869-1555</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h3>QUICK LINKS</h3>
+                            </div>
+                            <div class="footer-contant">
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="#">Review</a></li>
+                                    <li><a href="./product-collection.html">Products</a></li>
+                                    <li><a href="#">Size Chart</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h3>CUSTOMER AREA</h3>
+                            </div>
+                            <div class="footer-contant">
+                                <ul>
+                                    <li><a href="dashboard.html">My Account</a></li>
+                                    <li><a href="./faq.html">Help & Faq’s</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div>
+                            <div class="footer-title">
+                                <h3>FOLLOW US</h3>
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="footer-title mt-4">
+                                <h3>PAYMENT GATEWAY</h3>
+                            </div>
+                            <img src="./assets/images/icons/money-cards.svg" alt="Gateway Images" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-end">
+                            <p class="text-center">Copywrite By <i class="fa fa-copyright" aria-hidden="true"></i>
+                                WEBJACKET - 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- tap to top -->
+    <div class="tap-top top-cls">
+        <div>
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </div>
+    <!-- tap to top end -->
+
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- fly cart ui jquery-->
+    <script src="./assets/js/jquery-ui.min.js"></script>
+
+    <!-- exitintent jquery-->
+    <script src="./assets/js/jquery.zoom.min.js"></script>
+
+    <!-- slick js-->
+    <script src="./assets/js/slick.js"></script>
+
+    <!-- menu js-->
+    <script src="./assets/js/menu.js"></script>
+
+    <!-- rateyo js-->
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- rateyo js-->
+    <script src="./assets/js/jquery.rateyo.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/select2.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>

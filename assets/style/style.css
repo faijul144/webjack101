@@ -1035,6 +1035,13 @@ header .cart_qty_cls {
   z-index: -1;
 }
 
+@media screen and (min-width: 1200px) {
+  #main-menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 #main-menu li ul.mega-menu {
   padding: 0.8rem !important;
   top: 60px !important;
@@ -3334,4 +3341,44 @@ a.ui-button:active,
 #size-table tr td span {
   display: block;
   width: 6rem;
+}
+
+.privacy-page p {
+  font-size: 1rem;
+  color: var(--primary-dark);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-page h1,
+.privacy-page h2 {
+  margin: 1.5rem 0 1rem;
+}
+
+.privacy-page h1 {
+  font-size: 2.2rem;
+}
+
+.privacy-page h1:first-child {
+  margin-top: 0;
+}
+
+.privacy-page h2 {
+  font-size: 1.7rem;
+}
+
+.privacy-page a {
+  color: var(--primary) !important;
+}
+
+.privacy-page ul li {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+@media screen and (max-width: 1199) {
+  .d-sm-none {
+    display: none !important;
+  }
 }
