@@ -5701,7 +5701,7 @@ footer p {
 .blog-detail-page .comment-section {
   border-bottom: 1px solid #f1f1f1;
 }
-.blog-detail-page .comment-section li {
+.blog-detail-page .comment-section >li {
   padding-top: 60px;
   padding-bottom: 60px;
   border-top: 1px solid #f1f1f1;
