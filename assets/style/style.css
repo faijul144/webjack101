@@ -3513,6 +3513,7 @@ a.ui-button:active,
 
 .review-form-container.open {
   left: 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
 }
 
 .flag-select {
