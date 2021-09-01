@@ -3419,7 +3419,7 @@ a.ui-button:active,
 }
 
 .size-chart-page table tr:not(first-child):hover {
-  background-color: rgba(90, 34, 34, 0.09);
+  background-color: rgba(0, 0, 0, 0.09);
 }
 
 .meta-single-img {
