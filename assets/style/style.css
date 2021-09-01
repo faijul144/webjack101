@@ -3396,6 +3396,15 @@ a.ui-button:active,
   }
 }
 
+.size-chart-page table {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  overflow: hidden;
+}
+
 .size-chart-page table tr {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -3404,8 +3413,13 @@ a.ui-button:active,
   -o-transition: all 0.3s ease;
 }
 
-.size-chart-page table tr:hover {
-  background-color: rgba(0, 0, 0, 0.07);
+.size-chart-page table tr th {
+  background-color: var(--primary);
+  color: var(--primary-white);
+}
+
+.size-chart-page table tr:not(first-child):hover {
+  background-color: rgba(90, 34, 34, 0.09);
 }
 
 .meta-single-img {
