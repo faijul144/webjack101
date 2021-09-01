@@ -998,7 +998,7 @@
   });
 
   $(".review-slider").slick({
-    dots: true,
+    dots: false,
     arrows: true,
     prevArrow:
       '<button class="slick-prev" aria-label="Previous" type="button"><i class="fas fa-chevron-left"></i></button>',
