@@ -675,7 +675,7 @@ header .cart_qty_cls {
   justify-content: center;
   height: 4rem;
   padding: 1rem 10rem 1rem 1rem;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -689,9 +689,8 @@ header .cart_qty_cls {
 }
 
 .special-section.subscribe .subscribe-input input:focus {
-  border-color: var(--primary);
   outline: 0;
-  background: var(--tertiary-white);
+  border: none;
 }
 
 .special-section.subscribe .subscribe-input .btn-subscribe {
