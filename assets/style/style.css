@@ -3473,7 +3473,7 @@ a.ui-button:active,
   position: absolute;
   top: 4rem;
   left: -40rem;
-  background: var(--secondary-white);
+  background: var(--tertiary-white);
   padding: 1.2rem 1rem;
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
@@ -3494,6 +3494,14 @@ a.ui-button:active,
   width: 40%;
 }
 
+.review-form-container textarea {
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
 .review-form-container .review-form-reveal {
   position: absolute;
   top: 50%;
@@ -3508,7 +3516,7 @@ a.ui-button:active,
 }
 
 .flag-select {
-  margin-top: -2px;
+  margin-top: -2.5px;
   margin-right: 2px;
 }
 
