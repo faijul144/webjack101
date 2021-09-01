@@ -196,7 +196,7 @@ header .search-bar input {
   justify-content: center;
   height: 3rem;
   padding: 1rem 3rem 1rem 1rem;
-  border: 1px solid transparent;
+  border: 0;
   width: 100%;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
@@ -213,8 +213,7 @@ header .search-bar input {
 
 header .search-bar input:focus {
   outline: none;
-  box-shadow: 0px 0 6px rgba(52, 203, 242, 0.28);
-  border-color: var(--primary);
+  box-shadow: 0px 0 6px rgba(52, 203, 242, 0.28) !important;
 }
 
 header .search-bar .btn {
@@ -689,8 +688,8 @@ header .cart_qty_cls {
 }
 
 .special-section.subscribe .subscribe-input input:focus {
-  outline: 0;
   border: none;
+  outline: 0;
 }
 
 .special-section.subscribe .subscribe-input .btn-subscribe {
