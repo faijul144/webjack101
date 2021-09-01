@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/fontawesome.css">
+    <link rel="stylesheet" href="./assets/style/all.min.css">
+
+    <link rel="stylesheet" href="./assets/style/slick.css">
+    <link rel="stylesheet" href="./assets/style/slick-theme.css">
+    <link rel="stylesheet" href="./assets/style/animate.css">
+    <link rel="stylesheet" href="./assets/style/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="./assets/style/select2.min.css">
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/theme-style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Webjacket</title>
+</head>
+
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="mobile-fix-option"></div>
+        <div class="top-header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="header-contact">
+                        <ul>
+                            <li><img src="./assets/images/icons/phone.svg" alt="phone icon" /> 1-888-869-1555</li>
+                            <li><a href="mailto:sales@webjacket.com"><img src="./assets/images/icons/mail.svg"
+                                        alt="mail icon" /> sales@webjacket.com</a></li>
+                        </ul>
+                    </div>
+                    <ul class="header-dropdown">
+                        <li><a href="order-tracking.html"><img src="./assets/images/icons/order-track.svg"
+                                    alt="track icon" /> track your order</a>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <img src="./assets/images/icons/globe.svg" alt="globe icon" />
+                            <span>Language</span>
+                            <ul class="onhover-show-div px-1">
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/united-states.png"
+                                            witdth="24" class="my-0 mx-2" />English</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/france.png" witdth="24"
+                                            class="my-0 mx-2" />Frence</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/australia.png"
+                                            witdth="24" class="my-0 mx-2" />Australia</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/afghanistan.png"
+                                            witdth="24" class="my-0 mx-2" />Afghanistan</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/argentina.png"
+                                            witdth="24" class="my-0 mx-2" />Argentina</a></li>
+                                <li><a href="javascript:void(0)"><img src="./assets/images/flags/belgium.png"
+                                            witdth="24" class="my-0 mx-2" />Belgium</a></li>
+                            </ul>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <img src="./assets/images/icons/user.svg" alt="User Icon" witdth="24" />
+                            <span>My Account</span>
+                            <ul class="onhover-show-div pl-3 pr-1">
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="javascript:void(0)">Settings</a></li>
+                                <li><a href="javascript:void(0)">Logout</a></li>
+                                <!-- <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Sign Up</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-menu">
+                        <div class="row w-100 m-0 align-items-center">
+                            <div class="col-md-3">
+                                <div class="brand-logo">
+                                    <a href="index.html"><img src="./assets/images/logo.svg" class="img-fluid"
+                                            alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="menu-right">
+                                    <div class="icon-nav">
+                                        <ul>
+                                            <li>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <div class="search-bar">
+                                                        <input type="text" placeholder="search product">
+                                                        <a class="btn"><i class="fa fa-search"></i></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="position-relative">
+                                                <a href="wishlist.html" class="wishlist-link">
+                                                    <div>
+                                                        <img src="./assets/images/icons/heart.svg" class="img-fluid"
+                                                            alt="">
+                                                    </div>
+                                                    <span class="cart_qty_cls">2</span>
+                                                </a>
+                                            </li>
+                                            <li class="onhover-div mobile-cart">
+                                                <div><img src="./assets/images/icons/shopping-basket.svg"
+                                                        class="img-fluid" alt="">
+                                                    <i class="ti-shopping-cart"></i>
+                                                </div>
+                                                <span class="cart_qty_cls">2</span>
+                                                <ul class="show-div shopping-cart">
+                                                    <li>
+                                                        <div class="media">
+                                                            <a href="#"><img alt="" class="me-3"
+                                                                    src="./assets/images/products/collar-gold.png"></a>
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <h4>item name</h4>
+                                                                </a>
+                                                                <h4><span>1 x $ 299.00</span></h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                                                    aria-hidden="true"></i></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="media">
+                                                            <a href="#"><img alt="" class="me-3"
+                                                                    src="./assets/images/products/collar-blue.png"></a>
+                                                            <div class="media-body">
+                                                                <a href="#">
+                                                                    <h4>item name</h4>
+                                                                </a>
+                                                                <h4><span>1 x $ 299.00</span></h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                                                    aria-hidden="true"></i></a></div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="total">
+                                                            <h5>
+                                                                <span>subtotal :</span> <span>$299.00</span>
+                                                            </h5>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="buttons"><a href="cart.html" class="view-cart">view
+                                                                cart</a> <a href="checkout.html"
+                                                                class="checkout">checkout</a></div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="#" class="btn btn-primary ml-2" tabindex="0"><img
+                                                        src="./assets/images/icons/user.svg" alt="User Icon" /> Join
+                                                    Now</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div>
+                                    <nav id="main-nav">
+                                        <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                                        <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                                            <li>
+                                                <div class="mobile-back text-end">Back<i class="fa fa-angle-right ps-2"
+                                                        aria-hidden="true"></i></div>
+                                            </li>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li>
+                                                <a href="javascript:void(0)">Product Category</a>
+                                                <ul class="mega-menu clothing-menu">
+                                                    <li>
+                                                        <div class="row m-0">
+                                                            <div class="col-md-7 pl-0">
+                                                                <div class="link-section">
+                                                                    <ul class="has-preview">
+                                                                        <li class="has-subcat">
+                                                                            <h5>Versity Jackets</h5>
+                                                                            <ul>
+                                                                                <li><a href="./product-collection.html"
+                                                                                        data-preview-src="./assets/images/products/front-blue.png">All
+                                                                                        Versity
+                                                                                        Jackets</a></li>
+                                                                                <li><a href="./product-collection-2.html"
+                                                                                        data-preview-src="./assets/images/products/front-tan.png">Wool
+                                                                                        and
+                                                                                        genuine
+                                                                                        leather<span
+                                                                                            class="new-tag">new</span></a>
+                                                                                </li>
+                                                                                <li><a href="./product-collection-3.html"
+                                                                                        data-preview-src="./assets/images/products/front-gold.png">Wool
+                                                                                        and faux
+                                                                                        leather</a></li>
+                                                                                <li><a href="./product-collection-4.html"
+                                                                                        data-preview-src="./assets/images/products/front-blue.png">Cheerleader
+                                                                                        zipper
+                                                                                        jackets</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><a href="./product-collection-5.html"
+                                                                                data-preview-src="./assets/images/products/front-blue.png">The
+                                                                                Classic</a></li>
+                                                                        <li><a href="./product-collection-6.html"
+                                                                                data-preview-src="./assets/images/products/front-tan.png">Byron
+                                                                                (Shirt) Collar</a>
+                                                                        </li>
+                                                                        <li><a href="./product-collection-7.html"
+                                                                                data-preview-src="./assets/images/products/front-gold.png">Zippered
+                                                                                Hood</a></li>
+                                                                        <li><a href="./product-collection-8.html"
+                                                                                data-preview-src="./assets/images/products/front-blue.png">Sailor
+                                                                                Hood</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-5 p-0">
+                                                                <div class="link-section">
+                                                                    <div id="preview-menu-img"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                </ul>
+
+
+
+                                            </li>
+                                            <li>
+                                                <a href="./hot-deals.html" class="hotDeal"><img
+                                                        src="./assets/images/icons/flame.svg" alt="Hot Deal"
+                                                        class="mr-1" /> Hot
+                                                    Deal</a>
+                                            </li>
+                                            <li><a href="./size-chart.html">Size Chart</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Review</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb End -->
+    <!-- testimonial -->
+    <section class="section-b-space ratio_asos bg-grey">
+        <!-- testimonial title -->
+        <div class="title1 section-t-space position-relative py-3 mb-2">
+            <img src="./assets/images/icons/testimonial.svg" alt="Testimonial" class="tes-bg">
+            <div class="container">
+                <h2 class="title-inner1 text-center my-4 pb-0">
+                    WHAT CUSTOMER SAY’S
+                </h2>
+            </div>
+        </div>
+        <!-- testimonial title end -->
+
+
+        <div class="container py-3">
+            <div class="review-slider home-slider product-m">
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Susan Sweeney Wrote:</p>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_Susan_Sweeney.jpg" alt=""
+                                class="img-fluid w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Thank you Warwick Wolves!
+                            </p>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/Varsity-Jackets-Team-Photo.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>WebJacket did a great job on the custom varsity jacket I designed for my new music video!
+                                I've received a lot of compliments on it!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Killian Wells</div>
+                                <div class="meta-desc-place">Pop Music Artist</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_Killan_Wells.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Thank you for the amazing jackets.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">S.M</div>
+                                <div class="meta-desc-place">Sales and Marketing Manager</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_Mercedes.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>The girls look amazing and very impressive. We are so happy with our jackets!!! I see
+                                that you have windbreakers now - you can probably look for our order for those next
+                                cookie season!!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Kim Dyer, Troop Leader</div>
+                                <div class="meta-desc-place">Troop 846</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_jackets_with_leaders.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p> Hello! I received my jacket today and it is very nice EXCEEDING EXPECTATIONS!</p>
+
+                            <p>Thank you for making the changes as I requested. After my jacket is seen by all the
+                                coaches I'm sure they will one one for themselves. This jacket took me back to my days
+                                in Eastern Senior High school and all our Lettermen Club members would proudly wear
+                                their jackets to school and all activities. The Leather sleeves accent the wool material
+                                perfectly and the embroidery letterings is very professional. This jacket is a work of
+                                art and will be worn with pride to my School's athletic events and game day! Great doing
+                                business with WebJacket!</p>
+                            <p>EASTERN IS PROUD!<br />Thank you again!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Coach Saunders</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_Coach_Saunders.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p> Order 3 Jackets for my daughter and 2 of her gymnastics team mates. I sent the order in
+                                with comments that were addressed immediately. Jackets arrived ahead of schedule in time
+                                for Christmas. They are adorable and the girls Love them!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Robin Collier
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_Testimonial_8719.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p> My jacket has arrived and im am very pleased with it. thank you for your good customer
+                                service. you guys are the best.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Joshua Marshall</div>
+                                <div class="meta-desc-place">Bronx, New York</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_birthday_jacket.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Dear WebJacket</p>
+                            <p>I received your letterman jackets and I'm very pleased with the look. The synthetic
+                                leather looks like real leather and with the rich wool and quilt lining keeps us warm
+                                and looking good. The next year class is already talking about ordering jackets for next
+                                year from WebJacket. Thanks for all your help and thanks for that great price.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Coach Dudley</div>
+                                <div class="meta-desc-place">Hawthorne, Nevada</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_testominial99_ok.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Dear Sales Team,</p>
+                            <p>I would love to say how splendid it has been working with your team. Not only did you
+                                give me a good, quick service. You fulfilled my request and that made much of a
+                                difference. I am very happy and pleased! Thank you so much, i had been searching for
+                                this kind of jacket for years and the person who wears it is extremely happy for the
+                                gift. Your service has been amazingly great. I do appreciate your hard work. Again thank
+                                you and have a pleasant day! Have a pleasant day and just on another note, i will be
+                                ordering again!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">L.A</div>
+                                <div class="meta-desc-place">South San Francisco, CA, USA </div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_testimonial2_big.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>I got it yesterday. Thank you I like it</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">S.S</div>
+                                <div class="meta-desc-place">Washington, USA</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_testimonial1a_big.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Hi, First of all, I would like to thank you for your quick reply and patience. I
+                                appreciate it. You care about the design of the jacket. Yesterday I've received the
+                                jacket. My, it's really superb!!! I must say your team has done a great job!!!
+                                The colors are splendid, the embroidery is nice,...It's a great jacket!!!</p>
+                            <p>I'll show it to our team this afternoon and I'll place the order Friday or Saturday.
+                                Everyone that has already seen it, wants one!! I hope the elder members who are
+                                graduating next year still want one. I also graduate in November and i want one merely
+                                as a souvenir. Thanks again for the great job and I'll place the order soon!!!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">G.V</div>
+                                <div class="meta-desc-place">The Fencing team, BELGIUM</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_testimonial5c_big.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Good morning Sir,</p>
+                            <p>I just need to let you know how much I am impressed by your company. Yesterday the jacket
+                                arrived and I was very pleased with the item. It looks very nice and is exactly like I
+                                hoped it would be. Your company did an awesome job in mailing it to me in such a great
+                                time. I will definitely keep your company on my list for shopping. My husbands X-Mas
+                                will be nice (he's been looking for a jacket like this for a long time) and he'll be
+                                really happy about his gift. Again, thank you for such a great job.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Sabine (A really pleased customer !!!) :)</div>
+                                <div class="meta-desc-place">Sabine, USA</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_HappyBirthday_big.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Yes, we did receive our jackets and they are great. The Quality is much better than we
+                                imagined. We are very satisfied. Thanks a bunch!!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">J.D</div>
+                                <div class="meta-desc-place">South Lyon, Michigan, USA</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_testimonial3_big.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Just wanted to thank you for the jacket looked amazing and my son was happy. Great price
+                                saved me a lot of money.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Sheila</div>
+                                <div class="meta-desc-place">Carson City, NV, USA</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_kevje.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Hi, My jacket arrived today and I hardly know where to start. First the quality is second
+                                to none. What a fabulous jacket in both craftsmanship and fit. I have looked for years
+                                in order to find a jacket to copy one worn by University of Alabama football coach Paul
+                                "Bear" Bryant in the 1950s. Honestly because of being able to custom pick the colors it
+                                looks just like his that hangs today in the Bryant Museum on the University of Alabama
+                                campus. Thanks so much for everything and you can rest assure I shall pass along to all
+                                I know where I purchased my jacket. I hope you have a wonderful Christmas and a
+                                prosperous and Happy New Year.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Lisa Page</div>
+                                <div class="meta-desc-place">Madison, AL, USA</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_LisaP7.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>Bravo WebJacket! My letter sweater is poppin. Now I got the style to fit the skills. My
+                                sweater is incredible and I get noticed and I get to stay comfortable. I look forward to
+                                becoming a returning customer. You all are doing it right!
+                            </p>
+                            <p>Thanks again!</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">M.O.F</div>
+                                <div class="meta-desc-place">Portland, Oregon</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_MOF_Portland_Oregon.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <div class="testmonial-card">
+                        <img src="./assets/images/icons/quotes.svg" alt="Quotes" class="quotes">
+                        <div class="testimonial">
+                            <p>To WebJacket,</p>
+                            <p>I wanted to take a moment to commend and thank your company for a "job well done." I am
+                                the President of my high school's Alumni Association. We currently have Alumni blazers
+                                that we use for formal meetings and such; however, I also wanted to have a nice raglan
+                                sweater to wear to casual events in my school color. My plan is to add the same Alumni
+                                emblem on my sweater as my jacket.</p>
+                            <p>I received my sweater and was extremely pleased with the superb workmanship. Also, the
+                                royal blue color swatch on your Website was true to the color of the sweater.</p>
+                            <p>It was a pleasure working with your company and please accept my accolades to a company
+                                having products and customer service of excellent quality.</p>
+                        </div>
+                        <div class="meta">
+                            <div class="meta-desc">
+                                <div class="meta-desc-name">Phyllis Williams</div>
+                                <div class="meta-desc-place">USA</div>
+                            </div>
+                        </div>
+                        <div class="meta-single-img">
+                            <img src="./assets/images/reviews/WebJacket_Phyllis_Williams_testimonial.jpg" alt=""
+                                class="img-fluid h-30">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial end -->
+
+    <!-- footer -->
+    <footer class="footer-light">
+        <section class="section-b-space bg-grey">
+            <div class="container">
+                <div class="row footer-theme partition-f">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-title footer-mobile-title">
+                            <h4>about</h4>
+                        </div>
+                        <div class="footer-contant">
+                            <div class="footer-logo">
+                                <img src="./assets/images/logo.svg" alt="Logo">
+                                <p>DRAW AND DESIGN</p>
+                                <p>THAT YOU WISH FOR.</p>
+                            </div>
+
+                            <div class="footer-tel">
+                                <img src="./assets/images/icons/headphone.svg" alt="Call">
+                                <div class="contact-num">
+                                    <p>HAVE ANY QUESTION?</p>
+                                    <p class="number">1-888-869-1555</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h3>QUICK LINKS</h3>
+                            </div>
+                            <div class="footer-contant">
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="./faq.html">Help & Faq’s</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms.html">Terms</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sub-title">
+                            <div class="footer-title">
+                                <h3>CUSTOMER AREA</h3>
+                            </div>
+                            <div class="footer-contant">
+                                <ul>
+                                    <li><a href="dashboard.html">My Account</a></li>
+                                    <li><a href="#">Review</a></li>
+                                    <li><a href="./product-collection.html">Products</a></li>
+                                    <li><a href="./size-chart.html">Size Chart</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div>
+                            <div class="footer-title">
+                                <h3>FOLLOW US</h3>
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="footer-title mt-4">
+                                <h3>PAYMENT GATEWAY</h3>
+                            </div>
+                            <img src="./assets/images/icons/money-cards.svg" alt="Gateway Images" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-end">
+                            <p class="text-center">Copywrite By <i class="fa fa-copyright" aria-hidden="true"></i>
+                                WEBJACKET - 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- tap to top -->
+    <div class="tap-top top-cls">
+        <div>
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </div>
+    <!-- tap to top end -->
+
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- fly cart ui jquery-->
+    <script src="./assets/js/jquery-ui.min.js"></script>
+
+    <!-- exitintent jquery-->
+    <script src="./assets/js/jquery.zoom.min.js"></script>
+
+    <!-- slick js-->
+    <script src="./assets/js/slick.js"></script>
+
+    <!-- menu js-->
+    <script src="./assets/js/menu.js"></script>
+
+    <!-- rateyo js-->
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- rateyo js-->
+    <script src="./assets/js/jquery.rateyo.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/select2.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>

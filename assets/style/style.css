@@ -3371,14 +3371,62 @@ a.ui-button:active,
   color: var(--primary) !important;
 }
 
+.privacy-page ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .privacy-page ul li {
   padding-left: 1.2rem;
   margin-bottom: 1rem;
   position: relative;
 }
 
+.privacy-page ul li::before {
+  content: "\f101";
+  font: normal normal normal 20px/1 FontAwesome;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
 @media screen and (max-width: 1199) {
   .d-sm-none {
     display: none !important;
   }
+}
+
+.size-chart-page table tr {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.size-chart-page table tr:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.meta-single-img {
+  margin: 2rem 0;
+}
+
+.meta-single-img img {
+  width: 50%;
+  margin: 0 auto;
+  height: 34rem;
+  object-fit: contain;
+}
+
+.meta-single-img img.h-30 {
+  height: 30rem !important;
+}
+
+.review-slider .testmonial-card {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.17);
+}
+
+.review-slider.home-slider .slick-dots {
+  bottom: -2rem !important;
 }

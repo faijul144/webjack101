@@ -20,6 +20,18 @@
     $(this).remove();
   });
 
+  // Scroll Smothly
+  $(".smooth-goto>li a").click(function (e) {
+    e.preventDefault();
+    var sectionTo = $(this).attr("href");
+    $("html,body").animate(
+      {
+        scrollTop: $(sectionTo).offset().top - 15,
+      },
+      1000
+    );
+  });
+
   /*=====================
      02.Tap on Top
      ==========================*/
@@ -316,7 +328,7 @@
   /*=====================
      14. slick slider
      ==========================*/
-  $(".home-slider").slick({
+  $(".hero-slider").slick({
     dots: true,
     arrows: true,
     prevArrow:
@@ -983,6 +995,19 @@
     speed: 400,
     slidesToShow: 2,
     slidesToScroll: 2,
+  });
+
+  $(".review-slider").slick({
+    dots: true,
+    arrows: true,
+    prevArrow:
+      '<button class="slick-prev" aria-label="Previous" type="button"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button class="slick-next" aria-label="Next" type="button"><i class="fas fa-chevron-right"></i></button>',
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 
   $(".product-5").slick({
@@ -2054,6 +2079,15 @@ $(".testimonial-slider .slick-slide>div").each(function () {
 let maxHeight = Math.max.apply(Math, cardHeight);
 $(".testimonial-slider .slick-slide>div").each(function () {
   $(this).css("height", maxHeight + "px");
+});
+
+let rcardHeight = [];
+$(".review-slider .slick-slide>div").each(function () {
+  rcardHeight.push($(this).height());
+});
+let rmaxHeight = Math.max.apply(Math, rcardHeight);
+$(".review-slider .slick-slide>div").each(function () {
+  $(this).css("height", rmaxHeight + "px");
 });
 
 // Menu Category Preview
