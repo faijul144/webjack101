@@ -2526,3 +2526,32 @@ $(".size-change input").on("change", function () {
     $(target).find("td span:last-child").addClass("d-none");
   }
 });
+
+$(".review-form-reveal").on("click", function () {
+  $(this).parent().toggleClass("open");
+});
+
+function formatState(state) {
+  if (!state.id) {
+    return state.text;
+  }
+  var baseUrl = "/assets/images/flags";
+  var $state = $(
+    '<span><img src="' +
+      baseUrl +
+      "/" +
+      state.element.value.toLowerCase() +
+      '.png" width="18" class="flag-select" /> ' +
+      state.text +
+      "</span>"
+  );
+  return $state;
+}
+
+$(".has-flag").each(function () {
+  $(this).select2({
+    minimumResultsForSearch: -1,
+    templateResult: formatState,
+    templateSelection: formatState,
+  });
+});

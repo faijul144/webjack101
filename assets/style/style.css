@@ -3352,6 +3352,7 @@ a.ui-button:active,
 .privacy-page h1,
 .privacy-page h2 {
   margin: 1.5rem 0 1rem;
+  line-height: 2.3rem;
 }
 
 .privacy-page h1 {
@@ -3382,11 +3383,12 @@ a.ui-button:active,
 }
 
 .privacy-page ul li::before {
-  content: "\f101";
-  font: normal normal normal 20px/1 FontAwesome;
+  content: "\f192";
+  font-family: Fontawesome;
   position: absolute;
+  top: 0.2px;
   left: 0;
-  top: 1px;
+  font-size: 0.98rem;
 }
 
 @media screen and (max-width: 1199) {
@@ -3442,4 +3444,74 @@ a.ui-button:active,
 
 .review-slider.home-slider .slick-dots {
   bottom: -2rem !important;
+}
+
+.flag {
+  width: 24px;
+  height: 5px;
+  background-position: center center;
+}
+
+.flag-us {
+  background-image: url("./../images/flags/united-states.png");
+}
+
+.flag-au {
+  background-image: url("./../images/flags/australia.png");
+}
+
+.flag-be {
+  background-image: url("./../images/flags/belgium.png");
+}
+
+.flag-ar {
+  background-image: url("./../images/flags/argentina.png");
+}
+
+.review-form-container {
+  width: 40rem;
+  position: absolute;
+  top: 4rem;
+  left: -40rem;
+  background: var(--secondary-white);
+  padding: 1.2rem 1rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.review-form-container .form-control {
+  padding-top: 0.44rem;
+  padding-bottom: 0.44rem;
+}
+
+.review-form-container .uploaded-files > div {
+  width: 40%;
+}
+
+.review-form-container .review-form-reveal {
+  position: absolute;
+  top: 50%;
+  right: -6.6rem;
+  transform: translateY(-50%) rotate(90deg);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.review-form-container.open {
+  left: 0 !important;
+}
+
+.flag-select {
+  margin-top: -2px;
+  margin-right: 2px;
+}
+
+.select2-selection__rendered .flag-select {
+  width: 20px;
 }
