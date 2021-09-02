@@ -3695,4 +3695,13 @@ a.ui-button:active,
   .sm-info-card-container > div .sm-info-card__text span {
     font-size: 0.7rem;
   }
+  #quick-view .product-rating-container {
+    justify-content: center;
+  }
+  #quick-view .border-product {
+    text-align: left;
+  }
+  #quick-view .qty-box {
+    justify-content: flex-start;
+  }
 }
