@@ -1243,7 +1243,7 @@ header .cart_qty_cls {
 }
 
 .ratio_asos .bg-size:before {
-  padding-top: 16rem;
+  padding-top: 25rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1340,15 +1340,16 @@ input::placeholder {
   color: var(--fourth-white);
 }
 
-.custome-width.col-md-4 {
-  max-width: 29.1%;
-  flex: 0 0 29.1%;
-}
-
-.custome-width.col-md-8 {
-  max-width: 70.1%;
-  flex: 0 0 70.1%;
-  padding-left: 0;
+@media screen and (min-width: 1200px) {
+  .custome-width.col-md-4 {
+    max-width: 29.1%;
+    flex: 0 0 29.1%;
+  }
+  .custome-width.col-md-8 {
+    max-width: 70.1%;
+    flex: 0 0 70.1%;
+    padding-left: 0;
+  }
 }
 
 .profile-top {
@@ -3603,11 +3604,32 @@ a.ui-button:active,
     padding: 0.5rem 0.7rem;
     font-size: 1rem;
   }
+  .main-menu .menu-right .icon-nav .mobile-cart .mob-cart {
+    display: block !important;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+  }
+  .main-menu .menu-right .icon-nav li.mobile-cart {
+    height: auto;
+  }
+  header .mobile-cart .cart_qty_cls {
+    top: -11px;
+  }
+  .tenproducts-slider {
+    margin-top: 1.5rem;
+  }
+  .left-with-controller {
+    align-items: center;
+  }
+  .left-with-controller .f-highlight {
+    font-size: 4rem !important;
+  }
 }
 
 @media screen and (max-width: 577px) {
   .special-section .bg-shape,
   .tes-bg {
     width: 100% !important;
+    display: none;
   }
 }
