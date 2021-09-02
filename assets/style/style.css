@@ -3571,7 +3571,13 @@ a.ui-button:active,
     order: 3;
   }
   header .brand-logo img {
-    width: 100%;
+    width: 70%;
+  }
+  .main-menu > .row {
+    justify-content: center;
+  }
+  .main-menu > .row > .order-xs-2 {
+    text-align: center !important;
   }
   .main-menu .menu-right {
     float: left;
@@ -3582,6 +3588,20 @@ a.ui-button:active,
   .main-menu .menu-right .icon-nav ul li {
     padding-left: 0;
     margin-right: 0.5rem;
+  }
+  .slider-img {
+    width: 100%;
+  }
+  .home-slider .order-xs-2 {
+    margin-top: 1rem;
+  }
+  .home-slider .hero-text h2,
+  .home-slider .hero-text h3 {
+    font-size: 2rem;
+  }
+  .home-slider .hero-text .btn.hero-btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
   }
 }
 

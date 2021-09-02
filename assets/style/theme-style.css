@@ -7153,7 +7153,7 @@ footer p {
 }
 .toggle-nav i {
   font-size: 24px;
-  color: #ff6355;
+  color: var(--primary);
 }
 
 .mega-menu-banner:hover:before {
@@ -11098,7 +11098,7 @@ footer p {
   }
 
   .home-slider .home {
-    height: 58vh;
+    height: 60rem;
   }
   .home-slider .slider-contain {
     height: 58vh;
@@ -11668,9 +11668,9 @@ footer p {
     font-size: 24px;
   }
 
-  .home-slider .home {
+  /* .home-slider .home {
     height: 55vh;
-  }
+  } */
   .home-slider .slider-contain {
     height: 55vh;
   }
