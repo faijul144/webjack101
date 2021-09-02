@@ -3660,6 +3660,13 @@ a.ui-button:active,
     filter: invert(1);
     -webkit-filter: invert(1);
   }
+  .special-section {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 786px) {
@@ -3678,5 +3685,8 @@ a.ui-button:active,
   .special-section .left-text h5 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem !important;
+  }
+  .sm-info-card {
+    margin-bottom: 1rem;
   }
 }
