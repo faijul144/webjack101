@@ -3536,6 +3536,10 @@ a.ui-button:active,
   width: 20px;
 }
 
+.jq-ry-container {
+  z-index: 5;
+}
+
 @media screen and (max-width: 1199px) {
   #main-menu li ul.mega-menu {
     box-shadow: none !important;
@@ -3576,9 +3580,6 @@ a.ui-button:active,
   }
   .main-menu > .row {
     justify-content: center;
-  }
-  .main-menu > .row > .order-xs-2 {
-    text-align: center !important;
   }
   .main-menu .menu-right {
     float: left;
@@ -3624,6 +3625,18 @@ a.ui-button:active,
   .left-with-controller .f-highlight {
     font-size: 4rem !important;
   }
+  .product-slick .slick-slide img {
+    width: auto !important;
+  }
+  .mobile-account img {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 578px) {
+  .mobile-wishlist .mob-cart {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 577px) {
@@ -3631,5 +3644,39 @@ a.ui-button:active,
   .tes-bg {
     width: 100% !important;
     display: none;
+  }
+  .mobile-wishlist {
+    position: fixed !important;
+    bottom: 20px;
+    font-size: 0;
+    padding: 0;
+    align-items: flex-end !important;
+    z-index: 9999 !important;
+  }
+  .mobile-wishlist a > div img:first-child {
+    display: none !important;
+  }
+  .mobile-wishlist .mob-cart {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .col-0 {
+    width: 0;
+    flex: 0 !important;
+    padding: 0 !important;
+  }
+  .countDowntimer {
+    font-size: 1rem;
+  }
+  .special-section .left-text h4 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .special-section .left-text h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem !important;
   }
 }
