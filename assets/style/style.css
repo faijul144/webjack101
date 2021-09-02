@@ -3689,4 +3689,10 @@ a.ui-button:active,
   .sm-info-card-container > div {
     margin-bottom: 1rem;
   }
+  .sm-info-card-container > div .sm-info-card img {
+    width: 3.2rem;
+  }
+  .sm-info-card-container > div .sm-info-card__text span {
+    font-size: 0.7rem;
+  }
 }
