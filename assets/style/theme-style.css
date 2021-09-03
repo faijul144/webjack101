@@ -8088,14 +8088,14 @@ footer p {
   .top-header .header-dropdown .mobile-account, .top-header .header-dropdown .mobile-wishlist {
     position: fixed;
     bottom: 20px;
-    right: 45%;
+    right: 40%;
     font-size: 0;
     padding: 0;
     z-index: 9999;
   }
 
   .top-header .header-dropdown .mobile-account.wishlist, .top-header .header-dropdown .mobile-account.wishlist {
-    right: 30% ;
+    right: 25% ;
   }
 
   .top-header .header-dropdown .mobile-account i, .top-header .header-dropdown .mobile-wishlist i {
@@ -8115,7 +8115,7 @@ footer p {
     color: #999999;
   }
   .mobile-wishlist {
-    right: 75%;
+    right: 70%;
   }
   .top-header .header-dropdown .mobile-wishlist i {
     font-family: FontAwesome;
@@ -8159,7 +8159,7 @@ footer p {
     left: unset !important;
   }
   .main-menu .menu-right .icon-nav .mobile-cart {
-    right: 60%;
+    right: 55%;
   }
   .main-menu .menu-right .icon-nav .mobile-cart .close-circle i {
     font-size: 14px;
