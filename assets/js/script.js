@@ -1046,7 +1046,7 @@
 
     $(".slider-nav").slick({
       vertical: false,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: ".product-slick",
       arrows: false,

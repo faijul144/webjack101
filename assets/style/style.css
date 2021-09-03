@@ -2937,21 +2937,25 @@ textarea:focus {
 }
 
 .slider-detail-custom .slick-list,
-.slider-nav-custom .slick-list {
+.slider-nav-custom .slick-list,
+.slider-nav .slick-list {
   margin: 0 -5px;
 }
 
 .slider-detail-custom .slick-slide > div,
-.slider-nav-custom .slick-slide > div {
+.slider-nav-custom .slick-slide > div,
+.slider-nav .slick-slide > div {
   padding: 0;
   margin: 0 5px;
 }
 
-.slider-nav-custom .slick-slide > div > div {
+.slider-nav-custom .slick-slide > div > div,
+.slider-nav .slick-slide > div > div {
   position: relative;
 }
 
-.slider-nav-custom .slick-slide > div > div:after {
+.slider-nav-custom .slick-slide > div > div:after,
+.slider-nav .slick-slide > div > div:after {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -2977,23 +2981,28 @@ textarea:focus {
   -o-transform: scale(0);
 }
 
-.slider-nav-custom .slick-slide:nth-child(1) > div > div:after {
+.slider-nav-custom .slick-slide:nth-child(1) > div > div:after,
+.slider-nav .slick-slide:nth-child(1) > div > div:after {
   content: "Front";
 }
 
-.slider-nav-custom .slick-slide:nth-child(2) > div > div:after {
+.slider-nav-custom .slick-slide:nth-child(2) > div > div:after,
+.slider-nav .slick-slide:nth-child(2) > div > div:after {
   content: "Back";
 }
 
-.slider-nav-custom .slick-slide:nth-child(3) > div > div:after {
+.slider-nav-custom .slick-slide:nth-child(3) > div > div:after,
+.slider-nav .slick-slide:nth-child(3) > div > div:after {
   content: "Left";
 }
 
-.slider-nav-custom .slick-slide:nth-child(4) > div > div:after {
+.slider-nav-custom .slick-slide:nth-child(4) > div > div:after,
+.slider-nav .slick-slide:nth-child(4) > div > div:after {
   content: "Right";
 }
 
-.slider-nav-custom .slick-slide:hover > div > div:after {
+.slider-nav-custom .slick-slide:hover > div > div:after,
+.slider-nav .slick-slide:hover > div > div:after {
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -3662,6 +3671,9 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 480px) {
+  .mobile-account > img {
+    margin: 0 !important;
+  }
   .flash-slider .slick-dots {
     justify-content: center;
   }
@@ -3698,11 +3710,6 @@ a.ui-button:active,
     filter: invert(1);
     -webkit-filter: invert(1);
   }
-  .bg-shape,
-  .tes-bg {
-    width: 100% !important;
-    display: none;
-  }
   .mobile-wishlist {
     position: fixed !important;
     bottom: 20px;
@@ -3733,6 +3740,20 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 767px) {
+  .bg-shape,
+  .tes-bg {
+    width: 100% !important;
+    display: none;
+  }
+  .order-xs-1 {
+    order: 1;
+  }
+  .order-xs-2 {
+    order: 2;
+  }
+  .order-xs-3 {
+    order: 3;
+  }
   #main-menu li ul.mega-menu {
     box-shadow: none !important;
     width: 100% !important;
@@ -3777,18 +3798,6 @@ a.ui-button:active,
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-  }
-  .mobile-account img {
-    margin: 0 !important;
-  }
-  .order-xs-1 {
-    order: 1;
-  }
-  .order-xs-2 {
-    order: 2;
-  }
-  .order-xs-3 {
-    order: 3;
   }
   header .brand-logo img {
     width: 70%;
@@ -3902,3 +3911,5 @@ a.ui-button:active,
     display: none;
   }
 }
+
+/* Landscape */
