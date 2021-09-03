@@ -996,6 +996,14 @@
     arrows: true,
     fade: true,
     asNavFor: ".slider-nav-custom",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".slider-nav-custom").slick({
