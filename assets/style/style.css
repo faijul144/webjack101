@@ -3878,6 +3878,11 @@ a.ui-button:active,
     left: unset;
     right: 5rem;
   }
+  .parts-color-list__colors .has-swatch .swatch-select.swatch-img > span {
+    max-width: 8.3rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
   .parts-color-list__colors .has-swatch .swatch-select.swatch-img div {
     height: 2.1rem;
     width: 2.1rem;
