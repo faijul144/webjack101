@@ -2503,6 +2503,7 @@ textarea:focus {
   display: flex;
   align-items: center;
   margin: 0 0 1rem;
+  flex-wrap: wrap;
 }
 
 .img-direct-edit.img-add-edit > ul > li {
@@ -3879,7 +3880,7 @@ a.ui-button:active,
     right: 5rem;
   }
   .parts-color-list__colors .has-swatch .swatch-select.swatch-img > span {
-    max-width: 8.3rem;
+    width: 6.5rem;
     display: inline-flex;
     flex-wrap: wrap;
   }
@@ -3896,5 +3897,8 @@ a.ui-button:active,
   }
   .img-direct-edit .added-texts-opt .w-80 {
     width: auto !important;
+  }
+  .customize-section [data-titleText]::before {
+    display: none;
   }
 }
