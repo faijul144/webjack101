@@ -3618,9 +3618,6 @@ a.ui-button:active,
     width: 100% !important;
     margin-bottom: 1rem;
   }
-  .w-80 {
-    width: auto;
-  }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -3658,7 +3655,7 @@ a.ui-button:active,
   .sm-info-card-container > div .sm-info-card__text span {
     font-size: 0.8rem;
   }
-  .has-swatch .swatch-container {
+  li:not(.w-80) .has-swatch .swatch-container {
     left: unset;
     right: 0;
   }
