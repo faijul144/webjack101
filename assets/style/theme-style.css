@@ -8034,10 +8034,10 @@ footer p {
   }
 }
 @media (min-width: 578px) {
-  .main-menu .menu-right .icon-nav .mobile-search i, .main-menu .menu-right .icon-nav .mobile-cart .mob-cart, .main-menu .menu-right .icon-nav .mobile-setting i {
+  .main-menu .menu-right .icon-nav .mobile-search i, .main-menu .menu-right .icon-nav .mobile-cart .mob-cart, .main-menu .menu-right .icon-nav .mobile-setting .mob-cart {
     display: none;
   }
-  .main-menu .menu-right .icon-nav .mobile-search .close-circle i, .main-menu .menu-right .icon-nav .mobile-cart .close-circle i, .main-menu .menu-right .icon-nav .mobile-setting .close-circle i {
+  .main-menu .menu-right .icon-nav .mobile-search .close-circle i, .main-menu .menu-right .icon-nav .mobile-cart .close-circle i, .main-menu .menu-right .icon-nav .mobile-setting .close-circle .mob-cart {
     display: block;
   }
   .main-menu .menu-right .icon-nav .mobile-search .show-div .form-inline button i {
@@ -8088,11 +8088,16 @@ footer p {
   .top-header .header-dropdown .mobile-account, .top-header .header-dropdown .mobile-wishlist {
     position: fixed;
     bottom: 20px;
-    right: 32%;
+    right: 45%;
     font-size: 0;
     padding: 0;
     z-index: 9999;
   }
+
+  .top-header .header-dropdown .mobile-account.wishlist, .top-header .header-dropdown .mobile-account.wishlist {
+    right: 30% ;
+  }
+
   .top-header .header-dropdown .mobile-account i, .top-header .header-dropdown .mobile-wishlist i {
     font-size: 22px;
     font-family: FontAwesome;
@@ -8110,7 +8115,7 @@ footer p {
     color: #999999;
   }
   .mobile-wishlist {
-    right: 64%;
+    right: 75%;
   }
   .top-header .header-dropdown .mobile-wishlist i {
     font-family: FontAwesome;
@@ -8154,7 +8159,7 @@ footer p {
     left: unset !important;
   }
   .main-menu .menu-right .icon-nav .mobile-cart {
-    right: 48%;
+    right: 60%;
   }
   .main-menu .menu-right .icon-nav .mobile-cart .close-circle i {
     font-size: 14px;
