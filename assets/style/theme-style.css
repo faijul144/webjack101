@@ -5545,6 +5545,7 @@ footer p {
   width: 65px;
   margin-right: 20px;
   border-radius: 100%;
+  margin-bottom: 1rem;
 }
 .blog-detail-page .comment-section li h6 {
   color: #444444;
@@ -11827,7 +11828,7 @@ footer p {
   }
   .blog-detail-page .comment-section .media {
     display: inline-block;
-    text-align: center;
+    text-align: left;
   }
 
   .faq-section .theme-accordion .card .card-body p {
@@ -12185,12 +12186,14 @@ footer p {
 
   .tab-product .nav-material.nav-tabs {
     display: block;
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .tab-product .nav-material.nav-tabs .nav-item {
-    width: 100%;
+    padding: 0 15px;
   }
   .tab-product .nav-material.nav-tabs .nav-item .nav-link {
-    padding: 10px 20px;
+    padding: 10px 0;
   }
 
   .vertical-tab.tab-product .nav-material.nav-tabs .nav-item .nav-link, .vertical-tab .product-full-tab .nav-material.nav-tabs .nav-item .nav-link {
