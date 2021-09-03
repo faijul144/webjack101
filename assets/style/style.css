@@ -3867,6 +3867,10 @@ a.ui-button:active,
     width: 2.8rem;
     height: 2.8rem;
   }
+  .parts-color-list__colors .has-swatch .swatch-container {
+    left: unset;
+    right: 5rem;
+  }
   .img-direct-edit.img-add-edit > ul {
     flex-wrap: wrap;
   }
