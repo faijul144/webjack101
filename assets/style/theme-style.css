@@ -10636,12 +10636,19 @@ footer p {
 
   .collection-product-wrapper .product-pagination .pagination .page-item a {
     padding: 15px 18px;
-  }
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
   .collection-product-wrapper .product-pagination .product-search-count-bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding-right: 0;
+    border-left-width: 1px;
+    border-top-right-radius: 0;
   }
   .collection-product-wrapper .product-pagination .product-search-count-bottom h5 {
     padding: 10px 0;

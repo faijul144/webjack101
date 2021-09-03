@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/style/animate.css">
     <link rel="stylesheet" href="./assets/style/jquery.rateyo.min.css">
     <link rel="stylesheet" href="./assets/style/select2.min.css">
+    <link rel="stylesheet" href="./assets/style/price-range.css">
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/theme-style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -38,7 +39,7 @@
                         <li><a href="order-tracking.html"><img src="./assets/images/icons/order-track.svg"
                                     alt="track icon" /> track your order</a>
                         </li>
-                        <li class="onhover-dropdown">
+                        <li class="onhover-dropdown mobile-account wishlist">
                             <img src="./assets/images/icons/globe.svg" alt="globe icon" />
                             <span>Language</span>
                             <ul class="onhover-show-div px-1">
@@ -56,7 +57,7 @@
                                             witdth="24" class="my-0 mx-2" />Belgium</a></li>
                             </ul>
                         </li>
-                        <li class="onhover-dropdown">
+                        <li class="onhover-dropdown mobile-account">
                             <img src="./assets/images/icons/user.svg" alt="User Icon" witdth="24" />
                             <span>My Account</span>
                             <ul class="onhover-show-div pl-3 pr-1">
@@ -76,17 +77,17 @@
                 <div class="col-sm-12">
                     <div class="main-menu">
                         <div class="row w-100 m-0 align-items-center">
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-6 order-xs-1">
                                 <div class="brand-logo">
                                     <a href="index.html"><img src="./assets/images/logo.svg" class="img-fluid"
                                             alt="logo"></a>
                                 </div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-12 order-xs-3">
                                 <div class="menu-right">
                                     <div class="icon-nav">
                                         <ul>
-                                            <li>
+                                            <li class="nav-search-bar">
                                                 <div class="d-flex justify-content-center align-items-center">
                                                     <div class="search-bar">
                                                         <input type="text" placeholder="search product">
@@ -94,19 +95,23 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="position-relative">
+                                            <li class="position-relative mobile-wishlist">
                                                 <a href="wishlist.html" class="wishlist-link">
                                                     <div>
                                                         <img src="./assets/images/icons/heart.svg" class="img-fluid"
                                                             alt="">
+                                                        <img src="./assets/images/icons/heart.svg"
+                                                            class="img-fluid mob-cart" alt="">
                                                     </div>
+
                                                     <span class="cart_qty_cls">2</span>
                                                 </a>
                                             </li>
                                             <li class="onhover-div mobile-cart">
                                                 <div><img src="./assets/images/icons/shopping-basket.svg"
                                                         class="img-fluid" alt="">
-                                                    <i class="ti-shopping-cart"></i>
+                                                    <img src="./assets/images/icons/shopping-basket.svg"
+                                                        class="img-fluid mob-cart">
                                                 </div>
                                                 <span class="cart_qty_cls">2</span>
                                                 <ul class="show-div shopping-cart">
@@ -161,14 +166,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-center col-6 order-xs-2">
                                 <div>
                                     <nav id="main-nav">
-                                        <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
-                                        <ul id="main-menu"
-                                            class="sm pixelstrap sm-horizontal d-flex justify-content-center">
-                                            <li>
-                                                <div class="mobile-back text-end">Back<i class="fa fa-angle-right ps-2"
+                                        <div class="toggle-nav text-right"><i class="fa fa-bars sidebar-bar"></i></div>
+                                        <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                                            <li class="mob-nav-icon">
+                                                <div class="mobile-back text-end"><i class="fa fa-times ps-2"
                                                         aria-hidden="true"></i></div>
                                             </li>
                                             <li><a href="index.html">Home</a></li>
@@ -181,7 +185,7 @@
                                                                 <div class="link-section">
                                                                     <ul class="has-preview">
                                                                         <li class="has-subcat">
-                                                                            <h5>Versity Jackets</h5>
+                                                                            <h5><span>Versity Jackets</span></h5>
                                                                             <ul>
                                                                                 <li><a href="./product-collection.html"
                                                                                         data-preview-src="./assets/images/products/front-blue.png">All
@@ -191,8 +195,7 @@
                                                                                         data-preview-src="./assets/images/products/front-tan.png">Wool
                                                                                         and
                                                                                         genuine
-                                                                                        leather<span
-                                                                                            class="new-tag">new</span></a>
+                                                                                        leather</a>
                                                                                 </li>
                                                                                 <li><a href="./product-collection-3.html"
                                                                                         data-preview-src="./assets/images/products/front-gold.png">Wool
@@ -239,7 +242,7 @@
                                                         class="mr-1" /> Hot
                                                     Deal</a>
                                             </li>
-                                            <li><a href="javascript:void(0)">Size Chart</a></li>
+                                            <li><a href="./size-chart.html">Size Chart</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -275,7 +278,7 @@
     <section class="section-b-space">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <div class="dashboard-left">
                         <div class="collection-mobile-back"><span class="filter-back"><i class="fa fa-angle-left"
                                     aria-hidden="true"></i> back</span></div>
@@ -293,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9 privacy-page">
+                <div class="col-lg-9 privacy-page">
                     <h1 id="terms">Terms and Conditions</h1>
 
                     <p>Welcome to Webjacket!</p>
@@ -502,21 +505,23 @@
             <div class="container">
                 <div class="row footer-theme partition-f">
                     <div class="col-lg-4 col-md-6">
-                        <div class="footer-title footer-mobile-title">
-                            <h4>about</h4>
-                        </div>
-                        <div class="footer-contant">
-                            <div class="footer-logo">
-                                <img src="./assets/images/logo.svg" alt="Logo">
-                                <p>DRAW AND DESIGN</p>
-                                <p>THAT YOU WISH FOR.</p>
+                        <div class="sub-title">
+                            <div class="footer-title footer-mobile-title">
+                                <h3>ABOUT</h3>
                             </div>
+                            <div class="footer-contant">
+                                <div class="footer-logo">
+                                    <img src="./assets/images/logo.svg" alt="Logo">
+                                    <p>DRAW AND DESIGN</p>
+                                    <p>THAT YOU WISH FOR.</p>
+                                </div>
 
-                            <div class="footer-tel">
-                                <img src="./assets/images/icons/headphone.svg" alt="Call">
-                                <div class="contact-num">
-                                    <p>HAVE ANY QUESTION?</p>
-                                    <p class="number">1-888-869-1555</p>
+                                <div class="footer-tel">
+                                    <img src="./assets/images/icons/headphone.svg" alt="Call">
+                                    <div class="contact-num">
+                                        <p>HAVE ANY QUESTION?</p>
+                                        <p class="number">1-888-869-1555</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -529,9 +534,10 @@
                             <div class="footer-contant">
                                 <ul>
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="#">Review</a></li>
-                                    <li><a href="./product-collection.html">Products</a></li>
-                                    <li><a href="#">Size Chart</a></li>
+                                    <li><a href="./faq.html">Help & Faq’s</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms.html">Terms</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -544,9 +550,9 @@
                             <div class="footer-contant">
                                 <ul>
                                     <li><a href="dashboard.html">My Account</a></li>
-                                    <li><a href="./faq.html">Help & Faq’s</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="review.html">Review</a></li>
+                                    <li><a href="./product-collection.html">Products</a></li>
+                                    <li><a href="./size-chart.html">Size Chart</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -563,7 +569,7 @@
                                 <li><a href="javascript:void(0)"><i class="fab fa-pinterest"></i></a></li>
                                 <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
                             </ul>
-                            <div class="footer-title mt-4">
+                            <div class="footer-title mt-4 mb-3">
                                 <h3>PAYMENT GATEWAY</h3>
                             </div>
                             <img src="./assets/images/icons/money-cards.svg" alt="Gateway Images" class="img-fluid">
