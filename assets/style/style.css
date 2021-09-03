@@ -3560,6 +3560,13 @@ a.ui-button:active,
     padding: 0.5rem 0.7rem;
     font-size: 1rem;
   }
+  .swatch-list li > div {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
   .main-menu .menu-right .icon-nav li.mobile-cart {
     height: auto;
   }
@@ -3703,13 +3710,6 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 767px) {
-  .swatch-list li > div {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-  }
   #main-menu li ul.mega-menu {
     box-shadow: none !important;
     width: 100% !important;
