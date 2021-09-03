@@ -62,12 +62,12 @@
   /*=====================
      04. Mega menu js
      ==========================*/
-  if ($(window).width() > "1200") {
+  if ($(window).width() > "768") {
     $("#hover-cls").hover(function () {
       $(".sm").addClass("hover-unset");
     });
   }
-  if ($(window).width() > "1200") {
+  if ($(window).width() > "768") {
     $("#sub-menu > li").hover(
       function () {
         if ($(this).children().hasClass("has-submenu")) {
@@ -144,12 +144,12 @@
     $(".sm-horizontal").css("right", "-410px");
   });
   var window_width = jQuery(window).width();
-  if (window_width > "1199") {
+  if (window_width > "768") {
     $("#toggle-sidebar").click(function () {
       $(".marketplace-sidebar").slideToggle("slow");
     });
   }
-  if (window_width < "1199") {
+  if (window_width < "768") {
     $("#toggle-sidebar-res").click(function () {
       $(".marketplace-sidebar").addClass("open-side");
     });
@@ -168,7 +168,7 @@
      09. left category slider height
      ==========================*/
   var window_width = jQuery(window).width();
-  if (window_width > "1199") {
+  if (window_width > "767") {
     var category_height = $("#sidebar-height").height();
     $(".height-apply").css({ height: category_height });
   }
@@ -192,7 +192,7 @@
     jQuery(".footer-contant").show();
   }
 
-  if ($(window).width() < "1183") {
+  if ($(window).width() < "768") {
     jQuery(".menu-title h5").append('<span class="according-menu"></span>');
     jQuery(".menu-title").on("click", function () {
       jQuery(".menu-title").removeClass("active");
@@ -349,6 +349,13 @@
     responsive: [
       {
         breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -683,7 +690,7 @@
         },
       },
       {
-        breakpoint: 991,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -705,7 +712,7 @@
         },
       },
       {
-        breakpoint: 991,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -1268,7 +1275,7 @@
   /*=====================
      15.Header z-index js
      ==========================*/
-  if ($(window).width() < 1199) {
+  if ($(window).width() < 768) {
     $(
       ".header-2 .navbar .sidebar-bar, .header-2 .navbar .sidebar-back, .header-2 .mobile-search img"
     ).on("click", function () {
@@ -2234,6 +2241,7 @@ $("#main-menu .has-subcat").each(function () {
   } else {
     $(this).on("click", function (e) {
       $(this).find("ul").slideToggle();
+      $(this).toggleClass("open");
     });
   }
 });
@@ -2296,8 +2304,8 @@ $(".has-flag").each(function () {
   });
 });
 
-if ($(window).width() < "1200") {
-  let searchBar = $(".main-menu").find(".nav-search-bar").html();
-  $(".main-menu").find(".nav-search-bar").remove();
-  $(".mob-nav-icon").after(`<li>${searchBar}</li>`);
-}
+// if ($(window).width() < "1200") {
+//   let searchBar = $(".main-menu").find(".nav-search-bar").html();
+//   $(".main-menu").find(".nav-search-bar").remove();
+//   $(".mob-nav-icon").after(`<li>${searchBar}</li>`);
+// }
