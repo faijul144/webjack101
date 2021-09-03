@@ -3618,6 +3618,9 @@ a.ui-button:active,
     width: 100% !important;
     margin-bottom: 1rem;
   }
+  .w-80 {
+    width: auto;
+  }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -3895,8 +3898,8 @@ a.ui-button:active,
     flex: 0 0 100%;
     text-align: left;
   }
-  .img-direct-edit .added-texts-opt .w-80 {
-    width: auto !important;
+  .img-direct-edit .added-texts-opt:nth-child(2) > li:nth-child(2n) {
+    flex: 0 0 50%;
   }
   .customize-section [data-titleText]::before {
     display: none;
