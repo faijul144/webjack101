@@ -3867,9 +3867,20 @@ a.ui-button:active,
     width: 2.8rem;
     height: 2.8rem;
   }
+  .parts-color-list__title {
+    width: 45%;
+    font-size: 0.95rem;
+  }
+  .parts-color-list__colors {
+    width: 55%;
+  }
   .parts-color-list__colors .has-swatch .swatch-container {
     left: unset;
     right: 5rem;
+  }
+  .parts-color-list__colors .has-swatch .swatch-select.swatch-img div {
+    height: 2.1rem;
+    width: 2.1rem;
   }
   .img-direct-edit.img-add-edit > ul {
     flex-wrap: wrap;
