@@ -3736,13 +3736,15 @@ a.ui-button:active,
   header .brand-logo img {
     width: 70%;
   }
+  #main-menu {
+    margin-top: 1.5rem;
+  }
   .main-menu > .row {
     justify-content: center;
   }
   .main-menu .menu-right {
     float: none;
     width: 100%;
-    margin-bottom: 1.5rem;
   }
   .main-menu .menu-right .icon-nav {
     width: 100%;
