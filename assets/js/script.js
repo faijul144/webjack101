@@ -55,12 +55,12 @@
   /*=====================
      04. Mega menu js
      ==========================*/
-  if ($(window).width() > "768") {
+  if ($(window).width() > "1199") {
     $("#hover-cls").hover(function () {
       $(".sm").addClass("hover-unset");
     });
   }
-  if ($(window).width() > "768") {
+  if ($(window).width() > "1199") {
     $("#sub-menu > li").hover(
       function () {
         if ($(this).children().hasClass("has-submenu")) {

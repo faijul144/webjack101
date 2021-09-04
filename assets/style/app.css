@@ -7598,9 +7598,11 @@ footer p {
 
 
   .pixelstrap ul {
-    position: absolute;
+    position: absolute !important;
     width: 20em !important;
   }
+
+ 
 
 
   .pixelstrap ul li, .pixelstrap.sm-rtl ul li, .pixelstrap.sm-vertical li {
