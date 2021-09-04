@@ -2142,7 +2142,7 @@ textarea:focus {
 
 .has-swatch.img-icon-color .swatch-select > div img {
   width: 100%;
-  height: 100%;
+  height: 105%;
   object-fit: cover;
 }
 
@@ -2268,6 +2268,7 @@ textarea:focus {
 
 .has-swatch .swatch-container .swatch-list li div img {
   width: 100%;
+  height: 105%;
   object-fit: cover;
 }
 
@@ -2280,6 +2281,7 @@ textarea:focus {
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
+  z-index: 999999;
 }
 
 .selected-color div {
@@ -2723,8 +2725,8 @@ textarea:focus {
 
 .parts-color-list__colors .has-swatch .swatch-select.swatch-img div img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 105%;
+  object-fit: cover;
 }
 
 .parts-color-list__colors .has-swatch .swatch-select.swatch-img > span {
@@ -3565,6 +3567,10 @@ a.ui-button:active,
   z-index: 5;
 }
 
+.modal {
+  z-index: 99999;
+}
+
 @media screen and (max-width: 1199px) {
   .slider-img {
     width: 100%;
@@ -3837,6 +3843,10 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 577px) {
+  .pro-spec li {
+    flex: 0 0 100%;
+    width: 100%;
+  }
   .img-direct-edit.img-add-edit > ul {
     flex-wrap: wrap;
   }
