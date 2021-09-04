@@ -3683,6 +3683,12 @@ a.ui-button:active,
   }
 }
 
+@media (max-width: 767px) and (min-width: 577px) {
+  #main-menu li ul.mega-menu {
+    width: 30rem !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .cart-buttons .btn {
     font-size: 0.8rem;
@@ -3712,6 +3718,51 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 577px) {
+  #main-menu li ul.mega-menu {
+    box-shadow: none !important;
+    width: 100% !important;
+    padding-top: 0 !important;
+  }
+  #main-menu li ul.mega-menu > li h5 {
+    margin-top: 0;
+  }
+  #main-menu li ul.mega-menu > li h5 span {
+    border-left: 16px solid transparent;
+  }
+  #main-menu li ul.mega-menu > li > .row > div {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  #main-menu li ul.mega-menu > li > .row > div:last-child {
+    display: none;
+  }
+  #main-menu li.has-subcat {
+    position: relative;
+  }
+  #main-menu li.has-subcat::after {
+    content: "\f053";
+    font: normal normal normal 13px/1 FontAwesome;
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 6px;
+    display: block;
+    position: absolute;
+    transform-origin: 0 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  #main-menu li.has-subcat.open::after {
+    top: 18px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
   .mobile-account > img {
     margin: 0 !important;
   }
@@ -3786,51 +3837,6 @@ a.ui-button:active,
   }
   .tracking-page .tracking-detail ul li .left {
     min-width: 10rem;
-  }
-  #main-menu li ul.mega-menu {
-    box-shadow: none !important;
-    width: 100% !important;
-    padding-top: 0 !important;
-  }
-  #main-menu li ul.mega-menu > li h5 {
-    margin-top: 0;
-  }
-  #main-menu li ul.mega-menu > li h5 span {
-    border-left: 16px solid transparent;
-  }
-  #main-menu li ul.mega-menu > li > .row > div {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-  }
-  #main-menu li ul.mega-menu > li > .row > div:last-child {
-    display: none;
-  }
-  #main-menu li.has-subcat {
-    position: relative;
-  }
-  #main-menu li.has-subcat::after {
-    content: "\f053";
-    font: normal normal normal 13px/1 FontAwesome;
-    width: 0;
-    height: 0;
-    right: 0;
-    top: 6px;
-    display: block;
-    position: absolute;
-    transform-origin: 0 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-  }
-  #main-menu li.has-subcat.open::after {
-    top: 18px;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
   }
   header .brand-logo img {
     width: 70%;
