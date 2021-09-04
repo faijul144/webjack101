@@ -2267,7 +2267,7 @@ textarea:focus {
 }
 
 .has-swatch .swatch-container .swatch-list li div img {
-  width: 100%;
+  width: 103%;
   height: 103%;
   object-fit: cover;
 }
