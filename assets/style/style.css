@@ -3849,6 +3849,9 @@ a.ui-button:active,
     flex: 0 0 100%;
     width: 100%;
   }
+  .search-bar {
+    margin-bottom: 1.2rem !important;
+  }
   .img-direct-edit.img-add-edit > ul {
     flex-wrap: wrap;
   }

@@ -8123,7 +8123,7 @@ footer p {
     right: 40%;
     font-size: 0;
     padding: 0;
-    z-index: 9999;
+    z-index: 9;
   }
 
   .top-header .header-dropdown .mobile-account.wishlist, .top-header .header-dropdown .mobile-account.wishlist {
