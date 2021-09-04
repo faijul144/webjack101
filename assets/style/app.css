@@ -5797,7 +5797,7 @@ footer p {
 }
 
 
-.slider-nav .slick-slide,.slider-nav-detail .slick-slide, .rtl-slider-nav .slick-slide, .slider-right-nav .slick-slide, .rtl-slider-right-nav .slick-slide {
+.slider-nav-detail .slick-slide, .rtl-slider-nav .slick-slide, .slider-right-nav .slick-slide, .rtl-slider-right-nav .slick-slide {
   padding: 0 15px 15px;
   padding-bottom: 0;
 }
