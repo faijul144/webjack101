@@ -3951,10 +3951,4 @@ a.ui-button:active,
   }
 }
 
-@media (min-width: 577px) {
-  header #main-menu ul.mega-menu {
-    position: absolute !important;
-  }
-}
-
 /* Landscape */
