@@ -3775,6 +3775,7 @@ a.ui-button:active,
     width: 18rem;
     left: -18rem;
     top: -2rem;
+    z-index: 9999;
   }
   .meta-single-img img {
     height: 8rem;
