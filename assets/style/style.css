@@ -3852,6 +3852,9 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 577px) {
+  .order-track-top-link img {
+    display: none;
+  }
   .search-bar {
     margin-bottom: 1.5rem !important;
   }

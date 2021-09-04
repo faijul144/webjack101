@@ -2317,8 +2317,7 @@ $(".has-flag").each(function () {
   });
 });
 
-// if ($(window).width() < "1200") {
-//   let searchBar = $(".main-menu").find(".nav-search-bar").html();
-//   $(".main-menu").find(".nav-search-bar").remove();
-//   $(".mob-nav-icon").after(`<li>${searchBar}</li>`);
-// }
+if ($(window).width() < "578") {
+  let tracker = $(".order-track-top").html();
+  $("#main-menu").append(`<li>${tracker}</li>`);
+}
