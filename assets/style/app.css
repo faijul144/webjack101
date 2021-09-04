@@ -7887,6 +7887,14 @@ footer p {
   }
 }
 @media (max-width: 1199px) {
+
+  header .cart_qty_cls{
+    height: 16px!important;
+    width: 16px!important;
+    font-size: 9px!important;
+    line-height: 12px!important;
+  }
+
   .mobile-wishlist{
     height: auto!important;
   }
