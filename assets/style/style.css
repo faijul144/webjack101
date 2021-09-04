@@ -3846,9 +3846,8 @@ a.ui-button:active,
   .tracking-page .wrapper .arrow-steps .step {
     margin-bottom: 8px;
   }
-  .pro-spec li {
-    flex: 0 0 100%;
-    width: 100%;
+  .pro-spec {
+    width: auto;
   }
 }
 
