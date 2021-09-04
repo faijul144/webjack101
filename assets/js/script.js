@@ -53,13 +53,6 @@
   });
 
   /*=====================
-     03. Age verify modal
-     ==========================*/
-  $(window).on("load", function () {
-    $("#ageModal").modal("show");
-  });
-
-  /*=====================
      04. Mega menu js
      ==========================*/
   if ($(window).width() > "768") {
@@ -749,6 +742,12 @@
     speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        arrows: false,
+      },
+    ],
   });
 
   $(".product-5").slick({

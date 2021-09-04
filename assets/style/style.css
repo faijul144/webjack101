@@ -1034,7 +1034,7 @@ header .cart_qty_cls {
   z-index: -1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 577px) {
   #main-menu {
     display: flex;
     justify-content: center;
@@ -3602,6 +3602,12 @@ a.ui-button:active,
   .product-slick .slick-slide img {
     width: auto !important;
   }
+  .table-responsive-xs {
+    overflow-y: hidden;
+  }
+  .order-table tr td {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 578px) {
@@ -3626,6 +3632,13 @@ a.ui-button:active,
   .product-right .has-gender .select2 {
     width: 100% !important;
     margin-bottom: 1rem;
+  }
+  .divider::after {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .tracking-page .order-map {
+    margin-top: 2rem;
   }
 }
 
@@ -3671,8 +3684,9 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 480px) {
-  .mobile-account > img {
-    margin: 0 !important;
+  .cart-buttons .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
   .flash-slider .slick-dots {
     justify-content: center;
@@ -3698,6 +3712,18 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 577px) {
+  .mobile-account > img {
+    margin: 0 !important;
+  }
+  .order-xs-1 {
+    order: 1;
+  }
+  .order-xs-2 {
+    order: 2;
+  }
+  .order-xs-3 {
+    order: 3;
+  }
   header .mobile-cart .cart_qty_cls,
   header .mobile-wishlist .cart_qty_cls {
     top: -11px;
@@ -3709,6 +3735,11 @@ a.ui-button:active,
     display: block !important;
     filter: invert(1);
     -webkit-filter: invert(1);
+  }
+  .bg-shape,
+  .tes-bg {
+    width: 100% !important;
+    display: none;
   }
   .mobile-wishlist {
     position: fixed !important;
@@ -3740,19 +3771,20 @@ a.ui-button:active,
 }
 
 @media screen and (max-width: 767px) {
-  .bg-shape,
-  .tes-bg {
-    width: 100% !important;
-    display: none;
+  .review-form-container {
+    width: 18rem;
+    left: -18rem;
+    top: -2rem;
   }
-  .order-xs-1 {
-    order: 1;
+  .meta-single-img img {
+    height: 8rem;
+    width: 100%;
   }
-  .order-xs-2 {
-    order: 2;
+  .tracking-page .tracking-detail ul li {
+    font-size: 0.8rem;
   }
-  .order-xs-3 {
-    order: 3;
+  .tracking-page .tracking-detail ul li .left {
+    min-width: 10rem;
   }
   #main-menu li ul.mega-menu {
     box-shadow: none !important;
