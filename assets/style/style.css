@@ -3608,6 +3608,10 @@ a.ui-button:active,
   .order-table tr td {
     white-space: nowrap;
   }
+  #main-menu .scroll-up,
+  #main-menu .scroll-down {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 578px) {
@@ -3680,12 +3684,6 @@ a.ui-button:active,
   li:not(.w-80) .has-swatch .swatch-container {
     left: unset;
     right: 0;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 577px) {
-  #main-menu li ul.mega-menu {
-    width: 28rem !important;
   }
 }
 
