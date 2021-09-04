@@ -1669,6 +1669,7 @@ input::placeholder {
 .tab-product .rating-summury-box .product-left {
   display: flex;
   align-items: center;
+  margin-left: 0.5rem;
 }
 
 .tab-product .rating-summury-box .product-left .slider-bar {
@@ -3585,6 +3586,9 @@ a.ui-button:active,
   .home-slider .hero-text .btn.hero-btn {
     padding: 0.5rem 0.7rem;
     font-size: 1rem;
+  }
+  .tab-product .avg-rating-container h4 {
+    font-size: 4rem;
   }
   .swatch-list li > div {
     border-radius: 50%;

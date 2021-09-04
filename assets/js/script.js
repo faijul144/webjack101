@@ -1920,6 +1920,12 @@ $(".product-rating").each(function () {
   });
 });
 
+if ($(window).width() < 768) {
+  $(".avg-rating-star .product-rating").rateYo({
+    starWidth: "16px",
+  });
+}
+
 // Select 2 Initialize
 $("select").each(function () {
   let myselect = $(this).select2({
