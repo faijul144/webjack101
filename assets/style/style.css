@@ -3846,13 +3846,13 @@ a.ui-button:active,
   .tracking-page .wrapper .arrow-steps .step {
     margin-bottom: 8px;
   }
-}
-
-@media screen and (max-width: 577px) {
   .pro-spec li {
     flex: 0 0 100%;
     width: 100%;
   }
+}
+
+@media screen and (max-width: 577px) {
   .search-bar {
     margin-bottom: 1.5rem !important;
   }
