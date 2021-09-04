@@ -2246,10 +2246,16 @@ $("#main-menu .has-subcat").each(function () {
   $(this).find("ul").slideUp();
   if ($(window).width() >= "1200") {
     $(this).on("mouseenter", function () {
-      $(this).find("ul").slideDown();
+      let el = this;
+      setTimeout(function () {
+        $(el).find("ul").stop(true, true).slideDown();
+      }, 500);
     });
     $(this).on("mouseleave", function () {
-      $(this).find("ul").slideUp();
+      let el = this;
+      setTimeout(function () {
+        $(el).find("ul").stop(true, true).slideUp();
+      }, 500);
     });
   } else {
     $(this).on("click", function (e) {
