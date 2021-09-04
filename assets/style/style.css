@@ -3687,6 +3687,13 @@ a.ui-button:active,
   }
 }
 
+@media (max-width: 767px) and (min-width: 578px) {
+  #main-menu li ul.mega-menu {
+    width: 30rem !important;
+    left: -5rem !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .cart-buttons .btn {
     font-size: 0.8rem;
