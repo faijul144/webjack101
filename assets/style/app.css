@@ -9118,6 +9118,21 @@ footer p {
 
 }
 @media (max-width: 991px) {
+  .tracking-page .wrapper .arrow-steps .step:before{
+    left: -1px !important;
+  }
+
+  .tracking-page .wrapper .arrow-steps .step:before, .tracking-page .wrapper .arrow-steps .step:after{
+    right: -25px !important;
+    border-top-width: 25px!important;
+    border-bottom-width: 23px!important;
+  }
+
+  .tracking-page .wrapper .arrow-steps .step.current:after{
+    border-left-width: 26px !important;
+    /* left: -2px !important */
+  }
+
   .pet-parallax .pet-decor {
     left: 34px;
     bottom: -86px;
