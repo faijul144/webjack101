@@ -766,6 +766,8 @@ header .cart_qty_cls {
   background: var(--tertiary-white);
   appearance: none;
   display: block;
+  background: transparent;
+  /* Otherwise white in Chrome */
   border-radius: 50rem;
   -webkit-border-radius: 50rem;
   -moz-border-radius: 50rem;
@@ -786,6 +788,15 @@ header .cart_qty_cls {
 
 .product-left .slider-bar::-ms-thumb {
   background: transparent;
+}
+
+.product-left .slider-bar::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
 }
 
 .product-left .progress-bar {
