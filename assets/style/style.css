@@ -766,8 +766,6 @@ header .cart_qty_cls {
   background: var(--tertiary-white);
   appearance: none;
   display: block;
-  background: transparent;
-  /* Otherwise white in Chrome */
   border-radius: 50rem;
   -webkit-border-radius: 50rem;
   -moz-border-radius: 50rem;
