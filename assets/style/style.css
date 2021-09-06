@@ -781,6 +781,10 @@ header .cart_qty_cls {
   opacity: 0;
 }
 
+.product-left .slider-bar::-ms-track {
+  height: 0.5rem;
+}
+
 .product-left .slider-bar::-moz-range-track {
   height: 0.5rem;
 }
