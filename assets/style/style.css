@@ -760,6 +760,7 @@ header .cart_qty_cls {
 
 .product-left {
   position: relative;
+  height: 0.5rem;
 }
 
 .product-left .slider-bar {
