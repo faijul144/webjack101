@@ -781,46 +781,6 @@ header .cart_qty_cls {
   opacity: 0;
 }
 
-.product-left .slider-bar::-ms-track {
-  border-radius: 50rem !important;
-  -webkit-border-radius: 50rem !important;
-  -moz-border-radius: 50rem !important;
-  -ms-border-radius: 50rem !important;
-  -o-border-radius: 50rem !important;
-}
-
-.product-left .slider-bar::-webkit-slider-runnable-track {
-  border-radius: 50rem !important;
-  -webkit-border-radius: 50rem !important;
-  -moz-border-radius: 50rem !important;
-  -ms-border-radius: 50rem !important;
-  -o-border-radius: 50rem !important;
-}
-
-.product-left .slider-bar::-moz-range-track {
-  border-radius: 50rem !important;
-  -webkit-border-radius: 50rem !important;
-  -moz-border-radius: 50rem !important;
-  -ms-border-radius: 50rem !important;
-  -o-border-radius: 50rem !important;
-}
-
-.product-left .slider-bar::-ms-fill-lower {
-  border-radius: 50rem !important;
-  -webkit-border-radius: 50rem !important;
-  -moz-border-radius: 50rem !important;
-  -ms-border-radius: 50rem !important;
-  -o-border-radius: 50rem !important;
-}
-
-.product-left .slider-bar::-ms-fill-upper {
-  border-radius: 50rem !important;
-  -webkit-border-radius: 50rem !important;
-  -moz-border-radius: 50rem !important;
-  -ms-border-radius: 50rem !important;
-  -o-border-radius: 50rem !important;
-}
-
 .product-left .slider-bar::-moz-range-thumb {
   appearance: none !important;
   border: none !important;
@@ -859,6 +819,23 @@ header .cart_qty_cls {
   -o-border-radius: 50rem;
   position: absolute;
   top: 0;
+  z-index: 1;
+}
+
+.product-left::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--tertiary-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 50rem !important;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
 }
 
 .flash-sale-link {
