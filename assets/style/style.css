@@ -802,6 +802,7 @@ header .cart_qty_cls {
 .product-left .slider-bar::-ms-track {
   width: 100%;
   cursor: pointer;
+  height: 0.5rem;
   /* Hides the slider so custom styles can be added */
   background: transparent;
   border-color: transparent;
