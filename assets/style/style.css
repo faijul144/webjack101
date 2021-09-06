@@ -766,12 +766,12 @@ header .cart_qty_cls {
   background: var(--tertiary-white);
   appearance: none;
   display: block;
-  border-radius: 50rem;
-  -webkit-border-radius: 50rem;
-  -moz-border-radius: 50rem;
-  -ms-border-radius: 50rem;
-  -o-border-radius: 50rem;
-  height: 0.5rem;
+  border-radius: 50rem !important;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
+  height: 0.5rem !important;
   width: 100%;
   overflow: hidden;
 }
