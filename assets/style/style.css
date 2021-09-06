@@ -789,6 +789,14 @@ header .cart_qty_cls {
   height: 0.5rem;
 }
 
+.product-left .slider-bar::-ms-fill-lower {
+  height: 0.5rem;
+}
+
+.product-left .slider-bar::-ms-fill-upper {
+  height: 0.5rem;
+}
+
 .product-left .slider-bar::-moz-range-thumb {
   appearance: none !important;
   border: none !important;
